@@ -5,11 +5,35 @@ data:extend({
 		enabled = "false",
 		ingredients = 
 		{
-			{"steel-plate",120},
-			{"iron-plate",200},
-			{"stone-brick",50},
-			{"wooden-chest",25}
+			{"steel-plate",60},
+			{"iron-plate",100},
+			{"stone-brick",25},
+			{"wooden-chest",10}
 		},
 		result = "warehouse-basic"
-	}
+	},
+	{
+		type = "recipe",
+		name = "warehouse-passive-provider",
+		enabled = "false",
+		ingredients = 
+		{
+			{"warehouse-basic",1},
+			{"logistic-chest-passive-provider",1},
+			{"iron-plate",20},
+		},
+		result = "warehouse-passive-provider"
+	},
+	{
+		type = "recipe",
+		name = "warehouse-storage",
+		enabled = "false",
+		ingredients = 
+		{
+			{"warehouse-basic",1},
+			{"logistic-chest-storage",1},
+			{"iron-plate",20},
+		},
+		result = "warehouse-storage"
+	},
 })
