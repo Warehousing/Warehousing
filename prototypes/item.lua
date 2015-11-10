@@ -29,4 +29,24 @@ data:extend({
 		place_result = "warehouse-storage",
 		stack_size = 15
 	},
+	{
+		type = "item",
+		name = "warehouse-active-provider",
+		icon = "__Warehousing__/graphics/icons/warehouse-active-provider.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "logistic-network",
+		order = "b[storage]-c[logistic-chest-active-provider]",
+		place_result = "warehouse-active-provider",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "warehouse-requester",
+		icon = "__Warehousing__/graphics/icons/warehouse-requester.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "logistic-network",
+		order = "b[storage]-c[logistic-chest-requester]",
+		place_result = "warehouse-requester",
+		stack_size = 15
+	},
 })

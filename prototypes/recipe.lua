@@ -36,4 +36,28 @@ data:extend({
 		},
 		result = "warehouse-storage"
 	},
+	{
+		type = "recipe",
+		name = "warehouse-active-provider",
+		enabled = "false",
+		ingredients = 
+		{
+			{"warehouse-basic",1},
+			{"logistic-chest-active-provider",1},
+			{"iron-plate",20},
+		},
+		result = "warehouse-active-provider"
+	},
+	{
+		type = "recipe",
+		name = "warehouse-requester",
+		enabled = "false",
+		ingredients = 
+		{
+			{"warehouse-basic",1},
+			{"logistic-chest-requester",1},
+			{"iron-plate",20},
+		},
+		result = "warehouse-requester"
+	},
 })

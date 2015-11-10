@@ -33,7 +33,15 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "warehouse-storage",
-			}
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-active-provider",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-requester",
+			},
 		},
 		prerequisites = { "construction-robotics", "warehouse-research" },
 		unit =
