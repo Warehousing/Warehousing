@@ -4,6 +4,7 @@ data:extend(
 		type = "technology",
 		name = "warehouse-research",
 		icon = "__Warehousing__/graphics/research/warehouse-research.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -24,6 +25,7 @@ data:extend(
 		type = "technology",
 		name = "warehouse-logistics-research",
 		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
+		icon_size = 128,
 		effects =
 		{
 			{
