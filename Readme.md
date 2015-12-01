@@ -36,46 +36,51 @@ Also with shadows
 Recipies
 ---
     
-* Basic warehouse
-  Item|Qty
-  ---|---:
-  Steel plates | 60
-  Iron plates | 100
-  Stone bricks | 25
-  Wooden chests | 10
+##### Basic warehouse
+Item|Qty
+---|---:
+Steel plates | 60
+Iron plates | 100
+Stone bricks | 25
+Wooden chests | 10
+![Basic Warehouse][warehouse-basic]
 
-* Storage warehouse:
-  Item|Qty
-  ---|---:
-  Basic warehouse|1
-  Iron plates|20
-  Storage logistic chest|1
-  Advanced circuits|5
-  Steel Chests|15
+##### Storage warehouse:
+Item|Qty
+---|---:
+Basic warehouse|1
+Iron plates|20
+Storage logistic chest|1
+Advanced circuits|5
+Steel Chests|15
+![Storage Warehouse][warehouse-storage]
 
-* Passive provider warehouse:
-  Item|Qty
-  ---|---:
-  Basic warehouse|1
-  Iron plates|20
-  Passive provider logistic chest|1
-  Advanced circuits|5
+##### Passive provider warehouse:
+Item|Qty
+---|---:
+Basic warehouse|1
+Iron plates|20
+Passive provider logistic chest|1
+Advanced circuits|5
+![Passive provider warehouse][warehouse-passive-provider]
 
-* Active provider warehouse:
-  Item|Qty
-  ---|---:
-  Basic warehouse|1
-  Iron plates|20
-  Active provider logistic chest|1
-  Advanced circuits|5
+##### Active provider warehouse:
+Item|Qty
+---|---:
+Basic warehouse|1
+Iron plates|20
+Active provider logistic chest|1
+Advanced circuits|5
+![Active provider warehouse][warehouse-active-provider]
 
-* Requester warehouse:
-  Item|Qty
-  ---|---:
-  Basic warehouse|1
-  Iron plates|20
-  Requester logistic chest|1
-  Advanced circuits|5
+##### Requester warehouse:
+Item|Qty
+---|---:
+Basic warehouse|1
+Iron plates|20
+Requester logistic chest|1
+Advanced circuits|5
+![Requester warehouse][warehouse-requester]
 
 [warehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-basic-shadow.png
 [warehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-storage-shadow.png
