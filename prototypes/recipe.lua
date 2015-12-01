@@ -8,7 +8,7 @@ data:extend({
 			{"steel-plate",60},
 			{"iron-plate",100},
 			{"stone-brick",25},
-			{"wooden-chest",10}
+			{"wooden-chest",10},
 		},
 		result = "warehouse-basic"
 	},
@@ -21,6 +21,7 @@ data:extend({
 			{"warehouse-basic",1},
 			{"logistic-chest-passive-provider",1},
 			{"iron-plate",20},
+			{"advanced-circuit", 5},
 		},
 		result = "warehouse-passive-provider"
 	},
@@ -33,6 +34,8 @@ data:extend({
 			{"warehouse-basic",1},
 			{"logistic-chest-storage",1},
 			{"iron-plate",20},
+			{"advanced-circuit", 5},
+			{"steel-chest",15},
 		},
 		result = "warehouse-storage"
 	},
@@ -45,6 +48,7 @@ data:extend({
 			{"warehouse-basic",1},
 			{"logistic-chest-active-provider",1},
 			{"iron-plate",20},
+			{"advanced-circuit", 5},
 		},
 		result = "warehouse-active-provider"
 	},
@@ -57,6 +61,7 @@ data:extend({
 			{"warehouse-basic",1},
 			{"logistic-chest-requester",1},
 			{"iron-plate",20},
+			{"advanced-circuit", 5},
 		},
 		result = "warehouse-requester"
 	},
