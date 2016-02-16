@@ -1,3 +1,8 @@
+--[[ Copyright (c) David-John Miller AKA Anoyomouse 2016
+ * Part of the warehousing mod
+ *
+ * See LICENCE in the project directory for licence information
+--]]
 data:extend({
 	{
 		type = "recipe",
@@ -64,5 +69,18 @@ data:extend({
 			{"advanced-circuit", 5},
 		},
 		result = "warehouse-requester"
+	},
+	{
+		type = "recipe",
+		name = "warehouse-smart",
+		enabled = "false",
+		ingredients = 
+		{
+			{"warehouse-basic",1},
+			{"smart-chest",1},
+			{"iron-plate",20},
+			{"electronic-circuit", 5},
+		},
+		result = "warehouse-smart"
 	},
 })

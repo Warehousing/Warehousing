@@ -1,6 +1,6 @@
 Warehousing
 ===
-#### Current version 0.0.5
+#### Current version 0.0.6
 
 Word of warning, the warehouses have been changed to 6x6 as per a suggestion, this will make all current warehouses potentially overlap and not come out right ... you have been warned!
 
@@ -19,6 +19,8 @@ You can also attach red and green wires to the warehouses much like smart chests
 Graphics by **Nova Kast**, **please do not use without permission!** (just message me for this if you want)
 Also with shadows
 
+French translations kindly provided by: Hasturcraft
+
 ---
 
 1. Basic warehouses: 800 slots
@@ -32,6 +34,9 @@ Also with shadows
 ![Active provider warehouse][warehouse-active-provider]
 5. Requester warehouse: 800 slots
 ![Requester warehouse][warehouse-requester]
+
+6. Smart warehouse: 800 slots
+![Smart warehouse][warehouse-smart]
 
 Recipies
 ---
@@ -82,9 +87,18 @@ Requester logistic chest|1
 Advanced circuits|5
 ![Requester warehouse][warehouse-requester]
 
+##### Smart warehouse:
+Item|Qty
+---|---:
+Basic warehouse|1
+Iron plates|20
+Smart chest|1
+Electronic circuits|5
+![Smart warehouse][warehouse-smart]
+
 [warehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-basic-shadow.png
 [warehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-storage-shadow.png
 [warehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-passive-provider-shadow.png
 [warehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-active-provider-shadow.png
 [warehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-requester-shadow.png
-
+[warehouse-smart]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-smart-shadow.png

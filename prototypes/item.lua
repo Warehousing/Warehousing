@@ -1,3 +1,8 @@
+--[[ Copyright (c) David-John Miller AKA Anoyomouse 2016
+ * Part of the warehousing mod
+ *
+ * See LICENCE in the project directory for licence information
+--]]
 data:extend({
 	{
 		type = "item",
@@ -47,6 +52,16 @@ data:extend({
 		subgroup = "logistic-network",
 		order = "b[storage]-c[logistic-chest-requester]",
 		place_result = "warehouse-requester",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "warehouse-smart",
+		icon = "__Warehousing__/graphics/icons/warehouse-smart.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "a[items]-d[smart-chest]",
+		place_result = "warehouse-smart",
 		stack_size = 15
 	},
 })

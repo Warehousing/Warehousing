@@ -1,3 +1,8 @@
+--[[ Copyright (c) David-John Miller AKA Anoyomouse 2016
+ * Part of the warehousing mod
+ *
+ * See LICENCE in the project directory for licence information
+--]]
 data:extend(
 {
 	{
@@ -56,6 +61,30 @@ data:extend(
 			time = 30
 		},
 		order = "c-k-a"
+	},
+	{
+		type = "technology",
+		name = "warehouse-smart-research",
+		icon = "__Warehousing__/graphics/research/warehouse-smart-research.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-smart",
+			}
+		},
+		prerequisites = { "circuit-network", "warehouse-research" },
+		unit =
+		{
+			count = 25,
+			ingredients = {
+				{ "science-pack-1", 1},
+				{ "science-pack-2", 1}
+			},
+			time = 15
+		},
+		order = "a-d-d"
 	},
 })
 
