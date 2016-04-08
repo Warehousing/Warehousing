@@ -1,12 +1,14 @@
 Warehousing
 ===
-#### Current version 0.0.6
+#### Current version 0.0.7
 
 Word of warning, the warehouses have been changed to 6x6 as per a suggestion, this will make all current warehouses potentially overlap and not come out right ... you have been warned!
 
 Store _all_ the things! (So we heard you like boxes, you pack rat you!)
 
 Soo, Factorio 0.12.18 allowed scroll bars .. this is the result ...
+
+Please note that this may slow down Factorio, and a significant ammount of warehouses will cause a significant performance decrease (you know, many many slots makes for many many slow).
 
 Description
 ---
@@ -17,9 +19,13 @@ Also adds logistic versions (passive provider and storage)
 You can also attach red and green wires to the warehouses much like smart chests, and they'll attach to the correct points on the corner of the logistics warehouses
 
 Graphics by **Nova Kast**, **please do not use without permission!** (just message me for this if you want)
+The above clause is because i don't want people to steal the graphics, and suddenly discover it's everywhere, if you ask you can probably use the images (also, if you need custom graphics we can cook these up too if needed! ;) )
 Also with shadows
 
-French translations kindly provided by: Hasturcraft
+Translations kindly provided by:
+French by:  Hasturcraft
+Russian by: apriori
+Polish by:  diilmac
 
 ---
 
