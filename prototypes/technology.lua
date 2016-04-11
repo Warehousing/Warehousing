@@ -15,7 +15,12 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "warehouse-basic",
-			}
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-basic",
+			},
+
 		},
 		prerequisites = {"steel-processing"},
 		unit =
@@ -49,6 +54,22 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "warehouse-requester",
 			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-provider",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-storage",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-active",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-requester",
+			},
 		},
 		prerequisites = { "construction-robotics", "warehouse-research" },
 		unit =
@@ -72,6 +93,10 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "warehouse-smart",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-smart",
 			}
 		},
 		prerequisites = { "circuit-network", "warehouse-research" },

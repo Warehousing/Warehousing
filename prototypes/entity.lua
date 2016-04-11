@@ -37,6 +37,238 @@ data:extend(
 			shift = {1.0, -0.3},
 		},
 	},
+	{ -- Basic Storehouse
+		type = "container",
+		name = "storehouse-basic",
+		icon = "__Warehousing__/graphics/icons/storehouse.png",
+		flags = {"placeable-neutral", "placeable-player", "player-creation"},
+		minable = {mining_time = 2, result = "storehouse-basic"},
+		max_health = 250,
+		corpse = "big-remnants",
+		dying_explosion = "medium-explosion",
+		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		resistances =
+		{
+			{
+				type = "fire",
+				percent = 90
+			}
+		},
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 119,
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-basic.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+	},
+	{
+		type = "logistic-container",
+		name = "storehouse-provider",
+		icon = "__Warehousing__/graphics/icons/storehouseP.png",
+		flags = {"placeable-player", "player-creation"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "storehouse-provider"},
+		max_health = 250,
+		corpse = "big-remnants",
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 119,
+		logistic_mode = "passive-provider",
+		open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
+		close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-provider.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+		circuit_wire_max_distance = 7.5,
+		circuit_wire_connection_point =
+		{
+			shadow =
+			{
+				red = {.26, -0.6},
+				green = {.36, -0.6}
+				-- green = {2.36, 1.3}
+			},
+			wire =
+			{
+				red = {-0.16, -0.9},
+				green = {0.16, -0.9}
+			}
+		},
+	},
+	{
+		type = "logistic-container",
+		name = "storehouse-active",
+		icon = "__Warehousing__/graphics/icons/storehouseA.png",
+		flags = {"placeable-player", "player-creation"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "storehouse-active"},
+		max_health = 250,
+		corpse = "big-remnants",
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 119,
+		logistic_mode = "passive-provider",
+		open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
+		close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-active.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+		circuit_wire_max_distance = 7.5,
+		circuit_wire_connection_point =
+		{
+			shadow =
+			{
+				red = {.26, -0.6},
+				green = {.36, -0.6}
+				-- green = {2.36, 1.3}
+			},
+			wire =
+			{
+				red = {-0.16, -0.9},
+				green = {0.16, -0.9}
+			}
+		},
+	},
+	{
+		type = "logistic-container",
+		name = "storehouse-requester",
+		icon = "__Warehousing__/graphics/icons/storehouseR.png",
+		flags = {"placeable-player", "player-creation"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "storehouse-requester"},
+		max_health = 250,
+		corpse = "big-remnants",
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 119,
+		logistic_mode = "passive-provider",
+		open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
+		close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-requester.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+		circuit_wire_max_distance = 7.5,
+		circuit_wire_connection_point =
+		{
+			shadow =
+			{
+				red = {.26, -0.6},
+				green = {.36, -0.6}
+				-- green = {2.36, 1.3}
+			},
+			wire =
+			{
+				red = {-0.16, -0.9},
+				green = {0.16, -0.9}
+			}
+		},
+	},
+	{
+		type = "logistic-container",
+		name = "storehouse-storage",
+		icon = "__Warehousing__/graphics/icons/storehouseS.png",
+		flags = {"placeable-player", "player-creation"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "storehouse-storage"},
+		max_health = 250,
+		corpse = "big-remnants",
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 119,
+		logistic_mode = "passive-provider",
+		open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
+		close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-storage.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+		circuit_wire_max_distance = 7.5,
+		circuit_wire_connection_point =
+		{
+			shadow =
+			{
+				red = {.26, -0.6},
+				green = {.36, -0.6}
+				-- green = {2.36, 1.3}
+			},
+			wire =
+			{
+				red = {-0.16, -0.9},
+				green = {0.16, -0.9}
+			}
+		},
+	},
+	{
+		type = "logistic-container",
+		name = "storehouse-smart",
+		icon = "__Warehousing__/graphics/icons/storehouseG.png",
+		flags = {"placeable-player", "player-creation"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "storehouse-smart"},
+		max_health = 250,
+		corpse = "big-remnants",
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 119,
+		logistic_mode = "passive-provider",
+		open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
+		close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-smart.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+		circuit_wire_max_distance = 7.5,
+		circuit_wire_connection_point =
+		{
+			shadow =
+			{
+				red = {.26, -0.6},
+				green = {.36, -0.6}
+				-- green = {2.36, 1.3}
+			},
+			wire =
+			{
+				red = {-0.16, -0.9},
+				green = {0.16, -0.9}
+			}
+		},
+	},
 	{
 		type = "logistic-container",
 		name = "warehouse-passive-provider",
