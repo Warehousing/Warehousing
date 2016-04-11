@@ -16,6 +16,66 @@ data:extend({
 	},
 	{
 		type = "item",
+		name = "storehouse-basic",
+		icon = "__Warehousing__/graphics/icons/storehouse.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "d[items]-b[steel-chest]",
+		place_result = "storehouse-basic",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "storehouse-active",
+		icon = "__Warehousing__/graphics/icons/storehouseA.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "d[items]-b[steel-chest]",
+		place_result = "storehouse-active",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "storehouse-smart",
+		icon = "__Warehousing__/graphics/icons/storehouseG.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "d[items]-b[steel-chest]",
+		place_result = "storehouse-smart",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "storehouse-provider",
+		icon = "__Warehousing__/graphics/icons/storehouseP.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "d[items]-b[steel-chest]",
+		place_result = "storehouse-provider",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "storehouse-requester",
+		icon = "__Warehousing__/graphics/icons/storehouseR.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "d[items]-b[steel-chest]",
+		place_result = "storehouse-requester",
+		stack_size = 15
+	},
+	{
+		type = "item",
+		name = "storehouse-storage",
+		icon = "__Warehousing__/graphics/icons/storehouseS.png",
+		flags = {"goes-to-quickbar"},
+		subgroup = "storage",
+		order = "d[items]-b[steel-chest]",
+		place_result = "storehouse-storage",
+		stack_size = 15
+	},
+	{
+		type = "item",
 		name = "warehouse-passive-provider",
 		icon = "__Warehousing__/graphics/icons/warehouse-passive-provider.png",
 		flags = {"goes-to-quickbar"},
