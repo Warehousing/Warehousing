@@ -4,7 +4,7 @@
  * See LICENCE in the project directory for licence information
 --]]
 data:extend({
-	{
+	{ -- Basic Warehouse
 		type = "recipe",
 		name = "warehouse-basic",
 		enabled = "false",
@@ -17,7 +17,7 @@ data:extend({
 		},
 		result = "warehouse-basic"
 	},
-	{
+	{ -- Passive Provider Warehouse
 		type = "recipe",
 		name = "warehouse-passive-provider",
 		enabled = "false",
@@ -30,7 +30,7 @@ data:extend({
 		},
 		result = "warehouse-passive-provider"
 	},
-	{
+	{ -- Storage Warehouse
 		type = "recipe",
 		name = "warehouse-storage",
 		enabled = "false",
@@ -44,7 +44,7 @@ data:extend({
 		},
 		result = "warehouse-storage"
 	},
-	{
+	{ -- Active Provider Warehouse
 		type = "recipe",
 		name = "warehouse-active-provider",
 		enabled = "false",
@@ -57,7 +57,7 @@ data:extend({
 		},
 		result = "warehouse-active-provider"
 	},
-	{
+	{ -- Requestor Warehouse
 		type = "recipe",
 		name = "warehouse-requester",
 		enabled = "false",
@@ -70,7 +70,7 @@ data:extend({
 		},
 		result = "warehouse-requester"
 	},
-	{
+	{ -- Smart Warehouse
 		type = "recipe",
 		name = "warehouse-smart",
 		enabled = "false",
@@ -82,5 +82,84 @@ data:extend({
 			{"electronic-circuit", 5},
 		},
 		result = "warehouse-smart"
+	},
+	{ -- Basic Storehouse
+		type = "recipe",
+		name = "storehouse-basic",
+		enabled = "false",
+		ingredients = 
+		{
+			{"steel-plate",20},
+			{"iron-plate",40},
+			{"stone-brick",10},
+			{"wooden-chest",5},
+		},
+		result = "storehouse-basic"
+	},
+	{ -- Passive Provider Storehouse
+		type = "recipe",
+		name = "storehouse-passive-provider",
+		enabled = "false",
+		ingredients = 
+		{
+			{"storehouse-basic",1},
+			{"logistic-chest-passive-provider",1},
+			{"iron-plate",5},
+			{"advanced-circuit", 2},
+		},
+		result = "storehouse-passive-provider"
+	},
+	{ -- Storage Storehouse
+		type = "recipe",
+		name = "storehouse-storage",
+		enabled = "false",
+		ingredients = 
+		{
+			{"storehouse-basic",1},
+			{"logistic-chest-storage",1},
+			{"iron-plate",5},
+			{"advanced-circuit", 2},
+			{"steel-chest",5},
+		},
+		result = "storehouse-storage"
+	},
+	{ -- Active Provider Storehouse
+		type = "recipe",
+		name = "storehouse-active-provider",
+		enabled = "false",
+		ingredients = 
+		{
+			{"storehouse-basic",1},
+			{"logistic-chest-active-provider",1},
+			{"iron-plate",5},
+			{"advanced-circuit", 2},
+		},
+		result = "storehouse-active-provider"
+	},
+	{ -- Requestor Storehouse
+		type = "recipe",
+		name = "storehouse-requester",
+		enabled = "false",
+		ingredients = 
+		{
+			{"storehouse-basic",1},
+			{"logistic-chest-requester",1},
+			{"iron-plate",5},
+			{"advanced-circuit", 2},
+		},
+		result = "storehouse-requester"
+	},
+	{ -- Smart Storehouse
+		type = "recipe",
+		name = "storehouse-smart",
+		enabled = "false",
+		ingredients = 
+		{
+			{"storehouse-basic",1},
+			{"smart-chest",1},
+			{"iron-plate",5},
+			{"electronic-circuit", 2},
+		},
+		result = "storehouse-smart"
 	},
 })
