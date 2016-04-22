@@ -1,6 +1,6 @@
 Warehousing
 ===
-#### Current version 0.0.8
+#### Current version 0.0.9
 
 Word of warning, the warehouses have been changed to 6x6 as per a suggestion, this will make all current warehouses potentially overlap and not come out right ... you have been warned!
 
@@ -29,35 +29,31 @@ Translations kindly provided by the following people
 ----|--------|------
 :fr:|French|Hasturcraft
 :ru:|Russian|apriori
+||Oceanel
 :pl:|Polish|diilmac
 :de:|German|apcnc
 :es:|Spanish|frenchiveruti
 
 ---
 
-1. Basic warehouse: 800 slots, Storehouse: 150 slots
-![Basic Warehouse][warehouse-basic]
-![Basic Storehouse][storehouse-basic]
+1.|Basic warehouse: 800 slots|Storehouse: 150 slots
+-|-|-
+|![Basic Warehouse][warehouse-basic]|![Basic Storehouse][storehouse-basic]
 
-2. Storage warehouse: 2000 slots, Storehouse: 300 slots
-![Storage Warehouse][warehouse-storage]
-![Storage Storehouse][storehouse-storage]
+2.|Storage warehouse: 2000 slots|Storehouse: 300 slots
+|![Storage Warehouse][warehouse-storage]|![Storage Storehouse][storehouse-storage]
 
-3. Passive provider warehouse: 800 slots, Storehouse: 150 slots
-![Passive provider warehouse][warehouse-passive-provider]
-![Passive provider storehouse][storehouse-passive-provider]
+3.|Passive provider warehouse: 800 slots|Storehouse: 150 slots
+|![Passive provider warehouse][warehouse-passive-provider]|![Passive provider storehouse][storehouse-passive-provider]
 
-4. Active provider warehouse: 800 slots, Storehouse: 150 slots
-![Active provider warehouse][warehouse-active-provider]
-![Active provider storehouse][storehouse-active-provider]
+4.|Active provider warehouse: 800 slots|Storehouse: 150 slots
+|![Active provider warehouse][warehouse-active-provider]|![Active provider storehouse][storehouse-active-provider]
 
-5. Requester warehouse: 800 slots, Storehouse: 150 slots
-![Requester warehouse][warehouse-requester]
-![Requester warehouse][storehouse-requester]
+5.|Requester warehouse: 800 slots|Storehouse: 150 slots
+|![Requester warehouse][warehouse-requester]|![Requester warehouse][storehouse-requester]
 
-6. Smart warehouse: 800 slots, Storehouse: 150 slots
-![Smart warehouse][warehouse-smart]
-![Smart storehouse][storehouse-smart]
+6.|Smart warehouse: 800 slots|Storehouse: 150 slots
+|![Smart warehouse][warehouse-smart]|![Smart storehouse][storehouse-smart]
 
 Recipies
 ---

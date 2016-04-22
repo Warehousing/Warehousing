@@ -6,6 +6,6 @@
 require "defines"
 require "config"
 
-local WAREHOUSING_VERSION = "0.0.8"
+local WAREHOUSING_VERSION = "0.0.9"
 
 
