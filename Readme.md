@@ -33,6 +33,7 @@ Translations kindly provided by the following people
 :pl:|Polish|diilmac
 :de:|German|apcnc
 :es:|Spanish|frenchiveruti
+:br:|Brazil|RaphaelNeumann
 
 ---
 
