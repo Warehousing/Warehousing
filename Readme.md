@@ -33,7 +33,7 @@ Translations kindly provided by the following people
 :pl:|Polish|diilmac
 :de:|German|apcnc
 :es:|Spanish|frenchiveruti
-:br:|Brazil|RaphaelNeumann
+![br]|Brazil|RaphaelNeumann
 
 ---
 
@@ -178,3 +178,4 @@ Electronic circuits|2
 [storehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-active-provider.png
 [storehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-requester.png
 [storehouse-smart]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-smart.png
+[br](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png "Brazil")
