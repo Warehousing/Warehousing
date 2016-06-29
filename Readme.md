@@ -1,6 +1,6 @@
 Warehousing
 ===
-#### Current version 0.0.9
+#### Current version 0.0.10
 
 Word of warning, the warehouses have been changed to 6x6 as per a suggestion, this will make all current warehouses potentially overlap and not come out right ... you have been warned!
 
@@ -17,7 +17,7 @@ Added in 3x3 storehouses, thanks to @Hanniballo
 
 Also adds logistic versions (passive provider and storage)
 
-You can also attach red and green wires to the warehouses much like smart chests, and they'll attach to the correct points on the corner of the logistics warehouses
+You can also attach red and green wires to the warehouses, and they'll attach to the correct points on the corner of the logistics warehouses
 
 Graphics by **Nova Kast**, **please do not use without permission!** (just message me for this if you want)
 The above clause is because i don't want people to steal the graphics, and suddenly discover it's everywhere, if you ask you can probably use the images (also, if you need custom graphics we can cook these up too if needed! ;) )
@@ -51,9 +51,6 @@ Translations kindly provided by the following people
 
 5.|Requester warehouse: 800 slots|Storehouse: 150 slots
 |![Requester warehouse][warehouse-requester]|![Requester warehouse][storehouse-requester]
-
-6.|Smart warehouse: 800 slots|Storehouse: 150 slots
-|![Smart warehouse][warehouse-smart]|![Smart storehouse][storehouse-smart]
 
 Recipies
 ---
@@ -147,33 +144,14 @@ Requester logistic chest|1
 Advanced circuits|2
 ![Requester storehouse][storehouse-requester]
 
-##### Smart warehouse / storehouse:
-Item|Qty
----|---:
-Basic warehouse|1
-Iron plates|20
-Smart chest|1
-Electronic circuits|5
-![Smart warehouse][warehouse-smart]
-
-Item|Qty
----|---:
-Basic storehouse|1
-Iron plates|5
-Smart chest|1
-Electronic circuits|2
-![Smart storehouse][storehouse-smart]
-
 [warehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-basic-shadow.png
 [warehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-storage-shadow.png
 [warehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-passive-provider-shadow.png
 [warehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-active-provider-shadow.png
 [warehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-requester-shadow.png
-[warehouse-smart]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-smart-shadow.png
 
 [storehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-basic.png
 [storehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-storage.png
 [storehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-passive-provider.png
 [storehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-active-provider.png
 [storehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-requester.png
-[storehouse-smart]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-smart.png
