@@ -3,9 +3,8 @@
  *
  * See LICENCE in the project directory for licence information
 --]]
-require "defines"
 require "config"
 
-local WAREHOUSING_VERSION = "0.0.9"
+local WAREHOUSING_VERSION = "0.0.10"
 
 
