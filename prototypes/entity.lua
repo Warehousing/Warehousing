@@ -242,7 +242,7 @@ data:extend(
 			width = 129,
 			height = 100,
 			shift = {0.421875, 0},
-		},,
+		},
 		circuit_wire_max_distance = 7.5,
 		circuit_wire_connection_point =
 		{
@@ -288,14 +288,14 @@ data:extend(
 		{
 			shadow =
 			{
-				red = {.26, -0.6},
-				green = {.36, -0.6}
-				-- green = {2.36, 1.3}
+				red = {2.01, 0.6},
+				green = {2.52, 0.6}
+				-- green = {4.5, 2.6}
 			},
 			wire =
 			{
-				red = {-0.16, -0.9},
-				green = {0.16, -0.9}
+				red = {1.71, 0.3},
+				green = {2.22, 0.3}
 			}
 		},
 	},
@@ -328,14 +328,14 @@ data:extend(
 		{
 			shadow =
 			{
-				red = {.26, -0.6},
-				green = {.36, -0.6}
-				-- green = {2.36, 1.3}
+				red = {2.01, 0.6},
+				green = {2.52, 0.6}
+				-- green = {4.5, 2.6}
 			},
 			wire =
 			{
-				red = {-0.16, -0.9},
-				green = {0.16, -0.9}
+				red = {1.71, 0.3},
+				green = {2.22, 0.3}
 			}
 		},
 	},
@@ -368,14 +368,14 @@ data:extend(
 		{
 			shadow =
 			{
-				red = {.26, -0.6},
-				green = {.36, -0.6}
-				-- green = {2.36, 1.3}
+				red = {2.01, 0.6},
+				green = {2.52, 0.6}
+				-- green = {4.5, 2.6}
 			},
 			wire =
 			{
-				red = {-0.16, -0.9},
-				green = {0.16, -0.9}
+				red = {1.71, 0.3},
+				green = {2.22, 0.3}
 			}
 		},
 	},
@@ -408,14 +408,14 @@ data:extend(
 		{
 			shadow =
 			{
-				red = {.26, -0.6},
-				green = {.36, -0.6}
-				-- green = {2.36, 1.3}
+				red = {2.01, 0.6},
+				green = {2.52, 0.6}
+				-- green = {4.5, 2.6}
 			},
 			wire =
 			{
-				red = {-0.16, -0.9},
-				green = {0.16, -0.9}
+				red = {1.71, 0.3},
+				green = {2.22, 0.3}
 			}
 		},
 	},
