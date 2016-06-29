@@ -70,19 +70,6 @@ data:extend({
 		},
 		result = "warehouse-requester"
 	},
-	{ -- Smart Warehouse
-		type = "recipe",
-		name = "warehouse-smart",
-		enabled = "false",
-		ingredients = 
-		{
-			{"warehouse-basic",1},
-			{"smart-chest",1},
-			{"iron-plate",20},
-			{"electronic-circuit", 5},
-		},
-		result = "warehouse-smart"
-	},
 	{ -- Basic Storehouse
 		type = "recipe",
 		name = "storehouse-basic",
@@ -148,18 +135,5 @@ data:extend({
 			{"advanced-circuit", 2},
 		},
 		result = "storehouse-requester"
-	},
-	{ -- Smart Storehouse
-		type = "recipe",
-		name = "storehouse-smart",
-		enabled = "false",
-		ingredients = 
-		{
-			{"storehouse-basic",1},
-			{"smart-chest",1},
-			{"iron-plate",5},
-			{"electronic-circuit", 2},
-		},
-		result = "storehouse-smart"
 	},
 })

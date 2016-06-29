@@ -56,16 +56,6 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "warehouse-smart",
-		icon = "__Warehousing__/graphics/icons/warehouse-smart.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "storage",
-		order = "a[items]-d[smart-chest]",
-		place_result = "warehouse-smart",
-		stack_size = 15
-	},
-	{
-		type = "item",
 		name = "storehouse-basic",
 		icon = "__Warehousing__/graphics/icons/storehouse-basic.png",
 		flags = {"goes-to-quickbar"},
@@ -112,16 +102,6 @@ data:extend({
 		subgroup = "logistic-network",
 		order = "b[storage]-c[logistic-chest-requester]",
 		place_result = "storehouse-requester",
-		stack_size = 15
-	},
-	{
-		type = "item",
-		name = "storehouse-smart",
-		icon = "__Warehousing__/graphics/icons/storehouse-smart.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "storage",
-		order = "a[items]-d[smart-chest]",
-		place_result = "storehouse-smart",
 		stack_size = 15
 	},
 })
