@@ -39,5 +39,11 @@ for index, force in pairs(game.forces) do
       recipes["storehouse-requester"].enabled = true
     end
   end
+  
+  if tech["warehouse-smart-research"] and tech["warehouse-smart-research"].researched then
+    if recipes["storehouse-smart"] then
+      recipes["storehouse-smart"].enabled = true
+    end
+  end
 end
 
