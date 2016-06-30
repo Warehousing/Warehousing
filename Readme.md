@@ -29,10 +29,12 @@ Translations kindly provided by the following people
 ----|--------|------
 :fr:|French|Hasturcraft
 :ru:|Russian|apriori
-||Oceanel
-:pl:|Polish|diilmac
+ ||Oceanel
+![Poland][pl]|Polish|diilmac
 :de:|German|apcnc
 :es:|Spanish|frenchiveruti
+![Brazil][br]|Brazil|RaphaelNeumann
+:jp:|Japanese|Quifon
 
 ---
 
@@ -155,3 +157,5 @@ Advanced circuits|2
 [storehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-passive-provider.png
 [storehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-active-provider.png
 [storehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-requester.png
+[br]:https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png
+[pl]:https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/pl.png

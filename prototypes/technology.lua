@@ -70,13 +70,14 @@ data:extend(
 				recipe = "storehouse-requester",
 			},
 		},
-		prerequisites = { "construction-robotics", "warehouse-research" },
+		prerequisites = { "construction-robotics", "logistic-robotics", "warehouse-research" },
 		unit =
 		{
-			count = 50,
+			count = 25,
 			ingredients = {
-				{ "science-pack-1", 1},
-				{ "science-pack-2", 1}
+				{ "science-pack-1", 2},
+				{ "science-pack-2", 2},
+				{ "science-pack-3", 1}
 			},
 			time = 30
 		},
