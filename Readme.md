@@ -25,34 +25,31 @@ Also with shadows
 
 Translations kindly provided by the following people
 
-    |Language|Author
+&nbsp;|Language|Author
 ----|--------|------
 :fr:|French|Hasturcraft
 :ru:|Russian|apriori
- ||Oceanel
+&nbsp;||Oceanel
 ![Poland][pl]|Polish|diilmac
 :de:|German|apcnc
 :es:|Spanish|frenchiveruti
-![Brazil][br]|Brazil|RaphaelNeumann
+![Brazil][br]|Brazil|@RaphaelNeumann
+&nbsp;||@scarsick
 :jp:|Japanese|Quifon
 
 ---
-
-1.|Basic warehouse: 800 slots|Storehouse: 150 slots
+No.|Warehouse|Storehouse
 -|-|-
-|![Basic Warehouse][warehouse-basic]|![Basic Storehouse][storehouse-basic]
-
+1.|Basic warehouse: 800 slots|Storehouse: 150 slots
+&nbsp;|![Basic Warehouse][warehouse-basic]|![Basic Storehouse][storehouse-basic]
 2.|Storage warehouse: 2000 slots|Storehouse: 300 slots
-|![Storage Warehouse][warehouse-storage]|![Storage Storehouse][storehouse-storage]
-
+&nbsp;|![Storage Warehouse][warehouse-storage]|![Storage Storehouse][storehouse-storage]
 3.|Passive provider warehouse: 800 slots|Storehouse: 150 slots
-|![Passive provider warehouse][warehouse-passive-provider]|![Passive provider storehouse][storehouse-passive-provider]
-
+&nbsp;|![Passive provider warehouse][warehouse-passive-provider]|![Passive provider storehouse][storehouse-passive-provider]
 4.|Active provider warehouse: 800 slots|Storehouse: 150 slots
-|![Active provider warehouse][warehouse-active-provider]|![Active provider storehouse][storehouse-active-provider]
-
+&nbsp;|![Active provider warehouse][warehouse-active-provider]|![Active provider storehouse][storehouse-active-provider]
 5.|Requester warehouse: 800 slots|Storehouse: 150 slots
-|![Requester warehouse][warehouse-requester]|![Requester warehouse][storehouse-requester]
+&nbsp;|![Requester warehouse][warehouse-requester]|![Requester warehouse][storehouse-requester]
 
 Recipies
 ---
