@@ -167,8 +167,10 @@ function define_warehouse(name, logistics_name)
 		},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+		drawing_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
 		inventory_size = 800,
+		scale_info_icons = true,
 		picture =
 		{
 			filename = "__Warehousing__/graphics/entity/warehouse-" .. name .. "-shadow.png",
@@ -223,6 +225,7 @@ function define_storehouse(name, logistics_name)
 		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
 		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
 		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		scale_entity_info_icon = true,
 		resistances =
 		{
 			{
@@ -234,6 +237,7 @@ function define_storehouse(name, logistics_name)
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
 		inventory_size = 150,
+		scale_info_icons = true,
 		picture =
 		{
 			filename = "__Warehousing__/graphics/entity/storehouse-" .. name .. ".png",
