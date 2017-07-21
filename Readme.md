@@ -1,6 +1,6 @@
 Warehousing
 ===
-#### Current version 0.0.11
+#### Current version 0.0.13
 
 Now compatible with Factorio 0.15!
 
