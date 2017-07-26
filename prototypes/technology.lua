@@ -1,7 +1,7 @@
---[[ Copyright (c) David-John Miller AKA Anoyomouse 2016
- * Part of the warehousing mod
+--[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
+ * Part of the Warehousing mod
  *
- * See LICENCE in the project directory for licence information
+ * See License.txt in the project directory for license information.
 --]]
 data:extend(
 {

@@ -1,7 +1,7 @@
---[[ Copyright (c) David-John Miller AKA Anoyomouse 2016
- * Part of the warehousing mod
+--[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
+ * Part of the Warehousing mod
  *
- * See LICENCE in the project directory for licence information
+ * See License.txt in the project directory for license information.
 --]]
 data:extend({
 	{ -- Basic Warehouse
@@ -57,7 +57,7 @@ data:extend({
 		},
 		result = "warehouse-active-provider"
 	},
-	{ -- Requestor Warehouse
+	{ -- Requester Warehouse
 		type = "recipe",
 		name = "warehouse-requester",
 		enabled = "false",
@@ -123,7 +123,7 @@ data:extend({
 		},
 		result = "storehouse-active-provider"
 	},
-	{ -- Requestor Storehouse
+	{ -- Requester Storehouse
 		type = "recipe",
 		name = "storehouse-requester",
 		enabled = "false",
