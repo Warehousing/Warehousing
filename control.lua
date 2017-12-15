@@ -5,4 +5,4 @@
 --]]
 require "config"
 
-local WAREHOUSING_VERSION = "0.0.13"
+local WAREHOUSING_VERSION = "0.1.0"
