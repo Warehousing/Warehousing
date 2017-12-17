@@ -150,6 +150,7 @@ function define_warehouse(name, logistics_name)
 		type = entity_type,
 		name = "warehouse-" .. name,
 		icon = "__Warehousing__/graphics/icons/warehouse-" .. name .. ".png",
+		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
 		minable = {mining_time = 2, result = "warehouse-" .. name},
 		max_health = 350,
@@ -203,6 +204,9 @@ function define_warehouse(name, logistics_name)
 		if (logistics_name == "storage") then
 			result.inventory_size = 2000;
 		end
+		if (logistics_name == "requester") then
+			result.logistic_slots_count = 12;
+		end
 	end
 	return result;
 end
@@ -217,6 +221,7 @@ function define_storehouse(name, logistics_name)
 		type = entity_type,
 		name = "storehouse-" .. name,
 		icon = "__Warehousing__/graphics/icons/storehouse-" .. name .. ".png",
+		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
 		minable = {mining_time = 2, result = "storehouse-" .. name},
 		max_health = 250,
@@ -268,6 +273,9 @@ function define_storehouse(name, logistics_name)
 		result.logistic_mode = logistics_name;
 		if (logistics_name == "storage") then
 			result.inventory_size = 300;
+		end
+		if (logistics_name == "requester") then
+			result.logistic_slots_count = 12;
 		end
 	end
 	return result;
