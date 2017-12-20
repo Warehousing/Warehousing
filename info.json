@@ -1,6 +1,6 @@
 {
 	"name": "Warehousing",
-	"version": "0.1.0",
+	"version": "{{VERSION}}",
 	"factorio_version": "0.16",
 	"title": "Warehousing Mod",
 	"author": "Anoyomouse",

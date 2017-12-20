@@ -5,7 +5,7 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 
 ## News
 
-**Current version: 0.1.0**
+**Current version: {{VERSION}}**
 
 ### Latest
 
