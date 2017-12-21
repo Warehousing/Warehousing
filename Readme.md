@@ -8,6 +8,8 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 [![GitHub release](https://img.shields.io/github/release/Anoyomouse/Warehousing.svg?label=current+version)]()
 [![GitHub Release Date](https://img.shields.io/github/release-date/Anoyomouse/Warehousing.svg?label=released)]()
 
+Go grab it now, or get it in game by searching for Warehousing.
+
 ### Latest
 
 Now compatible with Factorio 0.15! Research requirements have changed, so be warned for new games.
