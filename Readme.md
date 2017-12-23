@@ -5,7 +5,8 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 
 ## News
 
-**Current version: {{VERSION}}**
+[![GitHub release](https://img.shields.io/github/release/Anoyomouse/Warehousing.svg?label=current+version)]()
+[![GitHub Release Date](https://img.shields.io/github/release-date/Anoyomouse/Warehousing.svg?label=released)]()
 
 ### Latest
 
