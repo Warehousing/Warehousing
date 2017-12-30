@@ -3,9 +3,9 @@
 	"version": "{{VERSION}}",
 	"factorio_version": "0.16",
 	"title": "Warehousing Mod",
-	"author": "Anoyomouse",
-	"contact": "PM on the Factorio Forums",
+	"author": "Anoyomouse & dgw",
+	"contact": "https://github.com/Anoyomouse/Warehousing",
 	"homepage": "https://forums.factorio.com/17295",
-	"description": "Warehousing that allows you to have large storage buildings. Store all the things! Storehouses by Hanniballo",
+	"description": "Store all the things! Warehousing provides high capacity storage buildings, including logistic network versions.",
 	"dependencies": ["base >= 0.15.0"]
 }
