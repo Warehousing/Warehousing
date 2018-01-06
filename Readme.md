@@ -12,7 +12,9 @@ Go grab it now, or get it in game by searching for Warehousing.
 
 ### Latest
 
-Now compatible with Factorio 0.15! Research requirements have changed, so be warned for new games.
+Now compatible with Factorio 0.16! Research requirements have changed (again), so be warned for new games.
+
+Logistic warehouse research cost is now based on the cost of "Logistic System", for balance when using mods that alter that research. Some mods may alter it too late for Warehousing to use the new values; report these incompatible mods in [the forum thread](https://forums.factorio.com/viewtopic.php?f=93&t=17295) or [GitHub issue tracker](https://github.com/Anoyomouse/Warehousing/issues) and they should be fixable.
 
 ### Previously
 
