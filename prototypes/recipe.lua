@@ -70,6 +70,19 @@ data:extend({
 		},
 		result = "warehouse-requester"
 	},
+	{ -- Buffer Warehouse
+		type = "recipe",
+		name = "warehouse-buffer",
+		enabled = "false",
+		ingredients = 
+		{
+			{"warehouse-basic",1},
+			{"logistic-chest-buffer",1},
+			{"iron-plate",20},
+			{"advanced-circuit", 5},
+		},
+		result = "warehouse-buffer"
+	},
 	{ -- Basic Storehouse
 		type = "recipe",
 		name = "storehouse-basic",
@@ -135,5 +148,18 @@ data:extend({
 			{"advanced-circuit", 2},
 		},
 		result = "storehouse-requester"
+	},
+	{ -- Buffer Storehouse
+		type = "recipe",
+		name = "storehouse-buffer",
+		enabled = "false",
+		ingredients = 
+		{
+			{"storehouse-basic",1},
+			{"logistic-chest-buffer",1},
+			{"iron-plate",5},
+			{"advanced-circuit", 2},
+		},
+		result = "storehouse-buffer"
 	},
 })
