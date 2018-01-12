@@ -55,6 +55,10 @@ data:extend(
 			},
 			{
 				type = "unlock-recipe",
+				recipe = "warehouse-buffer",
+			},
+			{
+				type = "unlock-recipe",
 				recipe = "storehouse-passive-provider",
 			},
 			{
@@ -68,6 +72,10 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "storehouse-requester",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-buffer",
 			},
 		},
 		prerequisites = { "warehouse-research", "logistic-system" },

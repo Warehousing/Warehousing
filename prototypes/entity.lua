@@ -204,7 +204,7 @@ function define_warehouse(name, logistics_name)
 		if (logistics_name == "storage") then
 			result.inventory_size = 2000;
 		end
-		if (logistics_name == "requester") then
+		if ((logistics_name == "requester") or (logistics_name == "buffer")) then
 			result.logistic_slots_count = 12;
 		end
 	end
@@ -274,7 +274,7 @@ function define_storehouse(name, logistics_name)
 		if (logistics_name == "storage") then
 			result.inventory_size = 300;
 		end
-		if (logistics_name == "requester") then
+		if ((logistics_name == "requester") or (logistics_name == "buffer")) then
 			result.logistic_slots_count = 12;
 		end
 	end
@@ -288,11 +288,13 @@ data:extend(
 	define_warehouse("storage", "storage"),
 	define_warehouse("active-provider", "active-provider"),
 	define_warehouse("requester", "requester"),
+	define_warehouse("buffer", "buffer"),
 
 	define_storehouse("basic", nil),
 	define_storehouse("passive-provider", "passive-provider"),
 	define_storehouse("storage", "storage"),
 	define_storehouse("active-provider", "active-provider"),
 	define_storehouse("requester", "requester"),
+	define_storehouse("buffer", "buffer"),
 })
 

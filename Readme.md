@@ -42,6 +42,8 @@ No.|Warehouse|Storehouse
 &nbsp;|![Active provider warehouse][warehouse-active-provider]|![Active provider storehouse][storehouse-active-provider]
 5.|Requester warehouse: 800 slots|Storehouse: 150 slots
 &nbsp;|![Requester warehouse][warehouse-requester]|![Requester warehouse][storehouse-requester]
+6.|Buffer warehouse: 800 slots|Storehouse: 150 slots
+&nbsp;|![Buffer warehouse][warehouse-buffer]|![Buffer warehouse][storehouse-buffer]
 
 ### Recipes
     
@@ -138,6 +140,24 @@ Requester logistic chest|1
 Advanced circuits|2
 ![Requester storehouse][storehouse-requester]
 
+#### Buffer warehouse / storehouse
+
+Item|Qty
+---|---:
+Basic warehouse|1
+Iron plates|20
+Buffer logistic chest|1
+Advanced circuits|5
+![Buffer warehouse][warehouse-buffer]
+
+Item|Qty
+---|---:
+Basic storehouse|1
+Iron plates|5
+Buffer logistic chest|1
+Advanced circuits|2
+![Buffer storehouse][storehouse-buffer]
+
 
 ## Contributors
 
@@ -163,9 +183,11 @@ Translations kindly provided by the following people:
 [warehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-passive-provider-shadow.png
 [warehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-active-provider-shadow.png
 [warehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-requester-shadow.png
+[warehouse-buffer]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-buffer-shadow.png
 
 [storehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-basic.png
 [storehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-storage.png
 [storehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-passive-provider.png
 [storehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-active-provider.png
 [storehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-requester.png
+[storehouse-buffer]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-buffer.png
