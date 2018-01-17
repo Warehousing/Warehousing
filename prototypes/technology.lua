@@ -24,8 +24,12 @@ data:extend(
 		prerequisites = {"steel-processing"},
 		unit =
 		{
-			count = 40,
-			ingredients = {{ "science-pack-1", 1}},
+			count = 50,
+			ingredients =
+			{
+				{ "science-pack-1", 1},
+				{ "science-pack-2", 1},
+			},
 			time = 20
 		},
 		order = "c-a"
@@ -81,12 +85,13 @@ data:extend(
 		prerequisites = { "warehouse-research", "logistic-system" },
 		unit =
 		{
-			count = 25,
+			count = 100,
 			ingredients = {
-				{ "science-pack-1", 2},
-				{ "science-pack-2", 2},
+				{ "science-pack-1", 1},
+				{ "science-pack-2", 1},
 				{ "science-pack-3", 1},
 				{ "production-science-pack", 1},
+				{ "high-tech-science-pack", 1},
 			},
 			time = 30
 		},
