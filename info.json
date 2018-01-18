@@ -7,5 +7,5 @@
 	"contact": "https://github.com/Anoyomouse/Warehousing",
 	"homepage": "https://forums.factorio.com/17295",
 	"description": "Store all the things! Warehousing provides high capacity storage buildings, including logistic network versions.",
-	"dependencies": ["base >= 0.15.0"]
+	"dependencies": ["base >= 0.16.0"]
 }
