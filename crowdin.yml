@@ -1,0 +1,7 @@
+files:
+  - source: /locale/en/locale.cfg
+    translation: /locale/%two_letters_code%/locale.cfg
+    languages_mapping:
+      two_letters_code:
+        pt-BR: pt-BR
+        es-EM: es-ES
