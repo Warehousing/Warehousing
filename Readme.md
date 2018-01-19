@@ -7,8 +7,12 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 
 [![GitHub release](https://img.shields.io/github/release/Anoyomouse/Warehousing.svg?label=current+version)]()
 [![GitHub Release Date](https://img.shields.io/github/release-date/Anoyomouse/Warehousing.svg?label=released)]()
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/factorio-warehousing/localized.svg)](https://crowdin.com/project/factorio-warehousing)
 
 Go grab it now, or get it in game by searching for Warehousing.
+
+### Translations!
+We have been approved as an open source crowdin project, please help us translate the mod on their site (needs a free account, or just use google, twitter, github, or others), join in and help us make this mod awesome
 
 ### Latest
 
