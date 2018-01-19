@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2018-01-19
+
+  Features:
+    - Logistic Buffer variants of Warehouse and Storehouse added
+  Changes:
+    - Cost of Warehousing research tweaked to be more in line with the base game
+    - Logistics Warehousing research cost is now based on the cost of Logistic System
+  Meta:
+    - Began maintaining changelog.txt for display in-game after updates
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2017-12-19
+
+  Changes:
+    - Factorio version changed to 0.16
+    - Compatibility tweaks to make the mod work in Factorio 0.16
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.13
+Date: 2017-07-26
+
+  Changes:
+    - Compatibility tweaks for Factorio 0.15 (mostly provided by kingarthur)
+    - Research costs rebalanced
