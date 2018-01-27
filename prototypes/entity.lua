@@ -203,6 +203,7 @@ function define_warehouse(name, logistics_name)
 		result.logistic_mode = logistics_name;
 		if (logistics_name == "storage") then
 			result.inventory_size = 2000;
+			result.logistic_slots_count = 1;
 		end
 		if ((logistics_name == "requester") or (logistics_name == "buffer")) then
 			result.logistic_slots_count = 12;
@@ -273,6 +274,7 @@ function define_storehouse(name, logistics_name)
 		result.logistic_mode = logistics_name;
 		if (logistics_name == "storage") then
 			result.inventory_size = 300;
+			result.logistic_slots_count = 1;
 		end
 		if ((logistics_name == "requester") or (logistics_name == "buffer")) then
 			result.logistic_slots_count = 12;
