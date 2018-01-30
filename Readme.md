@@ -12,7 +12,7 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 Go grab it now, or get it in game by searching for Warehousing.
 
 ### Translations!
-We have been approved as an open source crowdin project, please help us translate the mod on their site (needs a free account, or just use google, twitter, github, or others), join in and help us make this mod awesome
+Want to see Warehousing available in your language? Does the quality of our existing translation leave you wanting more? Please help us [translate the mod](https://crowdin.com/project/factorio-warehousing) on Crowdin! Create a free account (or log in with Google, Twitter, Facbook, GitHub, or Gitlab) and help make this mod (even more) awesome!
 
 ### Latest
 
