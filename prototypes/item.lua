@@ -11,7 +11,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "storage",
-		order = "d[items]-b[steel-chest]",
+		order = "a[items]-c[warehouse]",
 		place_result = "warehouse-basic",
 		stack_size = 15
 	},
@@ -22,7 +22,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]",
+		order = "b[storage]-c[logistic-chest-passive-provider]-b[warehouse]",
 		place_result = "warehouse-passive-provider",
 		stack_size = 15
 	},
@@ -33,7 +33,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]",
+		order = "b[storage]-c[logistic-chest-storage]-b[warehouse]",
 		place_result = "warehouse-storage",
 		stack_size = 15
 	},
@@ -44,7 +44,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]",
+		order = "b[storage]-c[logistic-chest-active-provider]-b[warehouse]",
 		place_result = "warehouse-active-provider",
 		stack_size = 15
 	},
@@ -55,7 +55,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-requester]",
+		order = "b[storage]-e[logistic-chest-requester]-b[warehouse]",
 		place_result = "warehouse-requester",
 		stack_size = 15
 	},
@@ -66,7 +66,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-buffer]",
+		order = "b[storage]-d[logistic-chest-buffer]-b[warehouse]",
 		place_result = "warehouse-buffer",
 		stack_size = 15
 	},
@@ -77,7 +77,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "storage",
-		order = "d[items]-b[steel-chest]",
+		order = "a[items]-c[storehouse]",
 		place_result = "storehouse-basic",
 		stack_size = 15
 	},
@@ -88,7 +88,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]",
+		order = "b[storage]-c[logistic-chest-passive-provider]-a[storehouse]",
 		place_result = "storehouse-passive-provider",
 		stack_size = 15
 	},
@@ -99,7 +99,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]",
+		order = "b[storage]-c[logistic-chest-storage]-a[storehouse]",
 		place_result = "storehouse-storage",
 		stack_size = 15
 	},
@@ -110,7 +110,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]",
+		order = "b[storage]-c[logistic-chest-active-provider]-a[storehouse]",
 		place_result = "storehouse-active-provider",
 		stack_size = 15
 	},
@@ -121,7 +121,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-requester]",
+		order = "b[storage]-e[logistic-chest-requester]-a[storehouse]",
 		place_result = "storehouse-requester",
 		stack_size = 15
 	},
@@ -132,7 +132,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-buffer]",
+		order = "b[storage]-d[logistic-chest-buffer]-a[storehouse]",
 		place_result = "storehouse-buffer",
 		stack_size = 15
 	},
