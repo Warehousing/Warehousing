@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2018-02-12
+
+  Fixed:
+    - Storage Warehouse and Storage Storehouse gained their missing logistic filter slot
+    - Warehousing's items are now sorted properly in the crafting menu
+  Translations:
+    - Warehousing is now on Crowdin. Contributions and corrections in your language are welcome: https://crowdin.com/project/factorio-warehousing
+    - Afrikaans added (roughed in by dgw)
+    - German updated (thanks honkinator22)
+    - Japanese updated (blame dgw for any new mistakes)
+    - Polish updated (thanks Nalapl3 for consultation work with dgw)
+    - Spanish tweaked (Anoyomouse)
+  Meta:
+    - Changelog filled out as far back as possible from project history
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2018-01-19
 
