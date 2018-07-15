@@ -5,5 +5,8 @@ require("util")
 --
 -- Done in data-final-fixes because other mods that override the
 -- cost of logistics research use both earlier steps.
-data.raw["technology"]["warehouse-logistics-research"].unit =
-	table.deepcopy(data.raw["technology"]["logistic-system"].unit)
+if data.raw["technology"]["logistic-system"] ~= nil
+	and data.raw["technology"]["logistic-system"].unit ~= nil then
+		data.raw["technology"]["warehouse-logistics-research"].unit =
+			table.deepcopy(data.raw["technology"]["logistic-system"].unit)
+end
