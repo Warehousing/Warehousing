@@ -10,59 +10,11 @@
 data:extend({
 	{
 		type = "container",
-		name = "storehouse-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-basic.png",
-		icon_size = 32,
-		flags = {"placeable-neutral", "placeable-player", "player-creation"},
-		minable = {mining_time = 2, hardness = 0.2, result = "storehouse-basic"},
-		max_health = 250,
-		corpse = "big-remnants",
-		dying_explosion = "medium-explosion",
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-		resistances =
-		{
-			{
-				type = "fire",
-				percent = 90
-			}
-		},
-		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-		fast_replaceable_group = "container",
-		inventory_size = 150,
-		picture =
-		{
-			filename = "__Warehousing__/graphics/entity/storehouse-basic.png",
-			priority = "high",
-			width = 129,
-			height = 100,
-			shift = {0.421875, 0},
-		},
-		scale_info_icons = true,
-		circuit_wire_max_distance = 7.5,
-		circuit_wire_connection_point =
-		{
-			shadow =
-			{
-				red = {.26, -0.6},
-				green = {.36, -0.6}
-			},
-			wire =
-			{
-				red = {-0.16, -0.9},
-				green = {0.16, -0.9}
-			}
-		},
-	},
-	{
-		type = "container",
 		name = "warehouse-basic",
 		icon = "__Warehousing__/graphics/icons/warehouse-basic.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
-		minable = {mining_time = 2, hardness = 0.2, result = "warehouse-basic"},
+		minable = {mining_time = 2, result = "warehouse-basic"},
 		max_health = 450,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
@@ -80,6 +32,7 @@ data:extend({
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
 		inventory_size = 800,
+		scale_info_icons = true,
 		picture =
 		{
 			filename = "__Warehousing__/graphics/entity/warehouse-basic.png",
@@ -88,7 +41,6 @@ data:extend({
 			height = 240,
 			shift = {1.0, -0.3},
 		},
-		scale_info_icons = true,
 		circuit_wire_max_distance = 7.5,
 		circuit_wire_connection_point =
 		{
@@ -101,6 +53,54 @@ data:extend({
 			{
 				red = {1.71, 0.3},
 				green = {2.22, 0.3}
+			}
+		},
+	},
+	{
+		type = "container",
+		name = "storehouse-basic",
+		icon = "__Warehousing__/graphics/icons/storehouse-basic.png",
+		icon_size = 32,
+		flags = {"placeable-neutral", "placeable-player", "player-creation"},
+		minable = {mining_time = 2, result = "storehouse-basic"},
+		max_health = 250,
+		corpse = "big-remnants",
+		dying_explosion = "medium-explosion",
+		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		resistances =
+		{
+			{
+				type = "fire",
+				percent = 90
+			}
+		},
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "container",
+		inventory_size = 150,
+		scale_info_icons = true,
+		picture =
+		{
+			filename = "__Warehousing__/graphics/entity/storehouse-basic.png",
+			priority = "high",
+			width = 129,
+			height = 100,
+			shift = {0.421875, 0},
+		},
+		circuit_wire_max_distance = 7.5,
+		circuit_wire_connection_point =
+		{
+			shadow =
+			{
+				red = {.26, -0.6},
+				green = {.36, -0.6}
+			},
+			wire =
+			{
+				red = {-0.16, -0.9},
+				green = {0.16, -0.9}
 			}
 		},
 	},
