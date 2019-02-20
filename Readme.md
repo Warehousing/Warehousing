@@ -5,8 +5,8 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 
 ## News
 
-[![GitHub release](https://img.shields.io/github/release/Anoyomouse/Warehousing.svg?label=current+version)]()
-[![GitHub Release Date](https://img.shields.io/github/release-date/Anoyomouse/Warehousing.svg?label=released)]()
+[![GitHub release](https://img.shields.io/github/release/Warehousing/Warehousing.svg?label=current+version)]()
+[![GitHub Release Date](https://img.shields.io/github/release-date/Warehousing/Warehousing.svg?label=released)]()
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/factorio-warehousing/localized.svg)](https://crowdin.com/project/factorio-warehousing)
 
 Go grab it now, or get it in game by searching for Warehousing.
@@ -18,7 +18,7 @@ Want to see Warehousing available in your language? Does the quality of our exis
 
 Now compatible with Factorio 0.16! Research requirements have changed (again), so be warned for new games.
 
-Logistic warehouse research cost is now based on the cost of "Logistic System", for balance when using mods that alter that research. Some mods may alter it too late for Warehousing to use the new values; report these incompatible mods in [the forum thread](https://forums.factorio.com/viewtopic.php?f=93&t=17295) or [GitHub issue tracker](https://github.com/Anoyomouse/Warehousing/issues) and they should be fixable.
+Logistic warehouse research cost is now based on the cost of "Logistic System", for balance when using mods that alter that research. Some mods may alter it too late for Warehousing to use the new values; report these incompatible mods in [the forum thread](https://forums.factorio.com/viewtopic.php?f=93&t=17295) or [GitHub issue tracker](https://github.com/Warehousing/Warehousing/issues) and they should be fixable.
 
 ### Previously
 
@@ -184,16 +184,16 @@ Translations kindly provided by the following people:
 | :jp:        | Japanese | Quifon                       |
 
 
-[warehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-basic-shadow.png
-[warehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-storage-shadow.png
-[warehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-passive-provider-shadow.png
-[warehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-active-provider-shadow.png
-[warehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-requester-shadow.png
-[warehouse-buffer]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/warehouse-buffer-shadow.png
+[warehouse-basic]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-basic.png
+[warehouse-storage]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-storage.png
+[warehouse-passive-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-passive-provider.png
+[warehouse-active-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-active-provider.png
+[warehouse-requester]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-requester.png
+[warehouse-buffer]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-buffer.png
 
-[storehouse-basic]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-basic.png
-[storehouse-storage]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-storage.png
-[storehouse-passive-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-passive-provider.png
-[storehouse-active-provider]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-active-provider.png
-[storehouse-requester]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-requester.png
-[storehouse-buffer]:https://raw.githubusercontent.com/Anoyomouse/Warehousing/master/graphics/entity/storehouse-buffer.png
+[storehouse-basic]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-basic.png
+[storehouse-storage]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-storage.png
+[storehouse-passive-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-passive-provider.png
+[storehouse-active-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-active-provider.png
+[storehouse-requester]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-requester.png
+[storehouse-buffer]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-buffer.png
