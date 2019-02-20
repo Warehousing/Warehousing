@@ -5,5 +5,7 @@ files:
       two_letters_code:
         pt-BR: pt-BR
         es-ES: es-ES
+        zh-TW: zh-TW
+        zh-CN: zh-CN
     type: ini
     dest: /locale.ini
