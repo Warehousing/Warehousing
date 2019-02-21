@@ -10,10 +10,9 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "steel-plate", 60 },
-			{ "iron-plate", 100 },
-			{ "stone-brick", 25 },
-			{ "wooden-chest", 10 },
+			{ "steel-plate", 200 },
+			{ "stone-brick", 40 },
+			{ "iron-stick", 85 },
 		},
 		result = "warehouse-basic"
 	},
@@ -25,8 +24,8 @@ data:extend({
 		{
 			{ "warehouse-basic", 1 },
 			{ "logistic-chest-passive-provider", 1 },
-			{ "iron-plate", 20 },
-			{ "advanced-circuit", 5 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-passive-provider"
 	},
@@ -38,9 +37,8 @@ data:extend({
 		{
 			{ "warehouse-basic", 1 },
 			{ "logistic-chest-storage", 1 },
-			{ "iron-plate", 20 },
-			{ "advanced-circuit", 5 },
-			{ "steel-chest", 15 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-storage"
 	},
@@ -52,8 +50,8 @@ data:extend({
 		{
 			{ "warehouse-basic", 1 },
 			{ "logistic-chest-active-provider", 1 },
-			{ "iron-plate", 20 },
-			{ "advanced-circuit", 5 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-active-provider"
 	},
@@ -65,8 +63,8 @@ data:extend({
 		{
 			{ "warehouse-basic", 1 },
 			{ "logistic-chest-requester", 1 },
-			{ "iron-plate", 20 },
-			{ "advanced-circuit", 5 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-requester"
 	},
@@ -78,8 +76,8 @@ data:extend({
 		{
 			{ "warehouse-basic", 1 },
 			{ "logistic-chest-buffer", 1 },
-			{ "iron-plate", 20 },
-			{ "advanced-circuit", 5 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-buffer"
 	},
@@ -89,10 +87,9 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "steel-plate", 20 },
-			{ "iron-plate", 40 },
+			{ "steel-plate", 50 },
 			{ "stone-brick", 10 },
-			{ "wooden-chest", 5 },
+			{ "iron-stick", 16 },
 		},
 		result = "storehouse-basic"
 	},
@@ -104,8 +101,7 @@ data:extend({
 		{
 			{ "storehouse-basic", 1 },
 			{ "logistic-chest-passive-provider", 1 },
-			{ "iron-plate", 5 },
-			{ "advanced-circuit", 2 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-passive-provider"
 	},
@@ -117,9 +113,7 @@ data:extend({
 		{
 			{ "storehouse-basic", 1 },
 			{ "logistic-chest-storage", 1 },
-			{ "iron-plate", 5 },
-			{ "advanced-circuit", 2 },
-			{ "steel-chest", 5 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-storage"
 	},
@@ -131,8 +125,7 @@ data:extend({
 		{
 			{ "storehouse-basic", 1 },
 			{ "logistic-chest-active-provider", 1 },
-			{ "iron-plate", 5 },
-			{ "advanced-circuit", 2 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-active-provider"
 	},
@@ -144,8 +137,7 @@ data:extend({
 		{
 			{ "storehouse-basic", 1 },
 			{ "logistic-chest-requester", 1 },
-			{ "iron-plate", 5 },
-			{ "advanced-circuit", 2 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-requester"
 	},
@@ -157,8 +149,7 @@ data:extend({
 		{
 			{ "storehouse-basic", 1 },
 			{ "logistic-chest-buffer", 1 },
-			{ "iron-plate", 5 },
-			{ "advanced-circuit", 2 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-buffer"
 	},
