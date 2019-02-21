@@ -9,4 +9,9 @@ if data.raw["technology"]["logistic-system"] ~= nil
 	and data.raw["technology"]["logistic-system"].unit ~= nil then
 		data.raw["technology"]["warehouse-logistics-research"].unit =
 			table.deepcopy(data.raw["technology"]["logistic-system"].unit)
+
+		data.raw["technology"]["warehouse-logistics-research"].unit.count =
+			math.floor(
+				data.raw["technology"]["warehouse-logistics-research"].unit.count * 1.667
+			)
 end

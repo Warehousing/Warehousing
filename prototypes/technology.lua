@@ -21,16 +21,16 @@ data:extend(
 				recipe = "storehouse-basic",
 			},
 		},
-		prerequisites = {"steel-processing"},
+		prerequisites = { "steel-processing" },
 		unit =
 		{
 			count = 50,
 			ingredients =
 			{
-				{ "science-pack-1", 1},
-				{ "science-pack-2", 1},
+				{ "science-pack-1", 1 },
+				{ "science-pack-2", 1 },
 			},
-			time = 20
+			time = 30
 		},
 		order = "c-a"
 	},
@@ -85,13 +85,12 @@ data:extend(
 		prerequisites = { "warehouse-research", "logistic-system" },
 		unit =
 		{
-			count = 100,
+			count = 250,
 			ingredients = {
-				{ "science-pack-1", 1},
-				{ "science-pack-2", 1},
-				{ "science-pack-3", 1},
-				{ "production-science-pack", 1},
-				{ "high-tech-science-pack", 1},
+				{ "science-pack-1", 1 },
+				{ "science-pack-2", 1 },
+				{ "science-pack-3", 1 },
+				{ "high-tech-science-pack", 1 },
 			},
 			time = 30
 		},
