@@ -35,6 +35,8 @@ Warehouses and storehouses also have logistic versions (passive provider, active
 
 You can also attach red and green wires to the warehouses, and they'll attach to the correct points on the corner of the logistics warehouses.
 
+![Warehouses in a Factorio map](hero-image.jpg)
+
 ---
 No.|Warehouse|Storehouse
 -|-|-
