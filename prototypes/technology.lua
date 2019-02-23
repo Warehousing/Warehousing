@@ -36,7 +36,7 @@ data:extend(
 	},
 	{
 		type = "technology",
-		name = "warehouse-logistics-research",
+		name = "warehouse-logistics-research-1",
 		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
 		icon_size = 128,
 		effects =
@@ -51,6 +51,34 @@ data:extend(
 			},
 			{
 				type = "unlock-recipe",
+				recipe = "storehouse-passive-provider",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-storage",
+			},
+		},
+		prerequisites = { "warehouse-research", "robotics" },
+		unit =
+		{
+			count = 150,
+			ingredients = {
+				{ "science-pack-1", 1 },
+				{ "science-pack-2", 1 },
+			},
+			time = 30
+		},
+		order = "c-k-a"
+	},
+	{
+		type = "technology",
+		name = "warehouse-logistics-research-2",
+		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
 				recipe = "warehouse-active-provider",
 			},
 			{
@@ -60,14 +88,6 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "warehouse-buffer",
-			},
-			{
-				type = "unlock-recipe",
-				recipe = "storehouse-passive-provider",
-			},
-			{
-				type = "unlock-recipe",
-				recipe = "storehouse-storage",
 			},
 			{
 				type = "unlock-recipe",
@@ -82,10 +102,10 @@ data:extend(
 				recipe = "storehouse-buffer",
 			},
 		},
-		prerequisites = { "warehouse-research", "logistic-system" },
+		prerequisites = { "warehouse-logistics-research-1", "logistic-system" },
 		unit =
 		{
-			count = 250,
+			count = 300,
 			ingredients = {
 				{ "science-pack-1", 1 },
 				{ "science-pack-2", 1 },
@@ -94,7 +114,7 @@ data:extend(
 			},
 			time = 30
 		},
-		order = "c-k-a"
+		order = "c-k-b"
 	},
 })
 
