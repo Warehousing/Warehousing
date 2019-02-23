@@ -45,4 +45,4 @@ package: package-copy $(OUT_FILES)
 	cd pkg && zip -r $(OUTPUT_NAME).zip $(OUTPUT_NAME)
 
 clean:
-	rm -rf pkg/$(OUTPUT_NAME)
+	rm -rf pkg/$(OUTPUT_NAME)*
