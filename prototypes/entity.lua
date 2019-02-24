@@ -32,7 +32,7 @@ data:extend({
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
 		inventory_size = 800,
-		scale_info_icons = true,
+		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
 			filename = "__Warehousing__/graphics/entity/warehouse-basic.png",
@@ -80,7 +80,7 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
 		inventory_size = 150,
-		scale_info_icons = true,
+		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
 			filename = "__Warehousing__/graphics/entity/storehouse-basic.png",
