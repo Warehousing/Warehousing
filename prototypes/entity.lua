@@ -31,7 +31,7 @@ data:extend({
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
-		inventory_size = 800,
+		inventory_size = 1800,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -79,7 +79,7 @@ data:extend({
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
-		inventory_size = 150,
+		inventory_size = 450,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -121,7 +121,7 @@ end
 local storehouse_active_provider = createLogisticContainer("storehouse", "active-provider")
 local storehouse_passive_provider = createLogisticContainer("storehouse", "passive-provider")
 local storehouse_storage = createLogisticContainer("storehouse", "storage")
-storehouse_storage.inventory_size = 300
+storehouse_storage.inventory_size = 500
 storehouse_storage.logistic_slots_count = 1
 local storehouse_buffer = createLogisticContainer("storehouse", "buffer")
 storehouse_buffer.logistic_slots_count = 12

@@ -21,22 +21,22 @@ data:extend(
 				recipe = "storehouse-basic",
 			},
 		},
-		prerequisites = {"steel-processing"},
+		prerequisites = { "steel-processing" },
 		unit =
 		{
 			count = 50,
 			ingredients =
 			{
-				{ "science-pack-1", 1},
-				{ "science-pack-2", 1},
+				{ "science-pack-1", 1 },
+				{ "science-pack-2", 1 },
 			},
-			time = 20
+			time = 30
 		},
 		order = "c-a"
 	},
 	{
 		type = "technology",
-		name = "warehouse-logistics-research",
+		name = "warehouse-logistics-research-1",
 		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
 		icon_size = 128,
 		effects =
@@ -51,6 +51,34 @@ data:extend(
 			},
 			{
 				type = "unlock-recipe",
+				recipe = "storehouse-passive-provider",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-storage",
+			},
+		},
+		prerequisites = { "warehouse-research", "robotics" },
+		unit =
+		{
+			count = 150,
+			ingredients = {
+				{ "science-pack-1", 1 },
+				{ "science-pack-2", 1 },
+			},
+			time = 30
+		},
+		order = "c-k-a"
+	},
+	{
+		type = "technology",
+		name = "warehouse-logistics-research-2",
+		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
 				recipe = "warehouse-active-provider",
 			},
 			{
@@ -60,14 +88,6 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "warehouse-buffer",
-			},
-			{
-				type = "unlock-recipe",
-				recipe = "storehouse-passive-provider",
-			},
-			{
-				type = "unlock-recipe",
-				recipe = "storehouse-storage",
 			},
 			{
 				type = "unlock-recipe",
@@ -82,20 +102,19 @@ data:extend(
 				recipe = "storehouse-buffer",
 			},
 		},
-		prerequisites = { "warehouse-research", "logistic-system" },
+		prerequisites = { "warehouse-logistics-research-1", "logistic-system" },
 		unit =
 		{
-			count = 100,
+			count = 300,
 			ingredients = {
-				{ "science-pack-1", 1},
-				{ "science-pack-2", 1},
-				{ "science-pack-3", 1},
-				{ "production-science-pack", 1},
-				{ "high-tech-science-pack", 1},
+				{ "science-pack-1", 1 },
+				{ "science-pack-2", 1 },
+				{ "science-pack-3", 1 },
+				{ "high-tech-science-pack", 1 },
 			},
 			time = 30
 		},
-		order = "c-k-a"
+		order = "c-k-b"
 	},
 })
 

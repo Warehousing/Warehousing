@@ -7,6 +7,11 @@ require("util")
 -- cost of logistics research use both earlier steps.
 if data.raw["technology"]["logistic-system"] ~= nil
 	and data.raw["technology"]["logistic-system"].unit ~= nil then
-		data.raw["technology"]["warehouse-logistics-research"].unit =
+		data.raw["technology"]["warehouse-logistics-research-2"].unit =
 			table.deepcopy(data.raw["technology"]["logistic-system"].unit)
+
+		data.raw["technology"]["warehouse-logistics-research-2"].unit.count =
+			math.floor(
+				data.raw["technology"]["warehouse-logistics-research-2"].unit.count * 2
+			)
 end

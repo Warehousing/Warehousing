@@ -8,12 +8,11 @@ data:extend({
 		type = "recipe",
 		name = "warehouse-basic",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"steel-plate",60},
-			{"iron-plate",100},
-			{"stone-brick",25},
-			{"wooden-chest",10},
+			{ "steel-plate", 200 },
+			{ "stone-brick", 40 },
+			{ "iron-stick", 85 },
 		},
 		result = "warehouse-basic"
 	},
@@ -21,12 +20,12 @@ data:extend({
 		type = "recipe",
 		name = "warehouse-passive-provider",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"warehouse-basic",1},
-			{"logistic-chest-passive-provider",1},
-			{"iron-plate",20},
-			{"advanced-circuit", 5},
+			{ "warehouse-basic", 1 },
+			{ "logistic-chest-passive-provider", 1 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-passive-provider"
 	},
@@ -34,13 +33,12 @@ data:extend({
 		type = "recipe",
 		name = "warehouse-storage",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"warehouse-basic",1},
-			{"logistic-chest-storage",1},
-			{"iron-plate",20},
-			{"advanced-circuit", 5},
-			{"steel-chest",15},
+			{ "warehouse-basic", 1 },
+			{ "logistic-chest-storage", 1 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-storage"
 	},
@@ -48,12 +46,12 @@ data:extend({
 		type = "recipe",
 		name = "warehouse-active-provider",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"warehouse-basic",1},
-			{"logistic-chest-active-provider",1},
-			{"iron-plate",20},
-			{"advanced-circuit", 5},
+			{ "warehouse-basic", 1 },
+			{ "logistic-chest-active-provider", 1 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-active-provider"
 	},
@@ -61,12 +59,12 @@ data:extend({
 		type = "recipe",
 		name = "warehouse-requester",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"warehouse-basic",1},
-			{"logistic-chest-requester",1},
-			{"iron-plate",20},
-			{"advanced-circuit", 5},
+			{ "warehouse-basic", 1 },
+			{ "logistic-chest-requester", 1 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-requester"
 	},
@@ -74,12 +72,12 @@ data:extend({
 		type = "recipe",
 		name = "warehouse-buffer",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"warehouse-basic",1},
-			{"logistic-chest-buffer",1},
-			{"iron-plate",20},
-			{"advanced-circuit", 5},
+			{ "warehouse-basic", 1 },
+			{ "logistic-chest-buffer", 1 },
+			{ "steel-plate", 10 },
+			{ "iron-stick", 15 },
 		},
 		result = "warehouse-buffer"
 	},
@@ -87,12 +85,11 @@ data:extend({
 		type = "recipe",
 		name = "storehouse-basic",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"steel-plate",20},
-			{"iron-plate",40},
-			{"stone-brick",10},
-			{"wooden-chest",5},
+			{ "steel-plate", 50 },
+			{ "stone-brick", 10 },
+			{ "iron-stick", 16 },
 		},
 		result = "storehouse-basic"
 	},
@@ -100,12 +97,11 @@ data:extend({
 		type = "recipe",
 		name = "storehouse-passive-provider",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"storehouse-basic",1},
-			{"logistic-chest-passive-provider",1},
-			{"iron-plate",5},
-			{"advanced-circuit", 2},
+			{ "storehouse-basic", 1 },
+			{ "logistic-chest-passive-provider", 1 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-passive-provider"
 	},
@@ -113,13 +109,11 @@ data:extend({
 		type = "recipe",
 		name = "storehouse-storage",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"storehouse-basic",1},
-			{"logistic-chest-storage",1},
-			{"iron-plate",5},
-			{"advanced-circuit", 2},
-			{"steel-chest",5},
+			{ "storehouse-basic", 1 },
+			{ "logistic-chest-storage", 1 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-storage"
 	},
@@ -127,12 +121,11 @@ data:extend({
 		type = "recipe",
 		name = "storehouse-active-provider",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"storehouse-basic",1},
-			{"logistic-chest-active-provider",1},
-			{"iron-plate",5},
-			{"advanced-circuit", 2},
+			{ "storehouse-basic", 1 },
+			{ "logistic-chest-active-provider", 1 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-active-provider"
 	},
@@ -140,12 +133,11 @@ data:extend({
 		type = "recipe",
 		name = "storehouse-requester",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"storehouse-basic",1},
-			{"logistic-chest-requester",1},
-			{"iron-plate",5},
-			{"advanced-circuit", 2},
+			{ "storehouse-basic", 1 },
+			{ "logistic-chest-requester", 1 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-requester"
 	},
@@ -153,12 +145,11 @@ data:extend({
 		type = "recipe",
 		name = "storehouse-buffer",
 		enabled = "false",
-		ingredients = 
+		ingredients =
 		{
-			{"storehouse-basic",1},
-			{"logistic-chest-buffer",1},
-			{"iron-plate",5},
-			{"advanced-circuit", 2},
+			{ "storehouse-basic", 1 },
+			{ "logistic-chest-buffer", 1 },
+			{ "iron-stick", 4 },
 		},
 		result = "storehouse-buffer"
 	},
