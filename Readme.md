@@ -40,58 +40,52 @@ You can also attach red and green wires to the warehouses, and they'll attach to
 ---
 No.|Warehouse|Storehouse
 -|-|-
-1.|Basic warehouse: 800 slots|Storehouse: 150 slots
+1.|Basic warehouse: 1800 slots|Storehouse: 450 slots
 &nbsp;|![Basic Warehouse][warehouse-basic]|![Basic Storehouse][storehouse-basic]
-2.|Storage warehouse: 2000 slots|Storehouse: 300 slots
+2.|Storage warehouse: 2000 slots|Storehouse: 500 slots
 &nbsp;|![Storage Warehouse][warehouse-storage]|![Storage Storehouse][storehouse-storage]
-3.|Passive provider warehouse: 800 slots|Storehouse: 150 slots
+3.|Passive provider warehouse: 1800 slots|Storehouse: 450 slots
 &nbsp;|![Passive provider warehouse][warehouse-passive-provider]|![Passive provider storehouse][storehouse-passive-provider]
-4.|Active provider warehouse: 800 slots|Storehouse: 150 slots
+4.|Active provider warehouse: 1800 slots|Storehouse: 450 slots
 &nbsp;|![Active provider warehouse][warehouse-active-provider]|![Active provider storehouse][storehouse-active-provider]
-5.|Requester warehouse: 800 slots|Storehouse: 150 slots
+5.|Requester warehouse: 1800 slots|Storehouse: 450 slots
 &nbsp;|![Requester warehouse][warehouse-requester]|![Requester warehouse][storehouse-requester]
-6.|Buffer warehouse: 800 slots|Storehouse: 150 slots
+6.|Buffer warehouse: 1800 slots|Storehouse: 450 slots
 &nbsp;|![Buffer warehouse][warehouse-buffer]|![Buffer warehouse][storehouse-buffer]
 
 ### Recipes
-    
+
 #### Basic warehouse / storehouse
 
 Item|Qty
 ---|---:
-Steel plates | 60
-Iron plates | 100
-Stone bricks | 25
-Wooden chests | 10
+Steel plate | 200
+Iron stick | 85
+Stone brick | 40
 ![Basic Warehouse][warehouse-basic]
 
 Item|Qty
 ---|---:
-Steel plates | 20
-Iron plates | 40
-Stone bricks | 10
-Wooden chests | 5
+Steel plate | 50
+Iron stick | 16
+Stone brick | 10
 ![Basic Storehouse][storehouse-basic]
-
 
 #### Storage warehouse / storehouse
 
 Item|Qty
 ---|---:
 Basic warehouse|1
-Iron plates|20
 Storage logistic chest|1
-Advanced circuits|5
-Steel Chests|15
+Steel plate|10
+Iron stick|15
 ![Storage Warehouse][warehouse-storage]
 
 Item|Qty
 ---|---:
 Basic storehouse|1
-Iron plates|5
 Storage logistic chest|1
-Advanced circuits|2
-Steel Chests|5
+Iron stick|4
 ![Storage Storehouse][storehouse-storage]
 
 #### Passive provider warehouse / storehouse
@@ -99,17 +93,16 @@ Steel Chests|5
 Item|Qty
 ---|---:
 Basic warehouse|1
-Iron plates|20
 Passive provider logistic chest|1
-Advanced circuits|5
+Steel plate|10
+Iron stick|15
 ![Passive provider warehouse][warehouse-passive-provider]
 
 Item|Qty
 ---|---:
 Basic storehouse|1
-Iron plates|5
 Passive provider logistic chest|1
-Advanced circuits|2
+Iron stick|4
 ![Passive provider storehouse][storehouse-passive-provider]
 
 #### Active provider warehouse / storehouse
@@ -117,17 +110,16 @@ Advanced circuits|2
 Item|Qty
 ---|---:
 Basic warehouse|1
-Iron plates|20
 Active provider logistic chest|1
-Advanced circuits|5
+Steel plate|10
+Iron stick|15
 ![Active provider warehouse][warehouse-active-provider]
 
 Item|Qty
 ---|---:
 Basic storehouse|1
-Iron plates|5
 Active provider logistic chest|1
-Advanced circuits|2
+Iron stick|4
 ![Active provider storehouse][storehouse-active-provider]
 
 #### Requester warehouse / storehouse
@@ -135,17 +127,16 @@ Advanced circuits|2
 Item|Qty
 ---|---:
 Basic warehouse|1
-Iron plates|20
 Requester logistic chest|1
-Advanced circuits|5
+Steel plate|10
+Iron stick|15
 ![Requester warehouse][warehouse-requester]
 
 Item|Qty
 ---|---:
 Basic storehouse|1
-Iron plates|5
 Requester logistic chest|1
-Advanced circuits|2
+Iron stick|4
 ![Requester storehouse][storehouse-requester]
 
 #### Buffer warehouse / storehouse
@@ -153,17 +144,16 @@ Advanced circuits|2
 Item|Qty
 ---|---:
 Basic warehouse|1
-Iron plates|20
 Buffer logistic chest|1
-Advanced circuits|5
+Steel plate|10
+Iron stick|15
 ![Buffer warehouse][warehouse-buffer]
 
 Item|Qty
 ---|---:
 Basic storehouse|1
-Iron plates|5
 Buffer logistic chest|1
-Advanced circuits|2
+Iron stick|4
 ![Buffer storehouse][storehouse-buffer]
 
 
