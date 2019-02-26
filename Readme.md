@@ -16,13 +16,17 @@ Want to see Warehousing available in your language? Does the quality of our exis
 
 ### Latest
 
-Now updated for Factorio 0.17! Just like the base-game research, technology requirements have been overhauled. There are now two levels of "Logistics Warehousing" to research, and Warehousing research in general is more expensive. The previously-added "cost copying" from "Logistic System" remains, on level 2. As always, report incompatible mods in [the forum thread][forum-thread] or [GitHub issue tracker][issue-tracker].
+Now updated for Factorio 0.17! Just like the base-game research, technology requirements have been overhauled. There are now two levels of "Logistics Warehousing" to research, and Warehousing research in general is more expensive.
 
 Crafting recipes were also updated—**no more wood!**
 
-Building storage capacity (except logistic storage variants) was finally rebalanced to reflect the 3x3 and 6x6 entity sizes. Storehouses now accept 450+ stacks of items, and Warehouses take 1800+ stacks.
+Building storage capacity (except logistic storage variants) was finally rebalanced to reflect the 3x3 and 6x6 entity sizes. Storehouses now accept 450+ stacks of items, and Warehouses take 1800+ stacks. The old capacities are accessible via a startup setting, if you have an existing map with circuit logic that will break with the changed inventory sizes.
 
-There's also a new setting to disable inventory icon scaling, if you don't like how the stretched icons look on top of your buildings. (This setting is only localized in English and German; [go to Crowdin][crowdin-project] if you can help add more languages!)
+Copying the research cost of "Logistic System" remains, as a startup setting (off by default, to save a bit of loading time). Enabling it will update the cost of "Logistics Warehousing 2" to match if you have a mod that changes the cost of "Logistic System". As before, report incompatible mods in [the forum thread][forum-thread] or [GitHub issue tracker][issue-tracker].
+
+There's also a new setting to disable inventory icon scaling, if you don't like how the stretched icons look on top of your buildings.
+
+Localizations for the new settings are almost entirely incomplete, except for a lucky few strings; [go to Crowdin][crowdin-project] if you can help translate them into more languages!
 
 ### Previously
 
@@ -183,7 +187,7 @@ Translations kindly provided by the following people:
 | :poland:       | Polish                 | diilmac<br>Nalapl3<br>sayonara4747                               |
 | :brazil:       | Portuguese (Brazilian) | @RaphaelNeumann<br>@scarsick<br>vini84200<br>artemkiselevvloger  |
 | :ru:           | Russian                | apriori<br>Oceanel<br>bjiomspeed<br>applevine1                   |
-| :es:           | Spanish                | frenchiveruti<br>black.dreicous                                  |
+| :es:           | Spanish                | frenchiveruti<br>black.dreicous<br>leortegacaudillo              |
 
 
   [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-basic.png
