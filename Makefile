@@ -42,7 +42,7 @@ $(OUTPUT_DIR)/%: %
 	sed $(SED_EXPRS) $< > $@
 
 package: package-copy $(OUT_FILES)
-	cd pkg && zip -r $(OUTPUT_NAME).zip $(OUTPUT_NAME)
+	cd pkg && rm -f $(OUTPUT_NAME).zip && zip -r $(OUTPUT_NAME).zip $(OUTPUT_NAME)
 
 clean:
 	rm -rf pkg/$(OUTPUT_NAME)*
