@@ -3,6 +3,5 @@
  *
  * See License.txt in the project directory for license information.
 --]]
-require "config"
 
 local WAREHOUSING_VERSION = "{{VERSION}}"
