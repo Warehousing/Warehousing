@@ -1,4 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2019-02-26
+
+  Changed:
+    - Factorio target version updated to 0.17
+    - Logistics Warehousing research split into two levels
+    - Warehouse and Storehouse capacities rebalanced
+    - Research costs rebalanced
+    - Crafting recipes rebalanced
+    - Match visual style of Warehouse and Storehouse item icons
+    - Simplified internal entity generation code (thanks to Optera)
+  Added:
+    - Setting to control inventory icon scaling on Warehouse/Storehouse buildings (startup, thanks to Optera)
+    - Setting to use the old inventory sizes from Warehousing 0.1.x / Factorio 0.16 (startup)
+    - Setting to toggle using Logistic System research cost as the base for Logistics Warehousing 2 (startup)
+  Translations:
+    - Brazilian Portuguese updated (thanks vini84200 & artemkiselevvloger)
+    - Chinese (Traditional) added (thanks artemkiselevvloger)
+    - French consistency tweaked
+    - German updated (thanks Optera)
+    - Hungarian added (thanks artemkiselevvloger)
+    - Korean added (thanks Xagros / XMKTP)
+    - Spanish updated (thanks leortegacaudillo)
+    - Removed source strings for "Smart" entities (previously only the translations were deleted)
+    - 18 new target languages added (see https://crowdin.com/project/factorio-warehousing to contribute, as always)
+  Meta:
+    - Added demo screenshot in Readme and a thumbnail image for the Factorio mod browser
+    - Removed empty config.lua file in mod distribution (it was unused)
+    - Source repository moved to Warehousing/Warehousing on GitHub
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2018-07-16
 
