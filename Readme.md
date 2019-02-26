@@ -5,22 +5,32 @@ Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you pack
 
 ## News
 
-[![GitHub release](https://img.shields.io/github/release/Warehousing/Warehousing.svg?label=current+version)]()
-[![GitHub Release Date](https://img.shields.io/github/release-date/Warehousing/Warehousing.svg?label=released)]()
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/factorio-warehousing/localized.svg)](https://crowdin.com/project/factorio-warehousing)
+[![GitHub release][badge-latest-release]][github-latest-release]
+![GitHub Release Date][badge-release-date]
+[![Crowdin][badge-crowdin]][crowdin-project]
 
-Go grab it now, or get it in game by searching for Warehousing.
+Go [grab it now][mod-portal-entry], or get it in-game by searching for `Warehousing`.
 
 ### Translations!
-Want to see Warehousing available in your language? Does the quality of our existing translation leave you wanting more? Please help us [translate the mod](https://crowdin.com/project/factorio-warehousing) on Crowdin! Create a free account (or log in with Google, Twitter, Facebook, GitHub, or Gitlab) and help make this mod (even more) awesome!
+Want to see Warehousing available in your language? Does the quality of our existing translation leave you wanting more? Please help us [translate the mod][crowdin-project] on Crowdin! Create a free account (or log in with Google, Twitter, Facebook, GitHub, or Gitlab) and help make this mod (even more) awesome!
 
 ### Latest
 
-Now compatible with Factorio 0.16! Research requirements have changed (again), so be warned for new games.
+Now updated for Factorio 0.17! Just like the base-game research, technology requirements have been overhauled. There are now two levels of "Logistics Warehousing" to research, and Warehousing research in general is more expensive.
 
-Logistic warehouse research cost is now based on the cost of "Logistic System", for balance when using mods that alter that research. Some mods may alter it too late for Warehousing to use the new values; report these incompatible mods in [the forum thread](https://forums.factorio.com/viewtopic.php?f=93&t=17295) or [GitHub issue tracker](https://github.com/Warehousing/Warehousing/issues) and they should be fixable.
+Crafting recipes were also updated—**no more wood!**
+
+Building storage capacity (except logistic storage variants) was finally rebalanced to reflect the 3x3 and 6x6 entity sizes. Storehouses now accept 450+ stacks of items, and Warehouses take 1800+ stacks. The old capacities are accessible via a startup setting, if you have an existing map with circuit logic that will break with the changed inventory sizes.
+
+Copying the research cost of "Logistic System" remains, as a startup setting (off by default, to save a bit of loading time). Enabling it will update the cost of "Logistics Warehousing 2" to match if you have a mod that changes the cost of "Logistic System". As before, report incompatible mods in [the forum thread][forum-thread] or [GitHub issue tracker][issue-tracker].
+
+There's also a new setting to disable inventory icon scaling, if you don't like how the stretched icons look on top of your buildings.
+
+Localizations for the new settings are almost entirely incomplete, except for a lucky few strings; [go to Crowdin][crowdin-project] if you can help translate them into more languages!
 
 ### Previously
+
+Logistic warehouse research cost is now based on the cost of "Logistic System", for better balance when using mods that alter that research.
 
 Warehouses were changed to 6x6 as per a suggestion, so if you are upgrading from a very old version of the mod it will make all existing warehouses potentially overlap and cause unknown issues. You have been warned! (If you've transitioned a steam power setup from Factorio 0.14 or below to 0.15, you know the pain.)
 
@@ -31,11 +41,11 @@ Factorio 0.12.18 allowed entity inventories to have scroll bars... Capacities we
 
 Adds 6x6 warehouses that allow you to store a lot of items, and smaller (cheaper) 3x3 storehouses with less capacity.
 
-Warehouses and storehouses also have logistic versions (passive provider, active provider, and storage), just like chests.
+Warehouses and storehouses also have logistic versions (passive provider, active provider, storage, requester, and buffer), just like chests.
 
 You can also attach red and green wires to the warehouses, and they'll attach to the correct points on the corner of the logistics warehouses.
 
-![Warehouses in a Factorio map](hero-image.jpg)
+![Warehouses in a Factorio map][hero-image]
 
 ---
 No.|Warehouse|Storehouse
@@ -165,27 +175,43 @@ Storehouses contributed by Hanniballo. Updates for Factorio 0.15 contributed by 
 
 Translations kindly provided by the following people:
 
-| <!--flag--> | Language |          Translator          |
-|-------------|----------|------------------------------|
-| :fr:        | French   | Hasturcraft                  |
-| :ru:        | Russian  | apriori<br>Oceanel           |
-| :poland:    | Polish   | diilmac                      |
-| :de:        | German   | apcnc                        |
-| :es:        | Spanish  | frenchiveruti                |
-| :brazil:    | Brazil   | @RaphaelNeumann<br>@scarsick |
-| :jp:        | Japanese | Quifon                       |
+| <!--flag-->    |       Language         |                          Translator(s)                           |
+|----------------|------------------------|------------------------------------------------------------------|
+| :south_africa: | Afrikaans              | Anoyomouse<br>@Yuuki2012                                         |
+| :cn:           | Chinese (Traditional)  | artemkiselevvloger                                               |
+| :fr:           | French                 | Hasturcraft<br>rom5921                                           |
+| :de:           | German                 | apcnc<br>honkinator22<br>Optera                                  |
+| :hungary:      | Hungarian              | artemkiselevvloger                                               |
+| :jp:           | Japanese               | Quifon                                                           |
+| :kr:           | Korean                 | @GimoXagros                                                      |
+| :poland:       | Polish                 | diilmac<br>Nalapl3<br>sayonara4747                               |
+| :brazil:       | Portuguese (Brazilian) | @RaphaelNeumann<br>@scarsick<br>vini84200<br>artemkiselevvloger  |
+| :ru:           | Russian                | apriori<br>Oceanel<br>bjiomspeed<br>applevine1                   |
+| :es:           | Spanish                | frenchiveruti<br>black.dreicous<br>leortegacaudillo              |
 
 
-[warehouse-basic]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-basic.png
-[warehouse-storage]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-storage.png
-[warehouse-passive-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-passive-provider.png
-[warehouse-active-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-active-provider.png
-[warehouse-requester]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-requester.png
-[warehouse-buffer]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-buffer.png
+  [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-basic.png
+  [warehouse-storage]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-storage.png
+  [warehouse-passive-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-passive-provider.png
+  [warehouse-active-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-active-provider.png
+  [warehouse-requester]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-requester.png
+  [warehouse-buffer]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-buffer.png
 
-[storehouse-basic]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-basic.png
-[storehouse-storage]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-storage.png
-[storehouse-passive-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-passive-provider.png
-[storehouse-active-provider]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-active-provider.png
-[storehouse-requester]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-requester.png
-[storehouse-buffer]:https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-buffer.png
+  [storehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-basic.png
+  [storehouse-storage]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-storage.png
+  [storehouse-passive-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-passive-provider.png
+  [storehouse-active-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-active-provider.png
+  [storehouse-requester]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-requester.png
+  [storehouse-buffer]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-buffer.png
+
+  [hero-image]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/hero-image.jpg
+
+  [badge-crowdin]: https://d322cqt584bo4o.cloudfront.net/factorio-warehousing/localized.svg
+  [badge-latest-release]: https://img.shields.io/github/release/Warehousing/Warehousing.svg?label=current+version
+  [badge-release-date]: https://img.shields.io/github/release-date/Warehousing/Warehousing.svg?label=released
+
+  [crowdin-project]: https://crowdin.com/project/factorio-warehousing
+  [forum-thread]: https://forums.factorio.com/17295
+  [github-latest-release]: https://github.com/Warehousing/Warehousing/releases/latest
+  [issue-tracker]: https://github.com/Warehousing/Warehousing/issues
+  [mod-portal-entry]: https://mods.factorio.com/mod/Warehousing
