@@ -6,6 +6,19 @@
  * See License.txt in the project directory for license information.
 --]]
 
+local warehouse_slots = 1800
+local storehouse_slots = 450
+local storage_warehouse_slots = 2000
+local storage_storehouse_slots = 500
+
+-- Support legacy mode
+if settings.startup["Warehousing-sixteen-mode"].value then
+	warehouse_slots = 800
+	storehouse_slots = 150
+	storage_warehouse_slots = 2000
+	storage_storehouse_slots = 300
+end
+
 -- generate base storehouse and warehouse
 data:extend({
 	{
@@ -31,7 +44,7 @@ data:extend({
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
-		inventory_size = 1800,
+		inventory_size = warehouse_slots,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -79,7 +92,7 @@ data:extend({
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
-		inventory_size = 450,
+		inventory_size = storehouse_slots,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -121,7 +134,7 @@ end
 local storehouse_active_provider = createLogisticContainer("storehouse", "active-provider")
 local storehouse_passive_provider = createLogisticContainer("storehouse", "passive-provider")
 local storehouse_storage = createLogisticContainer("storehouse", "storage")
-storehouse_storage.inventory_size = 500
+storehouse_storage.inventory_size = storage_storehouse_slots
 storehouse_storage.logistic_slots_count = 1
 local storehouse_buffer = createLogisticContainer("storehouse", "buffer")
 storehouse_buffer.logistic_slots_count = 12
@@ -130,7 +143,7 @@ storehouse_requester.logistic_slots_count = 12
 local warehouse_active_provider = createLogisticContainer("warehouse", "active-provider")
 local warehouse_passive_provider = createLogisticContainer("warehouse", "passive-provider")
 local warehouse_storage = createLogisticContainer("warehouse", "storage")
-warehouse_storage.inventory_size = 2000
+warehouse_storage.inventory_size = storage_warehouse_slots
 warehouse_storage.logistic_slots_count = 1
 local warehouse_buffer = createLogisticContainer("warehouse", "buffer")
 warehouse_buffer.logistic_slots_count = 12

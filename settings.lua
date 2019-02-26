@@ -5,4 +5,10 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 	},
+	{
+		type = "bool-setting",
+		name = "Warehousing-sixteen-mode",
+		setting_type = "startup",
+		default_value = false,
+	},
 })
