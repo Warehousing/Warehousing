@@ -14,7 +14,8 @@ data:extend({
 			{ "stone-brick", 40 },
 			{ "iron-stick", 85 },
 		},
-		result = "warehouse-basic"
+		energy_required = 30,
+		result = "warehouse-basic",
 	},
 	{ -- Passive Provider Warehouse
 		type = "recipe",
@@ -27,7 +28,8 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-passive-provider"
+		energy_required = 5,
+		result = "warehouse-passive-provider",
 	},
 	{ -- Storage Warehouse
 		type = "recipe",
@@ -40,7 +42,8 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-storage"
+		energy_required = 5,
+		result = "warehouse-storage",
 	},
 	{ -- Active Provider Warehouse
 		type = "recipe",
@@ -53,7 +56,8 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-active-provider"
+		energy_required = 5,
+		result = "warehouse-active-provider",
 	},
 	{ -- Requester Warehouse
 		type = "recipe",
@@ -66,7 +70,8 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-requester"
+		energy_required = 5,
+		result = "warehouse-requester",
 	},
 	{ -- Buffer Warehouse
 		type = "recipe",
@@ -79,7 +84,8 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-buffer"
+		energy_required = 5,
+		result = "warehouse-buffer",
 	},
 	{ -- Basic Storehouse
 		type = "recipe",
@@ -91,7 +97,8 @@ data:extend({
 			{ "stone-brick", 10 },
 			{ "iron-stick", 16 },
 		},
-		result = "storehouse-basic"
+		energy_required = 30,
+		result = "storehouse-basic",
 	},
 	{ -- Passive Provider Storehouse
 		type = "recipe",
@@ -103,7 +110,8 @@ data:extend({
 			{ "logistic-chest-passive-provider", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-passive-provider"
+		energy_required = 5,
+		result = "storehouse-passive-provider",
 	},
 	{ -- Storage Storehouse
 		type = "recipe",
@@ -115,7 +123,8 @@ data:extend({
 			{ "logistic-chest-storage", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-storage"
+		energy_required = 5,
+		result = "storehouse-storage",
 	},
 	{ -- Active Provider Storehouse
 		type = "recipe",
@@ -127,7 +136,8 @@ data:extend({
 			{ "logistic-chest-active-provider", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-active-provider"
+		energy_required = 5,
+		result = "storehouse-active-provider",
 	},
 	{ -- Requester Storehouse
 		type = "recipe",
@@ -139,7 +149,8 @@ data:extend({
 			{ "logistic-chest-requester", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-requester"
+		energy_required = 5,
+		result = "storehouse-requester",
 	},
 	{ -- Buffer Storehouse
 		type = "recipe",
@@ -151,6 +162,7 @@ data:extend({
 			{ "logistic-chest-buffer", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-buffer"
+		energy_required = 5,
+		result = "storehouse-buffer",
 	},
 })
