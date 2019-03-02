@@ -5,6 +5,8 @@
 --]]
 data:extend(
 {
+	--     -- BASE --
+	-- Warehouse Research
 	{
 		type = "technology",
 		name = "warehouse-research",
@@ -34,6 +36,7 @@ data:extend(
 		},
 		order = "c-a"
 	},
+	-- Logistics Warehouse Research 1
 	{
 		type = "technology",
 		name = "warehouse-logistics-research-1",
@@ -70,6 +73,7 @@ data:extend(
 		},
 		order = "c-k-a"
 	},
+	-- Logistics Warehouse Research 2
 	{
 		type = "technology",
 		name = "warehouse-logistics-research-2",
@@ -116,5 +120,167 @@ data:extend(
 		},
 		order = "c-k-b"
 	},
+	--     -- TINY --
+	-- Warehouse Research
+	{
+		type = "technology",
+		name = "warehouse-research-tiny",
+		icon = "__Warehousing__/graphics/research/warehouse-research-tiny.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-basic-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-basic-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-basic-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-basic-tiny",
+			},
+		},
+		prerequisites = { "steel-processing" },
+		unit =
+		{
+			count = 100,
+			ingredients =
+			{
+				{ "automation-science-pack", 1 },
+				{ "logistic-science-pack", 1 },
+			},
+			time = 30
+		},
+		order = "c-a"
+	},
+	-- Logistics Warehouse Research 1
+	{
+		type = "technology",
+		name = "warehouse-logistics-research-1-tiny",
+		icon = "__Warehousing__/graphics/research/warehouse-logistics-research-tiny.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-passive-provider-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-storage-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-passive-provider-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-storage-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-passive-provider-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-storage-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-passive-provider-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-storage-tiny",
+			},
+		},
+		prerequisites = { "warehouse-research-tiny", "robotics" },
+		unit =
+		{
+			count = 300,
+			ingredients = {
+				{ "automation-science-pack", 1 },
+				{ "logistic-science-pack", 1 },
+			},
+			time = 30
+		},
+		order = "c-k-a"
+	},
+	-- Logistics Warehouse Research 2
+	{
+		type = "technology",
+		name = "warehouse-logistics-research-2-tiny",
+		icon = "__Warehousing__/graphics/research/warehouse-logistics-research-tiny.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-active-provider-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-requester-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-buffer-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-active-provider-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-requester-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-buffer-small",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-active-provider-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-requester-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "warehouse-buffer-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-active-provider-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-requester-tiny",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-buffer-tiny",
+			},
+		},
+		prerequisites = { "warehouse-logistics-research-1-tiny", "logistic-system" },
+		unit =
+		{
+			count = 600,
+			ingredients = {
+				{ "automation-science-pack", 1 },
+				{ "logistic-science-pack", 1 },
+				{ "chemical-science-pack", 1 },
+				{ "utility-science-pack", 1 },
+			},
+			time = 30
+		},
+		order = "c-k-b"
+	},
 })
-
