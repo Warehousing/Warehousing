@@ -107,8 +107,8 @@ data:extend({
 		{
 			shadow =
 			{
-				red = {.26, -0.6},
-				green = {.36, -0.6}
+				red = {0.26, -0.6},
+				green = {0.36, -0.6}
 			},
 			wire =
 			{
