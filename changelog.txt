@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2019-03-06
+
+  Changed:
+    - Buildings now take a reasonable amount of crafting time, instead of only 0.5 seconds (Factorio's default)
+  Translations:
+    - Brazilian Portuguese updated (thanks johmax123)
+    - Dutch added (thanks eregni & TheRealHenkFisher)
+    - Hungarian updated (thanks nagy.karoly)
+    - Korean updated (thanks again, Xagros)
+    - Polish updated (thanks Tomirad)
+    - Ukrainian added (thanks antonus777)
+    - 14 more target languages added (see https://crowdin.com/project/factorio-warehousing to contribute, as always)
+    - Mod name and description are now included in translatable strings
+  Meta:
+    - Warehousing now targets all the languages that Factorio's own Crowdin project does
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2019-02-26
 
