@@ -419,4 +419,3 @@ data:extend({
 	warehouse_requester_tiny,
 })
 
-
