@@ -46,19 +46,19 @@ data:extend(
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-passive-provider",
+				recipe = "warehouse-passive-provider-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-storage",
+				recipe = "warehouse-storage-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-passive-provider",
+				recipe = "storehouse-passive-provider-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-storage",
+				recipe = "storehouse-storage-basic",
 			},
 		},
 		prerequisites = { "warehouse-research", "robotics" },
@@ -83,27 +83,27 @@ data:extend(
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-active-provider",
+				recipe = "warehouse-active-provider-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-requester",
+				recipe = "warehouse-requester-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-buffer",
+				recipe = "warehouse-buffer-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-active-provider",
+				recipe = "storehouse-active-provider-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-requester",
+				recipe = "storehouse-requester-basic",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-buffer",
+				recipe = "storehouse-buffer-basic",
 			},
 		},
 		prerequisites = { "warehouse-logistics-research-1", "logistic-system" },
@@ -131,19 +131,19 @@ data:extend(
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-basic-small",
+				recipe = "warehouse-small",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-basic-small",
+				recipe = "storehouse-small",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "warehouse-basic-tiny",
+				recipe = "warehouse-tiny",
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "storehouse-basic-tiny",
+				recipe = "storehouse-tiny",
 			},
 		},
 		prerequisites = { "steel-processing" },

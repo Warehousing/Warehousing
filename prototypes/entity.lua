@@ -73,11 +73,11 @@ data:extend({
 	-- small warehouse
 	{
 		type = "container",
-		name = "warehouse-basic-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-basic-small.png",
+		name = "warehouse-small",
+		icon = "__Warehousing__/graphics/icons/warehouse-small.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
-		minable = {mining_time = 2, result = "warehouse-basic-small"},
+		minable = {mining_time = 2, result = "warehouse-small"},
 		max_health = 450,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
@@ -98,7 +98,7 @@ data:extend({
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
-			filename = "__Warehousing__/graphics/entity/warehouse-basic-small.png",
+			filename = "__Warehousing__/graphics/entity/warehouse-small.png",
 			priority = "high",
 			width = 210,
 			height = 190,
@@ -122,11 +122,11 @@ data:extend({
 	-- tiny warehouse
 	{
 		type = "container",
-		name = "warehouse-basic-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-basic-tiny.png",
+		name = "warehouse-tiny",
+		icon = "__Warehousing__/graphics/icons/warehouse-tiny.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
-		minable = {mining_time = 2, result = "warehouse-basic-tiny"},
+		minable = {mining_time = 2, result = "warehouse-tiny"},
 		max_health = 450,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
@@ -147,7 +147,7 @@ data:extend({
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
-			filename = "__Warehousing__/graphics/entity/warehouse-basic-tiny.png",
+			filename = "__Warehousing__/graphics/entity/warehouse-tiny.png",
 			priority = "high",
 			width = 160,
 			height = 140,
@@ -220,11 +220,11 @@ data:extend({
 	-- small storehouse
 	{
 		type = "container",
-		name = "storehouse-basic-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-basic-small.png",
+		name = "storehouse-small",
+		icon = "__Warehousing__/graphics/icons/storehouse-small.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
-		minable = {mining_time = 2, result = "storehouse-basic-small"},
+		minable = {mining_time = 2, result = "storehouse-small"},
 		max_health = 250,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
@@ -245,7 +245,7 @@ data:extend({
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
-			filename = "__Warehousing__/graphics/entity/storehouse-basic-small.png",
+			filename = "__Warehousing__/graphics/entity/storehouse-small.png",
 			priority = "high",
 			width = 80,
 			height = 62,
@@ -269,11 +269,11 @@ data:extend({
 	-- tiny storehouse
 	{
 		type = "container",
-		name = "storehouse-basic-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-basic-tiny.png",
+		name = "storehouse-tiny",
+		icon = "__Warehousing__/graphics/icons/storehouse-tiny.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
-		minable = {mining_time = 2, result = "storehouse-basic-tiny"},
+		minable = {mining_time = 2, result = "storehouse-tiny"},
 		max_health = 250,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
@@ -294,7 +294,7 @@ data:extend({
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
-			filename = "__Warehousing__/graphics/entity/storehouse-basic-tiny.png",
+			filename = "__Warehousing__/graphics/entity/storehouse-tiny.png",
 			priority = "high",
 			width = 35,
 			height = 27,
@@ -318,9 +318,9 @@ data:extend({
 })
 
 -- generate logistic variants
-function createLogisticContainer(name, logistic_type)
-	local p = table.deepcopy(data.raw["container"][name.."-basic"])
-	p.name = name.."-"..logistic_type
+function createLogisticContainer(name, size, logistic_type)
+	local p = table.deepcopy(data.raw["container"][name.."-"..size])
+	p.name = name.."-"..logistic_type.."-"..size
 	p.minable.result = p.name
 	p.icon = "__Warehousing__/graphics/icons/"..p.name..".png"
 	p.picture.filename = "__Warehousing__/graphics/entity/"..p.name..".png"
@@ -329,83 +329,61 @@ function createLogisticContainer(name, logistic_type)
 	return p
 end
 
-local storehouse_active_provider = createLogisticContainer("storehouse", "active-provider")
-local storehouse_passive_provider = createLogisticContainer("storehouse", "passive-provider")
-local storehouse_storage = createLogisticContainer("storehouse", "storage")
+local storehouse_active_provider = createLogisticContainer("storehouse", "basic", "active-provider")
+local storehouse_passive_provider = createLogisticContainer("storehouse", "basic", "passive-provider")
+local storehouse_storage = createLogisticContainer("storehouse", "basic", "storage")
 storehouse_storage.inventory_size = storage_storehouse_slots
 storehouse_storage.logistic_slots_count = 1
-local storehouse_buffer = createLogisticContainer("storehouse", "buffer")
+local storehouse_buffer = createLogisticContainer("storehouse", "basic", "buffer")
 storehouse_buffer.logistic_slots_count = 12
-local storehouse_requester = createLogisticContainer("storehouse", "requester")
+local storehouse_requester = createLogisticContainer("storehouse", "basic", "requester")
 storehouse_requester.logistic_slots_count = 12
-local warehouse_active_provider = createLogisticContainer("warehouse", "active-provider")
-local warehouse_passive_provider = createLogisticContainer("warehouse", "passive-provider")
-local warehouse_storage = createLogisticContainer("warehouse", "storage")
+local warehouse_active_provider = createLogisticContainer("warehouse", "basic", "active-provider")
+local warehouse_passive_provider = createLogisticContainer("warehouse", "basic", "passive-provider")
+local warehouse_storage = createLogisticContainer("warehouse", "basic", "storage")
 warehouse_storage.inventory_size = storage_warehouse_slots
 warehouse_storage.logistic_slots_count = 1
-local warehouse_buffer = createLogisticContainer("warehouse", "buffer")
+local warehouse_buffer = createLogisticContainer("warehouse", "basic", "buffer")
 warehouse_buffer.logistic_slots_count = 12
-local warehouse_requester = createLogisticContainer("warehouse", "requester")
+local warehouse_requester = createLogisticContainer("warehouse", "basic", "requester")
 warehouse_requester.logistic_slots_count = 12
 
-function createLogisticContainerSmall(name, logistic_type)
-	local p = table.deepcopy(data.raw["container"][name.."-basic-small"])
-	p.name = name.."-"..logistic_type.."-small"
-	p.minable.result = p.name
-	p.icon = "__Warehousing__/graphics/icons/"..p.name..".png"
-	p.picture.filename = "__Warehousing__/graphics/entity/"..p.name..".png"
-	p.type = "logistic-container"
-	p.logistic_mode = logistic_type
-	return p
-end
-
-local storehouse_active_provider_small = createLogisticContainerSmall("storehouse", "active-provider")
-local storehouse_passive_provider_small = createLogisticContainerSmall("storehouse", "passive-provider")
-local storehouse_storage_small = createLogisticContainerSmall("storehouse", "storage")
+local storehouse_active_provider_small = createLogisticContainer("storehouse", "small", "active-provider")
+local storehouse_passive_provider_small = createLogisticContainer("storehouse", "small", "passive-provider")
+local storehouse_storage_small = createLogisticContainer("storehouse", "small", "storage")
 storehouse_storage_small.inventory_size = storage_storehouse_slots
 storehouse_storage_small.logistic_slots_count = 1
-local storehouse_buffer_small = createLogisticContainerSmall("storehouse", "buffer")
+local storehouse_buffer_small = createLogisticContainer("storehouse", "small", "buffer")
 storehouse_buffer_small.logistic_slots_count = 12
-local storehouse_requester_small = createLogisticContainerSmall("storehouse", "requester")
+local storehouse_requester_small = createLogisticContainer("storehouse", "small", "requester")
 storehouse_requester_small.logistic_slots_count = 12
-local warehouse_active_provider_small = createLogisticContainerSmall("warehouse", "active-provider")
-local warehouse_passive_provider_small = createLogisticContainerSmall("warehouse", "passive-provider")
-local warehouse_storage_small = createLogisticContainerSmall("warehouse", "storage")
+local warehouse_active_provider_small = createLogisticContainer("warehouse", "small", "active-provider")
+local warehouse_passive_provider_small = createLogisticContainer("warehouse", "small", "passive-provider")
+local warehouse_storage_small = createLogisticContainer("warehouse", "small", "storage")
 warehouse_storage_small.inventory_size = storage_warehouse_slots
 warehouse_storage_small.logistic_slots_count = 1
-local warehouse_buffer_small = createLogisticContainerSmall("warehouse", "buffer")
+local warehouse_buffer_small = createLogisticContainer("warehouse", "small", "buffer")
 warehouse_buffer_small.logistic_slots_count = 12
-local warehouse_requester_small = createLogisticContainerSmall("warehouse", "requester")
+local warehouse_requester_small = createLogisticContainer("warehouse", "small", "requester")
 warehouse_requester_small.logistic_slots_count = 12
 
-function createLogisticContainerTiny(name, logistic_type)
-	local p = table.deepcopy(data.raw["container"][name.."-basic-tiny"])
-	p.name = name.."-"..logistic_type.."-tiny"
-	p.minable.result = p.name
-	p.icon = "__Warehousing__/graphics/icons/"..p.name..".png"
-	p.picture.filename = "__Warehousing__/graphics/entity/"..p.name..".png"
-	p.type = "logistic-container"
-	p.logistic_mode = logistic_type
-	return p
-end
-
-local storehouse_active_provider_tiny = createLogisticContainerTiny("storehouse", "active-provider")
-local storehouse_passive_provider_tiny = createLogisticContainerTiny("storehouse", "passive-provider")
-local storehouse_storage_tiny = createLogisticContainerTiny("storehouse", "storage")
+local storehouse_active_provider_tiny = createLogisticContainer("storehouse", "tiny", "active-provider")
+local storehouse_passive_provider_tiny = createLogisticContainer("storehouse", "tiny", "passive-provider")
+local storehouse_storage_tiny = createLogisticContainer("storehouse", "tiny", "storage")
 storehouse_storage_tiny.inventory_size = storage_storehouse_slots
 storehouse_storage_tiny.logistic_slots_count = 1
-local storehouse_buffer_tiny = createLogisticContainerTiny("storehouse", "buffer")
+local storehouse_buffer_tiny = createLogisticContainer("storehouse", "tiny", "buffer")
 storehouse_buffer_tiny.logistic_slots_count = 12
-local storehouse_requester_tiny = createLogisticContainerTiny("storehouse", "requester")
+local storehouse_requester_tiny = createLogisticContainer("storehouse", "tiny", "requester")
 storehouse_requester_tiny.logistic_slots_count = 12
-local warehouse_active_provider_tiny = createLogisticContainerTiny("warehouse", "active-provider")
-local warehouse_passive_provider_tiny = createLogisticContainerTiny("warehouse", "passive-provider")
-local warehouse_storage_tiny = createLogisticContainerTiny("warehouse", "storage")
+local warehouse_active_provider_tiny = createLogisticContainer("warehouse", "tiny", "active-provider")
+local warehouse_passive_provider_tiny = createLogisticContainer("warehouse", "tiny", "passive-provider")
+local warehouse_storage_tiny = createLogisticContainer("warehouse", "tiny", "storage")
 warehouse_storage_tiny.inventory_size = storage_warehouse_slots
 warehouse_storage_tiny.logistic_slots_count = 1
-local warehouse_buffer_tiny = createLogisticContainerTiny("warehouse", "buffer")
+local warehouse_buffer_tiny = createLogisticContainer("warehouse", "tiny", "buffer")
 warehouse_buffer_tiny.logistic_slots_count = 12
-local warehouse_requester_tiny = createLogisticContainerTiny("warehouse", "requester")
+local warehouse_requester_tiny = createLogisticContainer("warehouse", "tiny", "requester")
 warehouse_requester_tiny.logistic_slots_count = 12
 
 data:extend({

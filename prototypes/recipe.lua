@@ -21,7 +21,7 @@ data:extend({
 	-- Passive Provider Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-passive-provider",
+		name = "warehouse-passive-provider-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -30,12 +30,12 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-passive-provider"
+		result = "warehouse-passive-provider-basic"
 	},
 	-- Storage Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-storage",
+		name = "warehouse-storage-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -44,12 +44,12 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-storage"
+		result = "warehouse-storage-basic"
 	},
 	-- Active Provider Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-active-provider",
+		name = "warehouse-active-provider-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -58,12 +58,12 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-active-provider"
+		result = "warehouse-active-provider-basic"
 	},
 	-- Requester Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-requester",
+		name = "warehouse-requester-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -72,12 +72,12 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-requester"
+		result = "warehouse-requester-basic"
 	},
 	-- Buffer Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-buffer",
+		name = "warehouse-buffer-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -86,7 +86,7 @@ data:extend({
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
 		},
-		result = "warehouse-buffer"
+		result = "warehouse-buffer-basic"
 	},
 	-- Basic Storehouse
 	{
@@ -104,7 +104,7 @@ data:extend({
 	-- Passive Provider Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-passive-provider",
+		name = "storehouse-passive-provider-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -112,12 +112,12 @@ data:extend({
 			{ "logistic-chest-passive-provider", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-passive-provider"
+		result = "storehouse-passive-provider-basic"
 	},
 	-- Storage Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-storage",
+		name = "storehouse-storage-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -125,12 +125,12 @@ data:extend({
 			{ "logistic-chest-storage", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-storage"
+		result = "storehouse-storage-basic"
 	},
 	-- Active Provider Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-active-provider",
+		name = "storehouse-active-provider-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -138,12 +138,12 @@ data:extend({
 			{ "logistic-chest-active-provider", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-active-provider"
+		result = "storehouse-active-provider-basic"
 	},
 	-- Requester Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-requester",
+		name = "storehouse-requester-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -151,12 +151,12 @@ data:extend({
 			{ "logistic-chest-requester", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-requester"
+		result = "storehouse-requester-basic"
 	},
 	-- Buffer Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-buffer",
+		name = "storehouse-buffer-basic",
 		enabled = "false",
 		ingredients =
 		{
@@ -164,13 +164,13 @@ data:extend({
 			{ "logistic-chest-buffer", 1 },
 			{ "iron-stick", 4 },
 		},
-		result = "storehouse-buffer"
+		result = "storehouse-buffer-basic"
 	},
 	--     --- SMALL --
 	-- Basic Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-basic-small",
+		name = "warehouse-small",
 		enabled = "false",
 		ingredients =
 		{
@@ -178,7 +178,7 @@ data:extend({
 			{ "stone-brick", 40 },
 			{ "iron-stick", 85 },
 		},
-		result = "warehouse-basic-small"
+		result = "warehouse-small"
 	},
 	-- Passive Provider Warehouse
 	{
@@ -187,7 +187,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-small", 1 },
+			{ "warehouse-small", 1 },
 			{ "logistic-chest-passive-provider", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -201,7 +201,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-small", 1 },
+			{ "warehouse-small", 1 },
 			{ "logistic-chest-storage", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -215,7 +215,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-small", 1 },
+			{ "warehouse-small", 1 },
 			{ "logistic-chest-active-provider", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -229,7 +229,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-small", 1 },
+			{ "warehouse-small", 1 },
 			{ "logistic-chest-requester", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -243,7 +243,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-small", 1 },
+			{ "warehouse-small", 1 },
 			{ "logistic-chest-buffer", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -253,7 +253,7 @@ data:extend({
 	-- Basic Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-basic-small",
+		name = "storehouse-small",
 		enabled = "false",
 		ingredients =
 		{
@@ -261,7 +261,7 @@ data:extend({
 			{ "stone-brick", 10 },
 			{ "iron-stick", 16 },
 		},
-		result = "storehouse-basic-small"
+		result = "storehouse-small"
 	},
 	-- Passive Provider Storehouse
 	{
@@ -270,7 +270,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-small", 1 },
+			{ "storehouse-small", 1 },
 			{ "logistic-chest-passive-provider", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -283,7 +283,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-small", 1 },
+			{ "storehouse-small", 1 },
 			{ "logistic-chest-storage", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -296,7 +296,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-small", 1 },
+			{ "storehouse-small", 1 },
 			{ "logistic-chest-active-provider", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -309,7 +309,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-small", 1 },
+			{ "storehouse-small", 1 },
 			{ "logistic-chest-requester", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -322,7 +322,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-small", 1 },
+			{ "storehouse-small", 1 },
 			{ "logistic-chest-buffer", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -332,7 +332,7 @@ data:extend({
 	-- Basic Warehouse
 	{
 		type = "recipe",
-		name = "warehouse-basic-tiny",
+		name = "warehouse-tiny",
 		enabled = "false",
 		ingredients =
 		{
@@ -340,7 +340,7 @@ data:extend({
 			{ "stone-brick", 40 },
 			{ "iron-stick", 85 },
 		},
-		result = "warehouse-basic-tiny"
+		result = "warehouse-tiny"
 	},
 	-- Passive Provider Warehouse
 	{
@@ -349,7 +349,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-tiny", 1 },
+			{ "warehouse-tiny", 1 },
 			{ "logistic-chest-passive-provider", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -363,7 +363,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-tiny", 1 },
+			{ "warehouse-tiny", 1 },
 			{ "logistic-chest-storage", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -377,7 +377,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-tiny", 1 },
+			{ "warehouse-tiny", 1 },
 			{ "logistic-chest-active-provider", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -391,7 +391,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-tiny", 1 },
+			{ "warehouse-tiny", 1 },
 			{ "logistic-chest-requester", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -405,7 +405,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "warehouse-basic-tiny", 1 },
+			{ "warehouse-tiny", 1 },
 			{ "logistic-chest-buffer", 1 },
 			{ "steel-plate", 10 },
 			{ "iron-stick", 15 },
@@ -415,7 +415,7 @@ data:extend({
 	-- Basic Storehouse
 	{
 		type = "recipe",
-		name = "storehouse-basic-tiny",
+		name = "storehouse-tiny",
 		enabled = "false",
 		ingredients =
 		{
@@ -423,7 +423,7 @@ data:extend({
 			{ "stone-brick", 10 },
 			{ "iron-stick", 16 },
 		},
-		result = "storehouse-basic-tiny"
+		result = "storehouse-tiny"
 	},
 	-- Passive Provider Storehouse
 	{
@@ -432,7 +432,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-tiny", 1 },
+			{ "storehouse-tiny", 1 },
 			{ "logistic-chest-passive-provider", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -445,7 +445,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-tiny", 1 },
+			{ "storehouse-tiny", 1 },
 			{ "logistic-chest-storage", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -458,7 +458,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-tiny", 1 },
+			{ "storehouse-tiny", 1 },
 			{ "logistic-chest-active-provider", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -471,7 +471,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-tiny", 1 },
+			{ "storehouse-tiny", 1 },
 			{ "logistic-chest-requester", 1 },
 			{ "iron-stick", 4 },
 		},
@@ -484,7 +484,7 @@ data:extend({
 		enabled = "false",
 		ingredients =
 		{
-			{ "storehouse-basic-tiny", 1 },
+			{ "storehouse-tiny", 1 },
 			{ "logistic-chest-buffer", 1 },
 			{ "iron-stick", 4 },
 		},
