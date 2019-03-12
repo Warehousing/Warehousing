@@ -46,6 +46,7 @@ data:extend({
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
+		localised_description = ({"", warehouse_slots, {"item-description.warehouse-basic"}}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -95,6 +96,7 @@ data:extend({
 		selection_box = {{-2.4, -2.4}, {2.4, 2.4}},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
+		localised_description = ({"", warehouse_slots, {"item-description.warehouse-basic-small"}}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -144,6 +146,7 @@ data:extend({
 		selection_box = {{-1.9, -1.9}, {1.9, 1.9}},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
+		localised_description = ({"", warehouse_slots, {"item-description.warehouse-basic-tiny"}}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -193,6 +196,7 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
+		localised_description = ({"", storehouse_slots, {"item-description.storehouse-basic"}}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -242,6 +246,7 @@ data:extend({
 		selection_box = {{-0.95, -0.95}, {0.95, 0.95}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
+		localised_description = ({"", storehouse_slots, {"item-description.storehouse-basic-small"}}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -291,6 +296,7 @@ data:extend({
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
+		localised_description = ({"", storehouse_slots, {"item-description.storehouse-basic-tiny"}}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -419,46 +425,39 @@ data:extend({
 	warehouse_requester_tiny,
 })
 
--- attempted work in progress
---[[
-function localisedDescription (description)
-	description = "slot storage capacity"
-end
+storehouse_active_provider.localised_description = ({"", storehouse_slots, {"item-description.storehouse-active-provider-basic"}})
+storehouse_passive_provider.localised_description = ({"", storehouse_slots, {"item-description.storehouse-passive-provider-basic"}})
+storehouse_storage.localised_description = ({"", storage_storehouse_slots, {"item-description.storehouse-storage-basic"}})
+storehouse_buffer.localised_description = ({"", storehouse_slots, {"item-description.storehouse-buffer-basic"}})
+storehouse_requester.localised_description = ({"", storehouse_slots, {"item-description.storehouse-requester-basic"}})
 
-storehouse_active_provider.localised_description = storehouse_slots localisedDescription () -- ("storehouse-active-provider-basic")
-storehouse_passive_provider.localised_description = storehouse_slots localisedDescription () -- ("storehouse-passive-provider-basic")
-storehouse_storage.localised_description = storage_storehouse_slots localisedDescription () -- ("storehouse-storage-basic")
-storehouse_buffer.localised_description = storehouse_slots localisedDescription () -- ("storehouse=buffer-basic")
-storehouse_requester.localised_description = storehouse_slots localisedDescription () -- ("storehouse-requester-basic")
+storehouse_active_provider_small.localised_description = ({"", storehouse_slots, {"item-description.storehouse-active-provider-small"}})
+storehouse_passive_provider_small.localised_description = ({"", storehouse_slots, {"item-description.storehouse-passive-provider-small"}})
+storehouse_storage_small.localised_description = ({"", storage_storehouse_slots, {"item-description.storehouse-storage-small"}})
+storehouse_buffer_small.localised_description = ({"", storehouse_slots, {"item-description.storehouse-buffer-small"}})
+storehouse_requester_small.localised_description = ({"", storehouse_slots, {"item-description.storehouse-requester-small"}})
 
-storehouse_active_provider_small.localised_description = storehouse_slots localisedDescription () -- ("storehouse-active-provider-small")
-storehouse_passive_provider_small.localised_description = storehouse_slots localisedDescription () -- ("storehouse-passive-provider-small")
-storehouse_storage_small.localised_description = storage_storehouse_slots localisedDescription () -- ("storehouse-storage-small")
-storehouse_buffer_small.localised_description = storehouse_slots localisedDescription () -- ("storehouse=buffer-small")
-storehouse_requester_small.localised_description = storehouse_slots localisedDescription () -- ("storehouse-requester-small")
+storehouse_active_provider_tiny.localised_description = ({"", storehouse_slots, {"item-description.storehouse-active-provider-tiny"}})
+storehouse_passive_provider_tiny.localised_description = ({"", storehouse_slots, {"item-description.storehouse-passive-provider-basic"}})
+storehouse_storage_tiny.localised_description = ({"", storage_storehouse_slots, {"item-description.storehouse-storage-tiny"}})
+storehouse_buffer_tiny.localised_description = ({"", storehouse_slots, {"item-description.storehouse-buffer-tiny"}})
+storehouse_requester_tiny.localised_description = ({"", storehouse_slots, {"item-description.storehouse-requester-tiny"}})
 
-storehouse_active_provider_tiny.localised_description = storehouse_slots localisedDescription () -- ("storehouse-active-provider-tiny")
-storehouse_passive_provider_tiny.localised_description = storehouse_slots localisedDescription () -- ("storehouse-passive-provider-tiny")
-storehouse_storage_tiny.localised_description = storage_storehouse_slots localisedDescription () -- ("storehouse-storage-tiny")
-storehouse_buffer_tiny.localised_description = storehouse_slots localisedDescription () -- ("storehouse=buffer-tiny")
-storehouse_requester_tiny.localised_description = storehouse_slots localisedDescription () -- ("storehouse-requester-tiny")
+warehouse_active_provider.localised_description = ({"", warehouse_slots, {"item-description.warehouse-active-provider-basic"}})
+warehouse_passive_provider.localised_description = ({"", warehouse_slots, {"item-description.warehouse-passive-provider-basic"}})
+warehouse_storage.localised_description = ({"", storage_warehouse_slots, {"item-description.warehouse-storage-basic"}})
+warehouse_buffer.localised_description = ({"", warehouse_slots, {"item-description.storehouse-passive-provider-basic"}})
+warehouse_requester.localised_description = ({"", warehouse_slots, {"item-description.warehouse-requester-basic"}})
 
-warehouse_active_provider.localised_description = warehouse_slots localisedDescription () -- ("warehouse-active-provider-basic")
-warehouse_passive_provider.localised_description = warehouse_slots localisedDescription () -- ("warehouse-passive-provider-basic")
-warehouse_storage.localised_description = storage_warehouse_slots localisedDescription () -- ("warehouse-storage-basic")
-warehouse_buffer.localised_description = warehouse_slots localisedDescription () -- ("warehouse=buffer-basic")
-warehouse_requester.localised_description = warehouse_slots localisedDescription () -- ("warehouse-requester-basic")
+warehouse_active_provider_small.localised_description = ({"", warehouse_slots, {"item-description.warehouse-active-provider-small"}})
+warehouse_passive_provider_small.localised_description = ({"", warehouse_slots, {"item-description.warehouse-passive-provider-small"}})
+warehouse_storage_small.localised_description = ({"", storage_warehouse_slots, {"item-description.warehouse-storage-small"}})
+warehouse_buffer_small.localised_description = ({"", warehouse_slots, {"item-description.warehouse-buffer-small"}})
+warehouse_requester_small.localised_description = ({"", warehouse_slots, {"item-description.warehouse-requester-small"}})
 
-warehouse_active_provider_small.localised_description = warehouse_slots localisedDescription () -- ("warehouse-active-provider-small")
-warehouse_passive_provider_small.localised_description = warehouse_slots localisedDescription () -- ("warehouse-passive-provider-small")
-warehouse_storage_small.localised_description = storage_warehouse_slots localisedDescription () -- ("warehouse-storage-small")
-warehouse_buffer_small.localised_description = warehouse_slots localisedDescription () -- ("warehouse=buffer-small")
-warehouse_requester_small.localised_description = warehouse_slots localisedDescription () -- ("warehouse-requester-small")
+warehouse_active_provider_tiny.localised_description = ({"", warehouse_slots, {"item-description.warehouse-active-provider-tiny"}})
+warehouse_passive_provider_tiny.localised_description = ({"", warehouse_slots, {"item-description.warehouse-passive-provider-tiny"}})
+warehouse_storage_tiny.localised_description = ({"", storage_warehouse_slots, {"item-description.warehouse-storage-tiny"}})
+warehouse_buffer_tiny.localised_description = ({"", warehouse_slots, {"item-description.warehouse-buffer-tiny"}})
+warehouse_requester_tiny.localised_description = ({"", warehouse_slots, {"item-description.warehouse-requester-tiny"}})
 
-warehouse_active_provider_tiny.localised_description = warehouse_slots localisedDescription () -- ("warehouse-active-provider-tiny")
-warehouse_passive_provider_tiny.localised_description = warehouse_slots localisedDescription () -- ("warehouse-passive-provider-tiny")
-warehouse_storage_tiny.localised_description = storage_warehouse_slots localisedDescription () -- ("warehouse-storage-tiny")
-warehouse_buffer_tiny.localised_description = warehouse_slots localisedDescription () -- ("warehouse=buffer-tiny")
-warehouse_requester_tiny.localised_description = warehouse_slots localisedDescription () -- ("warehouse-requester-tiny")
---
---]]
