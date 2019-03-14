@@ -6,7 +6,7 @@
  * See License.txt in the project directory for license information.
 --]]
 
-local localeDescription = {"item-description.warehousing-description"}
+local locale_description = "item-description.warehousing-description"
 local warehouse_slots = 1800
 local storehouse_slots = 450
 local storage_warehouse_slots = 2000
@@ -46,7 +46,7 @@ data:extend({
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
-		localised_description = ({"", warehouse_slots, localeDescription}),
+		localised_description = ({locale_description, warehouse_slots}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -95,7 +95,7 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
-		localised_description = ({"", storehouse_slots, localeDescription}),
+		localised_description = ({locale_description, storehouse_slots}),
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 		picture =
 		{
@@ -167,14 +167,14 @@ data:extend({
 	warehouse_requester,
 })
 
-storehouse_active_provider.localised_description = ({"", storehouse_slots, localeDescription})
-storehouse_passive_provider.localised_description = ({"", storehouse_slots, localeDescription})
-storehouse_storage.localised_description = ({"", storage_storehouse_slots, localeDescription})
-storehouse_buffer.localised_description = ({"", storehouse_slots, localeDescription})
-storehouse_requester.localised_description = ({"", storehouse_slots, localeDescription})
+storehouse_active_provider.localised_description = ({locale_description, storehouse_slots})
+storehouse_passive_provider.localised_description = ({locale_description, storehouse_slots})
+storehouse_storage.localised_description = ({locale_description, storage_storehouse_slots})
+storehouse_buffer.localised_description = ({locale_description, storehouse_slots})
+storehouse_requester.localised_description = ({locale_description, storehouse_slots})
 
-warehouse_active_provider.localised_description = ({"", warehouse_slots, localeDescription})
-warehouse_passive_provider.localised_description = ({"", warehouse_slots, localeDescription})
-warehouse_storage.localised_description = ({"", storage_warehouse_slots, localeDescription})
-warehouse_buffer.localised_description = ({"", warehouse_slots, localeDescription})
-warehouse_requester.localised_description = ({"", warehouse_slots, localeDescription})
+warehouse_active_provider.localised_description = ({locale_description, warehouse_slots})
+warehouse_passive_provider.localised_description = ({locale_description, warehouse_slots})
+warehouse_storage.localised_description = ({locale_description, storage_warehouse_slots})
+warehouse_buffer.localised_description = ({locale_description, warehouse_slots})
+warehouse_requester.localised_description = ({locale_description, warehouse_slots})
