@@ -91,7 +91,7 @@ data:extend({
 				percent = 90
 			}
 		},
-		collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+		collision_box = {{-2.1, -2.1}, {2.1, 2.1}},
 		selection_box = {{-2.4, -2.4}, {2.4, 2.4}},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
@@ -140,7 +140,7 @@ data:extend({
 				percent = 90
 			}
 		},
-		collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
+		collision_box = {{-1.6, -1.6}, {1.6, 1.6}},
 		selection_box = {{-1.9, -1.9}, {1.9, 1.9}},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
@@ -238,7 +238,7 @@ data:extend({
 				percent = 90
 			}
 		},
-		collision_box = {{-0.95, -0.95}, {0.95, 0.95}},
+		collision_box = {{-0.65, -0.65}, {0.65, 0.65}},
 		selection_box = {{-0.95, -0.95}, {0.95, 0.95}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
@@ -287,7 +287,7 @@ data:extend({
 				percent = 90
 			}
 		},
-		collision_box = {{-0.5, -0.5}, {0.5, 0.5}},
+		collision_box = {{-0.2, -0.2}, {0.2, 0.2}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
