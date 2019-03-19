@@ -162,7 +162,7 @@ data:extend(
 	-- Logistics Warehouse Research 1
 	{
 		type = "technology",
-		name = "warehouse-logistics-research-1-tiny",
+		name = "warehouse-logistics-research-tiny-1",
 		icon = "__Warehousing__/graphics/research/warehouse-logistics-research-tiny.png",
 		icon_size = 128,
 		effects =
@@ -215,7 +215,7 @@ data:extend(
 	-- Logistics Warehouse Research 2
 	{
 		type = "technology",
-		name = "warehouse-logistics-research-2-tiny",
+		name = "warehouse-logistics-research-tiny-2",
 		icon = "__Warehousing__/graphics/research/warehouse-logistics-research-tiny.png",
 		icon_size = 128,
 		effects =
@@ -269,7 +269,7 @@ data:extend(
 				recipe = "storehouse-buffer-tiny",
 			},
 		},
-		prerequisites = { "warehouse-logistics-research-1-tiny", "logistic-system" },
+		prerequisites = { "warehouse-logistics-research-tiny-1", "logistic-system" },
 		unit =
 		{
 			count = 600,
@@ -284,4 +284,3 @@ data:extend(
 		order = "c-k-b"
 	},
 })
-
