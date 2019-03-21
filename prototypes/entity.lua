@@ -19,6 +19,43 @@ if settings.startup["Warehousing-sixteen-mode"].value then
 	storage_storehouse_slots = 300
 end
 
+function shiftX(modifier_x, x)
+	return modifier_x + x
+end
+function shiftY(modifier_y, y)
+	return modifier_y + y
+end
+
+local warehouse_basic_shift_x = 1.6
+local warehouse_basic_shift_y = 0.6
+local warehouse_basic_connector_main_shift = {shiftX(warehouse_basic_shift_x, 0.578125), shiftY(warehouse_basic_shift_y, 0.625)}
+local warehouse_basic_connector_shadow_shift = {shiftX(warehouse_basic_shift_x, 0.71875), shiftY(warehouse_basic_shift_y, 0.875)}
+local warehouse_basic_led_red_shift = {shiftX(warehouse_basic_shift_x, 0.578125), shiftY(warehouse_basic_shift_y, 0.59375)}
+local warehouse_basic_led_green_shift = {shiftX(warehouse_basic_shift_x, 0.578125), shiftY(warehouse_basic_shift_y, 0.59375)}
+local warehouse_basic_led_blue_shift = {shiftX(warehouse_basic_shift_x, 0.578125), shiftY(warehouse_basic_shift_y, 0.59375)}
+local warehouse_basic_led_blue_off_shift = {shiftX(warehouse_basic_shift_x, 0.578125), shiftY(warehouse_basic_shift_y, 0.59375)}
+local warehouse_basic_wire_pins_shift = {shiftX(warehouse_basic_shift_x, 0.578125), shiftY(warehouse_basic_shift_y, 0.59375)}
+local warehouse_basic_wire_pins_shadow_shift = {shiftX(warehouse_basic_shift_x, 0.734375), shiftY(warehouse_basic_shift_y, 0.71875)}
+local warehouse_basic_wire_connection_point_shadow_red_shift = {shiftX(warehouse_basic_shift_x, 0.85), shiftY(warehouse_basic_shift_y, 0.9)}
+local warehouse_basic_wire_connection_point_shadow_green_shift = {shiftX(warehouse_basic_shift_x, 1.05), shiftY(warehouse_basic_shift_y, 0.95)}
+local warehouse_basic_wire_connection_point_wire_red_shift = {shiftX(warehouse_basic_shift_x, 0.675), shiftY(warehouse_basic_shift_y, 0.775)}
+local warehouse_basic_wire_connection_point_wire_green_shift = {shiftX(warehouse_basic_shift_x, 0.875), shiftY(warehouse_basic_shift_y, 0.825) }
+
+local storehouse_basic_shift_x = 0.15
+local storehouse_basic_shift_y = -0.35
+local storehouse_basic_connector_main_shift = {shiftX(storehouse_basic_shift_x, 0.578125), shiftY(storehouse_basic_shift_y, 0.625)}
+local storehouse_basic_connector_shadow_shift = {shiftX(storehouse_basic_shift_x, 0.71875), shiftY(storehouse_basic_shift_y, 0.875)}
+local storehouse_basic_led_red_shift = {shiftX(storehouse_basic_shift_x, 0.578125), shiftY(storehouse_basic_shift_y, 0.59375)}
+local storehouse_basic_led_green_shift = {shiftX(storehouse_basic_shift_x, 0.578125), shiftY(storehouse_basic_shift_y, 0.59375)}
+local storehouse_basic_led_blue_shift = {shiftX(storehouse_basic_shift_x, 0.578125), shiftY(storehouse_basic_shift_y, 0.59375)}
+local storehouse_basic_led_blue_off_shift = {shiftX(storehouse_basic_shift_x, 0.578125), shiftY(storehouse_basic_shift_y, 0.59375)}
+local storehouse_basic_wire_pins_shift = {shiftX(storehouse_basic_shift_x, 0.578125), shiftY(storehouse_basic_shift_y, 0.59375)}
+local storehouse_basic_wire_pins_shadow_shift = {shiftX(storehouse_basic_shift_x, 0.734375), shiftY(storehouse_basic_shift_y, 0.71875)}
+local storehouse_basic_wire_connection_point_shadow_red_shift = {shiftX(storehouse_basic_shift_x, 0.85), shiftY(storehouse_basic_shift_y, 0.9)}
+local storehouse_basic_wire_connection_point_shadow_green_shift = {shiftX(storehouse_basic_shift_x, 1.05), shiftY(storehouse_basic_shift_y, 0.95)}
+local storehouse_basic_wire_connection_point_wire_red_shift = {shiftX(storehouse_basic_shift_x, 0.675), shiftY(storehouse_basic_shift_y, 0.775)}
+local storehouse_basic_wire_connection_point_wire_green_shift = {shiftX(storehouse_basic_shift_x, 0.875), shiftY(storehouse_basic_shift_y, 0.825)}
+
 -- generate base storehouse and warehouse
 data:extend({
 	{
@@ -55,17 +92,113 @@ data:extend({
 			shift = {1.0, -0.3},
 		},
 		circuit_wire_max_distance = 7.5,
+		circuit_connector_sprites = {
+			led_light = {
+				intensity = 0.8,
+				size = 0.9,
+			},
+			blue_led_light_offset = {
+				0.609375,
+				0.890625,
+			},
+			red_green_led_light_offset = {
+				0.59375,
+				0.78125,
+			},
+			connector_main = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04a-base-sequence.png",
+				height = 50,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_connector_main_shift,
+				width = 52,
+				x = 364,
+				y = 50,
+			},
+			connector_shadow = {
+				draw_as_shadow = true,
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04b-base-shadow-sequence.png",
+				height = 46,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_connector_shadow_shift,
+				width = 62,
+				x = 434,
+				y = 46,
+			},
+			led_red = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04i-red-LED-sequence.png",
+				height = 46,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_led_red_shift,
+				width = 48,
+				x = 336,
+				y = 46,
+			},
+			led_green = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04h-green-LED-sequence.png",
+				height = 46,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_led_green_shift,
+				width = 48,
+				x = 336,
+				y = 46,
+			},
+			led_blue = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04e-blue-LED-on-sequence.png",
+				height = 60,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_led_blue_shift,
+				width = 60,
+				x = 420,
+				y = 60,
+			},
+			led_blue_off = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04f-blue-LED-off-sequence.png",
+				height = 44,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_led_blue_off_shift,
+				width = 46,
+				x = 322,
+				y = 44,
+			},
+			wire_pins = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04c-wire-sequence.png",
+				height = 58,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_wire_pins_shift,
+				width = 62,
+				x = 434,
+				y = 58,
+			},
+			wire_pins_shadow = {
+				draw_as_shadow = true,
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04d-wire-shadow-sequence.png",
+				height = 54,
+				priority = "low",
+				scale = 0.5,
+				shift = warehouse_basic_wire_pins_shadow_shift,
+				width = 70,
+				x = 490,
+				y = 54,
+			},
+		},
 		circuit_wire_connection_point =
 		{
 			shadow =
 			{
-				red = {2.52, 0.65},
-				green = {2.01, 0.65}
+				red = warehouse_basic_wire_connection_point_shadow_red_shift,
+				green = warehouse_basic_wire_connection_point_shadow_green_shift,
 			},
 			wire =
 			{
-				red = {2.22, 0.32},
-				green = {1.71, 0.32}
+				red = warehouse_basic_wire_connection_point_wire_red_shift,
+				green = warehouse_basic_wire_connection_point_wire_green_shift,
 			}
 		},
 	},
@@ -103,17 +236,113 @@ data:extend({
 			shift = {0.421875, 0},
 		},
 		circuit_wire_max_distance = 7.5,
+		circuit_connector_sprites = {
+			led_light = {
+				intensity = 0.8,
+				size = 0.9,
+			},
+			blue_led_light_offset = {
+				0.609375,
+				0.890625,
+			},
+			red_green_led_light_offset = {
+				0.59375,
+				0.78125,
+			},
+			connector_main = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04a-base-sequence.png",
+				height = 50,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_connector_main_shift,
+				width = 52,
+				x = 364,
+				y = 50,
+			},
+			connector_shadow = {
+				draw_as_shadow = true,
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04b-base-shadow-sequence.png",
+				height = 46,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_connector_shadow_shift,
+				width = 62,
+				x = 434,
+				y = 46,
+			},
+			led_red = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04i-red-LED-sequence.png",
+				height = 46,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_led_red_shift,
+				width = 48,
+				x = 336,
+				y = 46,
+			},
+			led_green = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04h-green-LED-sequence.png",
+				height = 46,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_led_green_shift,
+				width = 48,
+				x = 336,
+				y = 46,
+			},
+			led_blue = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04e-blue-LED-on-sequence.png",
+				height = 60,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_led_blue_shift,
+				width = 60,
+				x = 420,
+				y = 60,
+			},
+			led_blue_off = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04f-blue-LED-off-sequence.png",
+				height = 44,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_led_blue_off_shift,
+				width = 46,
+				x = 322,
+				y = 44,
+			},
+			wire_pins = {
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04c-wire-sequence.png",
+				height = 58,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_wire_pins_shift,
+				width = 62,
+				x = 434,
+				y = 58,
+			},
+			wire_pins_shadow = {
+				draw_as_shadow = true,
+				filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04d-wire-shadow-sequence.png",
+				height = 54,
+				priority = "low",
+				scale = 0.5,
+				shift = storehouse_basic_wire_pins_shadow_shift,
+				width = 70,
+				x = 490,
+				y = 54,
+			},
+		},
 		circuit_wire_connection_point =
 		{
 			shadow =
 			{
-				red = {0.56, -0.6},
-				green = {0.26, -0.6}
+				red = storehouse_basic_wire_connection_point_shadow_red_shift,
+				green = storehouse_basic_wire_connection_point_shadow_green_shift,
 			},
 			wire =
 			{
-				red = {0.16, -0.9},
-				green = {-0.16, -0.9}
+				red = storehouse_basic_wire_connection_point_wire_red_shift,
+				green = storehouse_basic_wire_connection_point_wire_green_shift,
 			}
 		},
 	},
