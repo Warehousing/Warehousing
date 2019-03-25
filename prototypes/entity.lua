@@ -19,12 +19,6 @@ if settings.startup["Warehousing-sixteen-mode"].value then
 	storage_storehouse_slots = 300
 end
 
-local warehouse_basic_shift_x = 1.6
-local warehouse_basic_shift_y = 0.6
-
-local storehouse_basic_shift_x = 0.15
-local storehouse_basic_shift_y = -0.35
-
 function shift(modifier, value)
 	return modifier + value
 end
@@ -168,11 +162,11 @@ function wireShift(shift_x, shift_y)
 	return w
 end
 
-local warehouse_basic_connector_sprites = circuitConnectorSprites(warehouse_basic_shift_x, warehouse_basic_shift_y)
-local warehouse_basic_wire_connection_point = wireShift(warehouse_basic_shift_x, warehouse_basic_shift_y)
+local warehouse_basic_connector_sprites = circuitConnectorSprites(1.6, 0.6)
+local warehouse_basic_wire_connection_point = wireShift(1.6, 0.6)
 
-local storehouse_basic_connector_sprites = circuitConnectorSprites(storehouse_basic_shift_x, storehouse_basic_shift_y)
-local storehouse_basic_wire_connection_point = wireShift(storehouse_basic_shift_x, storehouse_basic_shift_y)
+local storehouse_basic_connector_sprites = circuitConnectorSprites(0.15, -0.35)
+local storehouse_basic_wire_connection_point = wireShift(0.15, -0.35)
 
 -- generate base storehouse and warehouse
 data:extend({
