@@ -175,19 +175,21 @@ Storehouses contributed by Hanniballo. Updates for Factorio 0.15 contributed by 
 
 Translations kindly provided by the following people:
 
-| <!--flag-->    |       Language         |                          Translator(s)                           |
-|----------------|------------------------|------------------------------------------------------------------|
-| :south_africa: | Afrikaans              | Anoyomouse<br>@Yuuki2012                                         |
-| :cn:           | Chinese (Traditional)  | artemkiselevvloger                                               |
-| :fr:           | French                 | Hasturcraft<br>rom5921                                           |
-| :de:           | German                 | apcnc<br>honkinator22<br>Optera                                  |
-| :hungary:      | Hungarian              | artemkiselevvloger                                               |
-| :jp:           | Japanese               | Quifon                                                           |
-| :kr:           | Korean                 | @GimoXagros                                                      |
-| :poland:       | Polish                 | diilmac<br>Nalapl3<br>sayonara4747                               |
-| :brazil:       | Portuguese (Brazilian) | @RaphaelNeumann<br>@scarsick<br>vini84200<br>artemkiselevvloger  |
-| :ru:           | Russian                | apriori<br>Oceanel<br>bjiomspeed<br>applevine1                   |
-| :es:           | Spanish                | frenchiveruti<br>black.dreicous<br>leortegacaudillo              |
+| <!--flag-->      |       Language         |                          Translator(s)                           |
+|------------------|------------------------|------------------------------------------------------------------|
+| :south_africa:   | Afrikaans              | Anoyomouse<br>@Yuuki2012                                         |
+| :cn:             | Chinese (Traditional)  | artemkiselevvloger<br>willy04wu69                                |
+| :czech_republic: | Czech                  | kukuc473                                                         |
+| :fr:             | French                 | Hasturcraft<br>rom5921                                           |
+| :de:             | German                 | apcnc<br>honkinator22<br>Opterai<br>silentpiranha                |
+| :hungary:        | Hungarian              | artemkiselevvloger                                               |
+| :jp:             | Japanese               | Quifon                                                           |
+| :kr:             | Korean                 | @GimoXagros                                                      |
+| :poland:         | Polish                 | diilmac<br>Nalapl3<br>sayonara4747                               |
+| :brazil:         | Portuguese (Brazilian) | @RaphaelNeumann<br>@scarsick<br>vini84200<br>artemkiselevvloger  |
+| :ru:             | Russian                | apriori<br>Oceanel<br>bjiomspeed<br>applevine1<br>axell2580      |
+| :es:             | Spanish                | frenchiveruti<br>black.dreicous<br>leortegacaudillo              |
+| :tr:             | Turkish                | orya                                                             |
 
 
   [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-basic.png

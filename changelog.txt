@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 2019-03-28
+
+  Changed:
+    - Small visual tweaks to circuit wire connection points (from JDOGG88)
+  Translations:
+    - Czech added (thanks kukuc473)
+    - Chinese (Traditional) updated (thanks willy04wu69)
+    - German updated (thanks silentpiranha)
+    - Russian updated (thanks axell2580)
+    - Turkish updated (thanks orya)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 2019-03-06
 
