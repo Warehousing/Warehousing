@@ -3,402 +3,115 @@
  *
  * See License.txt in the project directory for license information.
 --]]
+function createItem(name, logistic_type, size, order)
+	local i = table.deepcopy(data.raw["item"]["steel-chest"])
+	i.type = "item"
+	i.icon_size = 32
+	i.order = order
+	i.stack_size = 15
+	if logistic_type == nil then
+		i.name = name.."-"..size
+		i.icon = "__Warehousing__/graphics/icons/"..name.."-"..size..".png"
+		i.subgroup = "warehousing"
+		i.place_result = name.."-"..size
+	else
+		i.name = name.."-"..logistic_type.."-"..size
+		i.icon = "__Warehousing__/graphics/icons/"..name.."-"..logistic_type.."-"..size..".png"
+		i.subgroup = "logistic-warehousing"
+		i.place_result = name.."-"..logistic_type.."-"..size
+	end
+	return i
+end
+
+local storehouse_basic = createItem("storehouse", nil, "basic", "a[storehouse-basic]")
+local storehouse_active_provider_basic = createItem("storehouse", "active-provider", "basic", "a[logistic-storehouse-basic]")
+local storehouse_buffer_basic = createItem("storehouse", "buffer", "basic", "a[logistic-storehouse-basic]")
+local storehouse_passive_provider_basic = createItem("storehouse", "passive-provider", "basic", "a[logistic-storehouse-basic]")
+local storehouse_requester_basic = createItem("storehouse", "requester", "basic", "a[logistic-storehouse-basic]")
+local storehouse_storage_basic = createItem("storehouse", "storage", "basic", "a[logistic-storehouse-basic]")
+
+local storehouse_small = createItem("storehouse", nil, "small", "a[storehouse-small]")
+local storehouse_active_provider_small = createItem("storehouse", "active-provider", "small", "d[logistic-storehouse-small]")
+local storehouse_buffer_small = createItem("storehouse", "buffer", "small", "d[logistic-storehouse-small]")
+local storehouse_passive_provider_small = createItem("storehouse", "passive-provider", "small", "d[logistic-storehouse-small]")
+local storehouse_requester_small = createItem("storehouse", "requester", "small", "d[logistic-storehouse-small]")
+local storehouse_storage_small = createItem("storehouse", "storage", "small", "d[logistic-storehouse-small]")
+
+local storehouse_tiny = createItem("storehouse", nil, "tiny", "a[storehouse-tiny]")
+local storehouse_active_provider_tiny = createItem("storehouse", "active-provider", "tiny", "f[logistic-storehouse-tiny]")
+local storehouse_buffer_tiny = createItem("storehouse", "buffer", "tiny", "f[logistic-storehouse-tiny]")
+local storehouse_passive_provider_tiny = createItem("storehouse", "passive-provider", "tiny", "f[logistic-storehouse-tiny]")
+local storehouse_requester_tiny = createItem("storehouse", "requester", "tiny", "f[logistic-storehouse-tiny]")
+local storehouse_storage_tiny = createItem("storehouse", "storage", "tiny", "f[logistic-storehouse-tiny]")
+
+local warehouse_basic = createItem("warehouse", nil, "basic", "b[warehouse-basic]")
+local warehouse_active_provider_basic = createItem("warehouse", "active-provider", "basic", "b[logistic-warehouse-basic]")
+local warehouse_buffer_basic = createItem("warehouse", "buffer", "basic", "b[logistic-warehouse-basic]")
+local warehouse_passive_provider_basic = createItem("warehouse", "passive-provider", "basic", "b[logistic-warehouse-basic]")
+local warehouse_requester_basic = createItem("warehouse", "requester", "basic", "b[logistic-warehouse-basic]")
+local warehouse_storage_basic = createItem("warehouse", "storage", "basic", "b[logistic-warehouse-basic]")
+
+local warehouse_small = createItem("warehouse", nil, "small", "b[warehouse-small]")
+local warehouse_active_provider_small = createItem("warehouse", "active-provider", "small", "e[logistic-warehouse-small]")
+local warehouse_buffer_small = createItem("warehouse", "buffer", "small", "e[logistic-warehouse-small]")
+local warehouse_passive_provider_small = createItem("warehouse", "passive-provider", "small", "e[logistic-warehouse-small]")
+local warehouse_requester_small = createItem("warehouse", "requester", "small", "e[logistic-warehouse-small]")
+local warehouse_storage_small = createItem("warehouse", "storage", "small", "e[logistic-warehouse-small]")
+
+local warehouse_tiny = createItem("warehouse", nil, "tiny", "b[warehouse-tiny]")
+local warehouse_active_provider_tiny = createItem("warehouse", "active-provider", "tiny", "g[logistic-warehouse-tiny]")
+local warehouse_buffer_tiny = createItem("warehouse", "buffer", "tiny", "g[logistic-warehouse-tiny]")
+local warehouse_passive_provider_tiny = createItem("warehouse", "passive-provider", "tiny", "g[logistic-warehouse-tiny]")
+local warehouse_requester_tiny = createItem("warehouse", "requester", "tiny", "g[logistic-warehouse-tiny]")
+local warehouse_storage_tiny = createItem("warehouse", "storage", "tiny", "g[logistic-warehouse-tiny]")
+
 data:extend({
-	-- Basic Warehouse
+	storehouse_basic,
+	storehouse_active_provider_basic,
+	storehouse_buffer_basic,
+	storehouse_passive_provider_basic,
+	storehouse_requester_basic,
+	storehouse_storage_basic,
+	storehouse_small,
+	storehouse_active_provider_small,
+	storehouse_buffer_small,
+	storehouse_passive_provider_small,
+	storehouse_requester_small,
+	storehouse_storage_small,
+	storehouse_tiny,
+	storehouse_active_provider_tiny,
+	storehouse_buffer_tiny,
+	storehouse_passive_provider_tiny,
+	storehouse_requester_tiny,
+	storehouse_storage_tiny,
+	warehouse_basic,
+	warehouse_active_provider_basic,
+	warehouse_buffer_basic,
+	warehouse_passive_provider_basic,
+	warehouse_requester_basic,
+	warehouse_storage_basic,
+	warehouse_small,
+	warehouse_active_provider_small,
+	warehouse_buffer_small,
+	warehouse_passive_provider_small,
+	warehouse_requester_small,
+	warehouse_storage_small,
+	warehouse_tiny,
+	warehouse_active_provider_tiny,
+	warehouse_buffer_tiny,
+	warehouse_passive_provider_tiny,
+	warehouse_requester_tiny,
+	warehouse_storage_tiny,
 	{
-		type = "item",
-		name = "warehouse-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-basic.png",
-		icon_size = 32,
-		subgroup = "storage",
-		order = "a[items]-c[warehouse]-a[base]",
-		place_result = "warehouse-basic",
-		stack_size = 15,
+		type = "item-subgroup",
+		name = "warehousing",
+		group = "logistics",
+		order = "a",
 	},
-	-- Passive Provider Warehouse
 	{
-		type = "item",
-		name = "warehouse-passive-provider-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-passive-provider-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]-d[warehouse]",
-		place_result = "warehouse-passive-provider-basic",
-		stack_size = 15,
-	},
-	-- Storage Warehouse
-	{
-		type = "item",
-		name = "warehouse-storage-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-storage-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]-d[warehouse]",
-		place_result = "warehouse-storage-basic",
-		stack_size = 15,
-	},
-	-- Active Provider Warehouse
-	{
-		type = "item",
-		name = "warehouse-active-provider-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-active-provider-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]-d[warehouse]",
-		place_result = "warehouse-active-provider-basic",
-		stack_size = 15,
-	},
-	-- Requester Warehouse
-	{
-		type = "item",
-		name = "warehouse-requester-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-requester-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-e[logistic-chest-requester]-d[warehouse]",
-		place_result = "warehouse-requester-basic",
-		stack_size = 15,
-	},
-	-- Buffer Warehouse
-	{
-		type = "item",
-		name = "warehouse-buffer-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-buffer-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-d[logistic-chest-buffer]-d[warehouse]",
-		place_result = "warehouse-buffer-basic",
-		stack_size = 15,
-	},
-	-- Basic Warehouse Small
-	{
-		type = "item",
-		name = "warehouse-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-small.png",
-		icon_size = 32,
-		subgroup = "storage",
-		order = "a[items]-c[warehouse]-b[small]",
-		place_result = "warehouse-small",
-		stack_size = 15,
-	},
-	-- Passive Provider Warehouse Small
-	{
-		type = "item",
-		name = "warehouse-passive-provider-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-passive-provider-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]-e[warehouse-small]",
-		place_result = "warehouse-passive-provider-small",
-		stack_size = 15,
-	},
-	-- Storage Warehouse Small
-	{
-		type = "item",
-		name = "warehouse-storage-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-storage-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]-e[warehouse-small]",
-		place_result = "warehouse-storage-small",
-		stack_size = 15,
-	},
-	-- Active Provider Warehouse
-	{
-		type = "item",
-		name = "warehouse-active-provider-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-active-provider-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]-e[warehouse-small]",
-		place_result = "warehouse-active-provider-small",
-		stack_size = 15,
-	},
-	-- Requester Warehouse Small
-	{
-		type = "item",
-		name = "warehouse-requester-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-requester-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-e[logistic-chest-requester]-e[warehouse-small]",
-		place_result = "warehouse-requester-small",
-		stack_size = 15,
-	},
-	-- Buffer Warehouse Small
-	{
-		type = "item",
-		name = "warehouse-buffer-small",
-		icon = "__Warehousing__/graphics/icons/warehouse-buffer-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-d[logistic-chest-buffer]-e[warehouse-small]",
-		place_result = "warehouse-buffer-small",
-		stack_size = 15,
-	},
-	-- Basic Warehouse Tiny
-	{
-		type = "item",
-		name = "warehouse-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-tiny.png",
-		icon_size = 32,
-		subgroup = "storage",
-		order = "a[items]-c[warehouse]-c[tiny]",
-		place_result = "warehouse-tiny",
-		stack_size = 15,
-	},
-	-- Passive Provider Warehouse Tiny
-	{
-		type = "item",
-		name = "warehouse-passive-provider-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-passive-provider-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]-f[warehouse-tiny]",
-		place_result = "warehouse-passive-provider-tiny",
-		stack_size = 15,
-	},
-	-- Storage Warehouse Tiny
-	{
-		type = "item",
-		name = "warehouse-storage-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-storage-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]-f[warehouse-tiny]",
-		place_result = "warehouse-storage-tiny",
-		stack_size = 15,
-	},
-	-- Active Provider Warehouse Tiny
-	{
-		type = "item",
-		name = "warehouse-active-provider-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-active-provider-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]-f[warehouse-tiny]",
-		place_result = "warehouse-active-provider-tiny",
-		stack_size = 15,
-	},
-	-- Requester Warehouse Tiny
-	{
-		type = "item",
-		name = "warehouse-requester-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-requester-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-e[logistic-chest-requester]-f[warehouse-tiny]",
-		place_result = "warehouse-requester-tiny",
-		stack_size = 15,
-	},
-	-- Buffer Warehouse Tiny
-	{
-		type = "item",
-		name = "warehouse-buffer-tiny",
-		icon = "__Warehousing__/graphics/icons/warehouse-buffer-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-d[logistic-chest-buffer]-f[warehouse-tiny]",
-		place_result = "warehouse-buffer-tiny",
-		stack_size = 15,
-	},
-	-- Basic Storehouse
-	{
-		type = "item",
-		name = "storehouse-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-basic.png",
-		icon_size = 32,
-		subgroup = "storage",
-		order = "a[items]-c[storehouse]-a[base]",
-		place_result = "storehouse-basic",
-		stack_size = 15,
-	},
-	-- Passive Provider Storehouse
-	{
-		type = "item",
-		name = "storehouse-passive-provider-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-passive-provider-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]-a[storehouse]",
-		place_result = "storehouse-passive-provider-basic",
-		stack_size = 15,
-	},
-	-- Storage Storehouse
-	{
-		type = "item",
-		name = "storehouse-storage-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-storage-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]-a[storehouse]",
-		place_result = "storehouse-storage-basic",
-		stack_size = 15,
-	},
-	-- Active Provider Storehouse
-	{
-		type = "item",
-		name = "storehouse-active-provider-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-active-provider-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]-a[storehouse]",
-		place_result = "storehouse-active-provider-basic",
-		stack_size = 15,
-	},
-	-- Requester Storehouse
-	{
-		type = "item",
-		name = "storehouse-requester-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-requester-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-e[logistic-chest-requester]-a[storehouse]",
-		place_result = "storehouse-requester-basic",
-		stack_size = 15,
-	},
-	-- Buffer Storehouse
-	{
-		type = "item",
-		name = "storehouse-buffer-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-buffer-basic.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-d[logistic-chest-buffer]-a[storehouse]",
-		place_result = "storehouse-buffer-basic",
-		stack_size = 15,
-	},
-	-- Basic Storehouse Small
-	{
-		type = "item",
-		name = "storehouse-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-small.png",
-		icon_size = 32,
-		subgroup = "storage",
-		order = "a[items]-c[storehouse]-b[small]",
-		place_result = "storehouse-small",
-		stack_size = 15,
-	},
-	-- Passive Provider Storehouse Small
-	{
-		type = "item",
-		name = "storehouse-passive-provider-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-passive-provider-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]-b[storehouse-small]",
-		place_result = "storehouse-passive-provider-small",
-		stack_size = 15,
-	},
-	-- Storage Storehouse Small
-	{
-		type = "item",
-		name = "storehouse-storage-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-storage-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]-b[storehouse-small]",
-		place_result = "storehouse-storage-small",
-		stack_size = 15,
-	},
-	-- Active Provider Storehouse Small
-	{
-		type = "item",
-		name = "storehouse-active-provider-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-active-provider-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]-b[storehouse-small]",
-		place_result = "storehouse-active-provider-small",
-		stack_size = 15,
-	},
-	-- Requester Storehouse Small
-	{
-		type = "item",
-		name = "storehouse-requester-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-requester-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-e[logistic-chest-requester]-b[storehouse-small]",
-		place_result = "storehouse-requester-small",
-		stack_size = 15,
-	},
-	-- Buffer Storehouse Small
-	{
-		type = "item",
-		name = "storehouse-buffer-small",
-		icon = "__Warehousing__/graphics/icons/storehouse-buffer-small.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-d[logistic-chest-buffer]-b[storehouse-small]",
-		place_result = "storehouse-buffer-small",
-		stack_size = 15,
-	},
-	-- Basic Storehouse Tiny
-	{
-		type = "item",
-		name = "storehouse-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-tiny.png",
-		icon_size = 32,
-		subgroup = "storage",
-		order = "a[items]-c[storehouse]-c[tiny]",
-		place_result = "storehouse-tiny",
-		stack_size = 15,
-	},
-	-- Passive Provider Storehouse Tiny
-	{
-		type = "item",
-		name = "storehouse-passive-provider-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-passive-provider-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-passive-provider]-c[storehouse-tiny]",
-		place_result = "storehouse-passive-provider-tiny",
-		stack_size = 15,
-	},
-	-- Storage Storehouse Tiny
-	{
-		type = "item",
-		name = "storehouse-storage-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-storage-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-storage]-c[storehouse-tiny]",
-		place_result = "storehouse-storage-tiny",
-		stack_size = 15,
-	},
-	-- Active Provider Storehouse Tiny
-	{
-		type = "item",
-		name = "storehouse-active-provider-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-active-provider-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-c[logistic-chest-active-provider]-c[storehouse-tiny]",
-		place_result = "storehouse-active-provider-tiny",
-		stack_size = 15,
-	},
-	-- Requester Storehouse Tiny
-	{
-		type = "item",
-		name = "storehouse-requester-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-requester-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-e[logistic-chest-requester]-c[storehouse-tiny]",
-		place_result = "storehouse-requester-tiny",
-		stack_size = 15,
-	},
-	-- Buffer Storehouse Tiny
-	{
-		type = "item",
-		name = "storehouse-buffer-tiny",
-		icon = "__Warehousing__/graphics/icons/storehouse-buffer-tiny.png",
-		icon_size = 32,
-		subgroup = "logistic-network",
-		order = "b[storage]-d[logistic-chest-buffer]-c[storehouse-tiny]",
-		place_result = "storehouse-buffer-tiny",
-		stack_size = 15,
+		type = "item-subgroup",
+		name = "logistic-warehousing",
+		group = "logistics",
+		order = "b",
 	},
 })
-
