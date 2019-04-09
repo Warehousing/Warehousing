@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 2019-04-09
+
+  Translations:
+    - Czech updated (thanks Raus)
+    - Chinese (Simplified) started (thanks 621awdrgyjil)
+    - Chinese (Traditional) updated (thanks k98a & willy04wu69)
+    - French updated (thanks alainmonk)
+    - Ukrainian updated (thanks ddayver)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 2019-03-28
 
