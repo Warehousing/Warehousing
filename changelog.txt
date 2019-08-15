@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 2019-08-15
+
+  Translations:
+    - Chinese (Simplified) updated (thanks plumxing)
+    - Chinese (Traditional) updated (thanks pickuse2013)
+    - Spanish updated (thanks ithan.lara.f)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: 2019-04-09
 
