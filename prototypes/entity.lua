@@ -128,6 +128,11 @@ function createLogisticContainer(name, logistic_type)
 	p.picture.filename = "__Warehousing__/graphics/entity/"..p.name..".png"
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
+	if logistic_type == "storage" then
+		p.logistic_slots_count = 1
+	elseif logistic_type == "buffer" or logistic_type == "requester" then
+		p.logistic_slots_count = 30
+	end
 	return p
 end
 
@@ -135,20 +140,14 @@ local storehouse_active_provider = createLogisticContainer("storehouse", "active
 local storehouse_passive_provider = createLogisticContainer("storehouse", "passive-provider")
 local storehouse_storage = createLogisticContainer("storehouse", "storage")
 storehouse_storage.inventory_size = storage_storehouse_slots
-storehouse_storage.logistic_slots_count = 1
 local storehouse_buffer = createLogisticContainer("storehouse", "buffer")
-storehouse_buffer.logistic_slots_count = 12
 local storehouse_requester = createLogisticContainer("storehouse", "requester")
-storehouse_requester.logistic_slots_count = 12
 local warehouse_active_provider = createLogisticContainer("warehouse", "active-provider")
 local warehouse_passive_provider = createLogisticContainer("warehouse", "passive-provider")
 local warehouse_storage = createLogisticContainer("warehouse", "storage")
 warehouse_storage.inventory_size = storage_warehouse_slots
-warehouse_storage.logistic_slots_count = 1
 local warehouse_buffer = createLogisticContainer("warehouse", "buffer")
-warehouse_buffer.logistic_slots_count = 12
 local warehouse_requester = createLogisticContainer("warehouse", "requester")
-warehouse_requester.logistic_slots_count = 12
 
 
 data:extend({
