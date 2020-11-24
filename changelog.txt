@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2020-11-24
+
+  Changed:
+    - Factorio target version updated to 1.1
+    - Updated logistic request slot property name (changed in Factorio 1.1)
+  Translations:
+    - Finnish added (thanks mikkoku81)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2020-08-15
 
