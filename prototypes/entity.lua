@@ -129,9 +129,9 @@ function createLogisticContainer(name, logistic_type)
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
 	if logistic_type == "storage" then
-		p.logistic_slots_count = 1
+		p.max_logistic_slots = 1
 	elseif logistic_type == "buffer" or logistic_type == "requester" then
-		p.logistic_slots_count = 30
+		p.max_logistic_slots = 30
 	end
 	return p
 end
