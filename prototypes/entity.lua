@@ -1,6 +1,8 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * rewritten by Optera 2019
  *
+ * extended by dgw 2021
+ *
  * Part of the Warehousing mod
  *
  * See License.txt in the project directory for license information.
@@ -148,6 +150,29 @@ local warehouse_buffer = createLogisticContainer("warehouse", "buffer")
 local warehouse_requester = createLogisticContainer("warehouse", "requester")
 
 
+-- generate linked variants
+function createLinkedContainer(kind)
+	local p = table.deepcopy(data.raw["container"][kind.."-basic"])
+	p.type = "linked-container"
+	p.name = "linked-"..kind
+	p.minable.result = p.name
+	p.circuit_wire_connection_point = nil
+	p.circuit_connector_sprites = nil
+	p.circuit_wire_max_distance = nil
+	p.gui_mode = "admins" -- all, none, admins
+	p.icon = "__Warehousing__/graphics/icons/linked-"..kind..".png"
+	p.icon_size = 32
+	p.picture.filename = "__Warehousing__/graphics/entity/linked-"..kind..".png"
+	return p
+end
+
+local linked_warehouse = createLinkedContainer("warehouse")
+linked_warehouse.inventory_size = warehouse_slots
+local linked_storehouse = createLinkedContainer("storehouse")
+linked_storehouse.inventory_size = storehouse_slots
+
+
+-- add generated entities to data table
 data:extend({
 	storehouse_active_provider,
 	storehouse_passive_provider,
@@ -159,6 +184,8 @@ data:extend({
 	warehouse_storage,
 	warehouse_buffer,
 	warehouse_requester,
+	linked_warehouse,
+	linked_storehouse,
 })
 
 
