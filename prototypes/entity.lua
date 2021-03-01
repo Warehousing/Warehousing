@@ -8,6 +8,9 @@
  * See License.txt in the project directory for license information.
 --]]
 
+ICONPATH = "__Warehousing__/graphics/icons/"
+ENTITYPATH = "__Warehousing__/graphics/entity/"
+
 local warehouse_slots = 1800
 local storehouse_slots = 450
 local storage_warehouse_slots = 2000
@@ -26,7 +29,7 @@ data:extend({
 	{
 		type = "container",
 		name = "warehouse-basic",
-		icon = "__Warehousing__/graphics/icons/warehouse-basic.png",
+		icon = ICONPATH.."warehouse-basic.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
 		minable = {mining_time = 2, result = "warehouse-basic"},
@@ -48,13 +51,37 @@ data:extend({
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
-		picture =
-		{
-			filename = "__Warehousing__/graphics/entity/warehouse-basic.png",
-			priority = "high",
-			width = 260,
-			height = 240,
-			shift = {1.0, -0.3},
+		picture = {
+			layers = {
+				{
+					filename = ENTITYPATH.."warehouse/warehouse-basic.png",
+					width = 260,
+					height = 240,
+					shift = {1.0, -0.3},
+					hr_version = {
+						filename = ENTITYPATH.."warehouse/hr-warehouse-basic.png",
+						width = 520,
+						height = 480,
+						shift = {1.0, -0.3},
+						scale = 0.5,
+					}
+				},
+				{
+					filename = ENTITYPATH.."warehouse/warehouse-basic-shadow.png",
+					width = 260,
+					height = 240,
+					shift = {1.0, -0.3},
+					draw_as_shadow = true,
+					hr_version = {
+						filename = ENTITYPATH.."warehouse/hr-warehouse-basic-shadow.png",
+						width = 520,
+						height = 480,
+						shift = {1.0, -0.3},
+						scale = 0.5,
+						draw_as_shadow = true,
+					}
+				},
+			},
 		},
 		circuit_wire_max_distance = 7.5,
 		circuit_wire_connection_point =
@@ -74,7 +101,7 @@ data:extend({
 	{
 		type = "container",
 		name = "storehouse-basic",
-		icon = "__Warehousing__/graphics/icons/storehouse-basic.png",
+		icon = ICONPATH.."storehouse-basic.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
 		minable = {mining_time = 2, result = "storehouse-basic"},
@@ -96,13 +123,33 @@ data:extend({
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
-		picture =
-		{
-			filename = "__Warehousing__/graphics/entity/storehouse-basic.png",
-			priority = "high",
-			width = 129,
-			height = 100,
-			shift = {0.421875, 0},
+		picture ={
+			layers = {
+				{
+					filename = ENTITYPATH.."storehouse/storehouse-basic.png",
+					width = 128,
+					height = 128,
+					hr_version = {
+						filename = ENTITYPATH.."storehouse/hr-storehouse-basic.png",
+						width = 256,
+						height = 256,
+						scale = 0.5,
+					}
+				},
+				{
+					filename = ENTITYPATH.."storehouse/storehouse-basic-shadow.png",
+					width = 128,
+					height = 128,
+					draw_as_shadow = true,
+					hr_version = {
+						filename = ENTITYPATH.."storehouse/hr-storehouse-basic-shadow.png",
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						draw_as_shadow = true,
+					}
+				},
+			},
 		},
 		circuit_wire_max_distance = 7.5,
 		circuit_wire_connection_point =
@@ -126,8 +173,11 @@ function createLogisticContainer(name, logistic_type)
 	local p = table.deepcopy(data.raw["container"][name.."-basic"])
 	p.name = name.."-"..logistic_type
 	p.minable.result = p.name
-	p.icon = "__Warehousing__/graphics/icons/"..p.name..".png"
-	p.picture.filename = "__Warehousing__/graphics/entity/"..p.name..".png"
+	p.icon = ICONPATH..p.name..".png"
+	p.picture.layers[1].filename = ENTITYPATH..name.."/"..p.name..".png"
+	p.picture.layers[1].hr_version.filename = ENTITYPATH..name.."/hr-"..p.name..".png"
+	p.picture.layers[2].filename = ENTITYPATH..name.."/"..name.."-shadow.png"
+	p.picture.layers[2].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
 	if logistic_type == "storage" then
