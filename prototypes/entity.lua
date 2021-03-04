@@ -48,6 +48,7 @@ data:extend({
 		},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+		landing_location_offset = {1.0, -1.0},
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
@@ -57,12 +58,10 @@ data:extend({
 					filename = ENTITYPATH.."warehouse/warehouse-basic.png",
 					width = 260,
 					height = 240,
-					shift = {1.0, -0.3},
 					hr_version = {
 						filename = ENTITYPATH.."warehouse/hr-warehouse-basic.png",
 						width = 520,
 						height = 480,
-						shift = {1.0, -0.3},
 						scale = 0.5,
 					}
 				},
@@ -70,13 +69,13 @@ data:extend({
 					filename = ENTITYPATH.."warehouse/warehouse-basic-shadow.png",
 					width = 260,
 					height = 240,
-					shift = {1.0, -0.3},
+					shift = {1, 0},
 					draw_as_shadow = true,
 					hr_version = {
 						filename = ENTITYPATH.."warehouse/hr-warehouse-basic-shadow.png",
 						width = 520,
 						height = 480,
-						shift = {1.0, -0.3},
+						shift = {1, 0},
 						scale = 0.5,
 						draw_as_shadow = true,
 					}
@@ -161,8 +160,8 @@ data:extend({
 			},
 			wire =
 			{
-				red = {0.16, -0.9},
-				green = {-0.16, -0.9}
+				red = {0.4, 0},
+				green = {-0.4, 0}
 			}
 		},
 	},

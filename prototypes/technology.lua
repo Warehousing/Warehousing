@@ -38,7 +38,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "warehouse-logistics-research-1",
-		icon = ICONPATH.."warehouse-logistics-research.png",
+		icon = ICONPATH.."warehouse-logistics-research-1.png",
 		icon_size = 256,
 		effects =
 		{
