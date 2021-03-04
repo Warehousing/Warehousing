@@ -155,18 +155,54 @@ data:extend({
 		{
 			shadow =
 			{
-				red = {0.56, -0.6},
-				green = {0.26, -0.6}
+				red = {0.76, 0.3},
+				green = {0.06, 0.3}
 			},
 			wire =
 			{
-				red = {0.4, 0},
-				green = {-0.4, 0}
+				red = {0.36, -0.04},
+				green = {-0.36, -0.04}
 			}
 		},
 	},
 })
 
+
+local connectorsprite = {
+	connector_main =
+	{
+		filename = ENTITYPATH.."warehouse/warehouse-wire-connector.png",
+		width = 260,
+		height = 240,
+		hr_version = {
+			filename = ENTITYPATH.."warehouse/hr-warehouse-wire-connector.png",
+			width = 520,
+			height = 480,
+			scale = 0.5,
+		}
+	},
+
+	connector_shadow =
+	{
+		filename = ENTITYPATH.."warehouse/warehouse-shadow.png",
+		width = 260,
+		height = 240,
+		shift = {1, 0},
+		draw_as_shadow = true,
+		hr_version = {
+			filename = ENTITYPATH.."warehouse/hr-warehouse-shadow.png",
+			width = 520,
+			height = 480,
+			shift = {1, 0},
+			scale = 0.5,
+			draw_as_shadow = true,
+		}
+	},
+	led_blue = { filename = "__core__/graphics/empty.png", size = 1 },
+	led_green = { filename = "__core__/graphics/empty.png", size = 1 },
+	led_red = { filename = "__core__/graphics/empty.png", size = 1 },
+	led_light = { type = "basic", intensity = 0, size = 0 }
+}
 -- generate logistic variants
 function createLogisticContainer(name, logistic_type)
 	local p = table.deepcopy(data.raw["container"][name.."-basic"])
@@ -175,10 +211,13 @@ function createLogisticContainer(name, logistic_type)
 	p.icon = ICONPATH..p.name..".png"
 	p.picture.layers[1].filename = ENTITYPATH..name.."/"..p.name..".png"
 	p.picture.layers[1].hr_version.filename = ENTITYPATH..name.."/hr-"..p.name..".png"
-	p.picture.layers[2].filename = ENTITYPATH..name.."/"..name.."-shadow.png"
-	p.picture.layers[2].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
+	--p.picture.layers[2].filename = ENTITYPATH..name.."/"..name.."-shadow.png"
+	--p.picture.layers[2].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
+	if name == "warehouse" then
+		p.circuit_connector_sprites = connectorsprite
+	end
 	if logistic_type == "storage" then
 		p.max_logistic_slots = 1
 	end
@@ -236,5 +275,3 @@ data:extend({
 	linked_warehouse,
 	linked_storehouse,
 })
-
-
