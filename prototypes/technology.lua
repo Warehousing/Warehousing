@@ -11,6 +11,7 @@ data:extend(
 		name = "warehouse-research",
 		icon = ICONPATH.."warehouse-research.png",
 		icon_size = 256,
+		icon_mipmaps = 4,
 		effects =
 		{
 			{
@@ -40,6 +41,7 @@ data:extend(
 		name = "warehouse-logistics-research-1",
 		icon = ICONPATH.."warehouse-logistics-research-1.png",
 		icon_size = 256,
+		icon_mipmaps = 4,
 		effects =
 		{
 			{
@@ -76,6 +78,7 @@ data:extend(
 		name = "warehouse-logistics-research-2",
 		icon = ICONPATH.."warehouse-logistics-research-2.png",
 		icon_size = 256,
+		icon_mipmaps = 4,
 		effects =
 		{
 			{
