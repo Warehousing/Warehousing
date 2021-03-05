@@ -87,13 +87,13 @@ data:extend({
 		{
 			shadow =
 			{
-				red = {2.52, 0.65},
-				green = {2.01, 0.65}
+				red = {144/32, 79/32},
+				green = {126/32, 79/32}
 			},
 			wire =
 			{
-				red = {2.22, 0.32},
-				green = {1.71, 0.32}
+				red = {67/32, 6/32},
+				green = {49/32, 6/32}
 			}
 		},
 	},
@@ -122,7 +122,7 @@ data:extend({
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
 		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
-		picture ={
+		picture = {
 			layers = {
 				{
 					filename = ENTITYPATH.."storehouse/storehouse-basic.png",
@@ -155,54 +155,58 @@ data:extend({
 		{
 			shadow =
 			{
-				red = {0.76, 0.3},
-				green = {0.06, 0.3}
+				red = {82/32, 22/32},
+				green = {64/32, 22/32}
 			},
 			wire =
 			{
-				red = {0.36, -0.04},
-				green = {-0.36, -0.04}
+				red = {32/32, -22/32},
+				green = {14/32, -22/32}
 			}
 		},
 	},
 })
 
-
-local connectorsprite = {
-	connector_main =
+function connectorSprite(shift, shiftshadow)
+return
 	{
-		filename = ENTITYPATH.."warehouse/warehouse-wire-connector.png",
-		width = 260,
-		height = 240,
-		hr_version = {
-			filename = ENTITYPATH.."warehouse/hr-warehouse-wire-connector.png",
-			width = 520,
-			height = 480,
-			scale = 0.5,
-		}
-	},
-
-	connector_shadow =
-	{
-		filename = ENTITYPATH.."warehouse/warehouse-shadow.png",
-		width = 260,
-		height = 240,
-		shift = {1, 0},
-		draw_as_shadow = true,
-		hr_version = {
-			filename = ENTITYPATH.."warehouse/hr-warehouse-shadow.png",
-			width = 520,
-			height = 480,
-			shift = {1, 0},
-			scale = 0.5,
+		connector_main =
+		{
+			filename = ENTITYPATH.."connector.png",
+			width = 42,
+			height = 68,
+			shift = shift,
+			hr_version = {
+				filename = ENTITYPATH.."hr-connector.png",
+				width = 84,
+				height = 136,
+				scale = 0.5,
+				shift = shift,
+			}
+		},
+		connector_shadow =
+		{
+			filename = ENTITYPATH.."connector-shadow.png",
+			width = 34,
+			height = 17,
 			draw_as_shadow = true,
-		}
-	},
-	led_blue = { filename = "__core__/graphics/empty.png", size = 1 },
-	led_green = { filename = "__core__/graphics/empty.png", size = 1 },
-	led_red = { filename = "__core__/graphics/empty.png", size = 1 },
-	led_light = { type = "basic", intensity = 0, size = 0 }
-}
+			shift = shiftshadow,
+			hr_version = {
+				filename = ENTITYPATH.."hr-connector-shadow.png",
+				width = 68,
+				height = 33,
+				scale = 0.5,
+				draw_as_shadow = true,
+				shift = shiftshadow,
+			}
+		},
+		led_blue = { filename = "__core__/graphics/empty.png", size = 1 },
+		led_green = { filename = "__core__/graphics/empty.png", size = 1 },
+		led_red = { filename = "__core__/graphics/empty.png", size = 1 },
+		led_light = { type = "basic", intensity = 0, size = 0 }
+	}
+end
+
 -- generate logistic variants
 function createLogisticContainer(name, logistic_type)
 	local p = table.deepcopy(data.raw["container"][name.."-basic"])
@@ -211,12 +215,15 @@ function createLogisticContainer(name, logistic_type)
 	p.icon = ICONPATH..p.name..".png"
 	p.picture.layers[1].filename = ENTITYPATH..name.."/"..p.name..".png"
 	p.picture.layers[1].hr_version.filename = ENTITYPATH..name.."/hr-"..p.name..".png"
-	--p.picture.layers[2].filename = ENTITYPATH..name.."/"..name.."-shadow.png"
-	--p.picture.layers[2].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
+	p.picture.layers[2].filename = ENTITYPATH..name.."/"..name.."-shadow.png"
+	p.picture.layers[2].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
 	if name == "warehouse" then
-		p.circuit_connector_sprites = connectorsprite
+		p.circuit_connector_sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32})
+	end
+	if name == "storehouse" then
+		p.circuit_connector_sprites = connectorSprite({23/32, -22/32}, {73/32, 22/32})
 	end
 	if logistic_type == "storage" then
 		p.max_logistic_slots = 1
@@ -236,7 +243,6 @@ local warehouse_storage = createLogisticContainer("warehouse", "storage")
 warehouse_storage.inventory_size = storage_warehouse_slots
 local warehouse_buffer = createLogisticContainer("warehouse", "buffer")
 local warehouse_requester = createLogisticContainer("warehouse", "requester")
-
 
 -- generate linked variants
 function createLinkedContainer(kind)

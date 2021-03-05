@@ -5,6 +5,7 @@
  *
  * See License.txt in the project directory for license information.
 --]]
+
 ICONPATH = "__Warehousing__/graphics/icons/"
 
 data:extend({
