@@ -1,6 +1,8 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
  *
+ * extended by dgw 2021
+ *
  * See License.txt in the project directory for license information.
 --]]
 data:extend({
@@ -122,6 +124,30 @@ data:extend({
 		subgroup = "logistic-network",
 		order = "b[storage]-d[logistic-chest-buffer]-a[storehouse]",
 		place_result = "storehouse-buffer",
+		stack_size = 15,
+	},
+
+	-- no recipes; only for editor
+	{
+		type = "item",
+		name = "linked-storehouse",
+		icon = "__Warehousing__/graphics/icons/linked-storehouse.png",
+		icon_size = 32,
+		flags = {"hidden"},
+		subgroup = "other",
+		order = "a[items]-a[linked-chest]-a[linked-storehouse]",
+		place_result = "linked-storehouse",
+		stack_size = 15,
+	},
+	{
+		type = "item",
+		name = "linked-warehouse",
+		icon = "__Warehousing__/graphics/icons/linked-warehouse.png",
+		icon_size = 32,
+		flags = {"hidden"},
+		subgroup = "other",
+		order = "a[items]-a[linked-chest]-b[linked-warehouse]",
+		place_result = "linked-warehouse",
 		stack_size = 15,
 	},
 })
