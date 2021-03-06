@@ -10,6 +10,7 @@
 
 ICONPATH = "__Warehousing__/graphics/icons/"
 ENTITYPATH = "__Warehousing__/graphics/entity/"
+local sounds = require("__base__/prototypes/entity/sounds")
 
 local warehouse_slots = 1800
 local storehouse_slots = 450
@@ -169,6 +170,59 @@ data:extend({
 	},
 })
 
+function chestAnim(img, hrimg, shadow, hrshadow, shadowshift, width, height, chestanim, hrchestanim, chestshift, chestanimsize)
+return
+	{
+		layers = {
+			{
+				filename = img,
+				width = width/2,
+				height = height/2,
+				repeat_count = 7,
+				hr_version = {
+					filename = hrimg,
+					width = width,
+					height = height,
+					repeat_count = 7,
+					scale = 0.5,
+				}
+			},
+			{
+				filename = chestanim,
+				width = chestanimsize/2,
+				height = chestanimsize/2,
+				frame_count = 7,
+				shift = chestshift,
+				hr_version = {
+					filename = hrchestanim,
+					width = chestanimsize,
+					height = chestanimsize,
+					frame_count = 7,
+					shift = chestshift,
+					scale = 0.5,
+				}
+			},
+			{
+				filename = shadow,
+				width = width/2,
+				height = height/2,
+				shift = shadowshift,
+				repeat_count = 7,
+				draw_as_shadow = true,
+				hr_version = {
+					filename = hrshadow,
+					width = width,
+					height = height,
+					shift = shadowshift,
+					scale = 0.5,
+					repeat_count = 7,
+					draw_as_shadow = true,
+				}
+			},
+		},
+	}
+end
+
 function connectorSprite(shift, shiftshadow)
 return
 	{
@@ -213,19 +267,25 @@ end
 function createLogisticContainer(name, logistic_type)
 	local p = table.deepcopy(data.raw["container"][name.."-basic"])
 	p.name = name.."-"..logistic_type
+	local img = ENTITYPATH..name.."/"..p.name..".png"
+	local hrimg = ENTITYPATH..name.."/hr-"..p.name..".png"
+	local shadow = ENTITYPATH..name.."/"..name.."-shadow.png"
+	local hrshadow = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
+	local chestanim = ENTITYPATH..name.."/"..name.."-chest-anim.png"
+	local hrchestanim = ENTITYPATH..name.."/hr-"..name.."-chest-anim.png"
 	p.minable.result = p.name
 	p.icon = ICONPATH..p.name..".png"
-	p.picture.layers[1].filename = ENTITYPATH..name.."/"..p.name..".png"
-	p.picture.layers[1].hr_version.filename = ENTITYPATH..name.."/hr-"..p.name..".png"
-	p.picture.layers[2].filename = ENTITYPATH..name.."/"..name.."-shadow.png"
-	p.picture.layers[2].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
+	p.animation_sound = sounds.logistics_chest_open
+    p.opened_duration = 7
 	if name == "warehouse" then
 		p.circuit_connector_sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32})
+		p.animation = chestAnim(img, hrimg, shadow, hrshadow, {1, 0}, 520, 480, chestanim, hrchestanim, {1, -44/32}, 44)
 	end
 	if name == "storehouse" then
 		p.circuit_connector_sprites = connectorSprite({23/32, -22/32}, {73/32, 22/32})
+		p.animation = chestAnim(img, hrimg, shadow, hrshadow, {0, 0}, 256, 256, chestanim, hrchestanim, {0, 3/32}, 74)
 	end
 	if logistic_type == "storage" then
 		p.max_logistic_slots = 1
