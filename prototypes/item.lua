@@ -146,8 +146,8 @@ data:extend({
 	{
 		type = "item",
 		name = "linked-storehouse",
-		icon = "__Warehousing__/graphics/icons/linked-storehouse.png",
-		icon_size = 32,
+		icon = ICONPATH.."storehouse-linked.png",
+		icon_size = 64,
 		flags = {"hidden"},
 		subgroup = "other",
 		order = "a[items]-a[linked-chest]-a[linked-storehouse]",
@@ -157,8 +157,8 @@ data:extend({
 	{
 		type = "item",
 		name = "linked-warehouse",
-		icon = "__Warehousing__/graphics/icons/linked-warehouse.png",
-		icon_size = 32,
+		icon = ICONPATH.."warehouse-linked.png",
+		icon_size = 64,
 		flags = {"hidden"},
 		subgroup = "other",
 		order = "a[items]-a[linked-chest]-b[linked-warehouse]",

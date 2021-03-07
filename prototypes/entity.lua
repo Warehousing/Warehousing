@@ -307,18 +307,19 @@ local warehouse_buffer = createLogisticContainer("warehouse", "buffer")
 local warehouse_requester = createLogisticContainer("warehouse", "requester")
 
 -- generate linked variants
-function createLinkedContainer(kind)
-	local p = table.deepcopy(data.raw["container"][kind.."-basic"])
+function createLinkedContainer(name)
+	local p = table.deepcopy(data.raw["container"][name.."-basic"])
 	p.type = "linked-container"
-	p.name = "linked-"..kind
+	p.name = "linked-"..name
 	p.minable.result = p.name
 	p.circuit_wire_connection_point = nil
 	p.circuit_connector_sprites = nil
 	p.circuit_wire_max_distance = nil
 	p.gui_mode = "admins" -- all, none, admins
-	p.icon = "__Warehousing__/graphics/icons/linked-"..kind..".png"
-	p.icon_size = 32
-	p.picture.filename = "__Warehousing__/graphics/entity/linked-"..kind..".png"
+	p.icon = ICONPATH..name.."-linked.png"
+	p.icon_size = 64
+	p.picture.layers[1].filename = ENTITYPATH..name.."/"..name.."-linked.png"
+	p.picture.layers[1].hr_version.filename = ENTITYPATH..name.."/hr-"..name.."-linked.png"
 	return p
 end
 
