@@ -3,13 +3,15 @@
  *
  * See License.txt in the project directory for license information.
 --]]
+ICONPATH = "__Warehousing__/graphics/research/"
 data:extend(
 {
 	{
 		type = "technology",
 		name = "warehouse-research",
-		icon = "__Warehousing__/graphics/research/warehouse-research.png",
-		icon_size = 128,
+		icon = ICONPATH.."warehouse-research.png",
+		icon_size = 256,
+		icon_mipmaps = 4,
 		effects =
 		{
 			{
@@ -37,8 +39,9 @@ data:extend(
 	{
 		type = "technology",
 		name = "warehouse-logistics-research-1",
-		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
-		icon_size = 128,
+		icon = ICONPATH.."warehouse-logistics-research-1.png",
+		icon_size = 256,
+		icon_mipmaps = 4,
 		effects =
 		{
 			{
@@ -73,8 +76,9 @@ data:extend(
 	{
 		type = "technology",
 		name = "warehouse-logistics-research-2",
-		icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png",
-		icon_size = 128,
+		icon = ICONPATH.."warehouse-logistics-research-2.png",
+		icon_size = 256,
+		icon_mipmaps = 4,
 		effects =
 		{
 			{
@@ -117,4 +121,3 @@ data:extend(
 		order = "c-k-b"
 	},
 })
-

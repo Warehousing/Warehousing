@@ -169,7 +169,7 @@ Iron stick|4
 
 ## Contributors
 
-Graphics by **Nova Kast**, **please do not use without permission!** (If you ask, you can probably use the images. Also, if you need custom graphics we can cook these up too if needed! ;) PM Anoyomouse on the Factorio forums for permission/requests.)
+Graphics by Nova_Kast, with visual updates for Factorio 1.0 by snouz. **Please do not use without permission!** PM Anoyomouse on the Factorio forums for permission/requests.
 
 Storehouses contributed by Hanniballo. Updates for Factorio 0.15 contributed by kingarthur, with integration help from dgw (joined as co-maintainer as of 0.0.13).
 
