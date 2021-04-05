@@ -197,19 +197,19 @@ Translations kindly provided by the following people:
 | :ukraine:        | Ukrainian              | antonus777<br>ddayver                                                       |
 
 
-  [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-basic.png
-  [warehouse-storage]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-storage.png
-  [warehouse-passive-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-passive-provider.png
-  [warehouse-active-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-active-provider.png
-  [warehouse-requester]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-requester.png
-  [warehouse-buffer]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse-buffer.png
+  [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-basic.png
+  [warehouse-storage]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-storage.png
+  [warehouse-passive-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-passive-provider.png
+  [warehouse-active-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-active-provider.png
+  [warehouse-requester]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-requester.png
+  [warehouse-buffer]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-buffer.png
 
-  [storehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-basic.png
-  [storehouse-storage]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-storage.png
-  [storehouse-passive-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-passive-provider.png
-  [storehouse-active-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-active-provider.png
-  [storehouse-requester]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-requester.png
-  [storehouse-buffer]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse-buffer.png
+  [storehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse/storehouse-basic.png
+  [storehouse-storage]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse/storehouse-storage.png
+  [storehouse-passive-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse/storehouse-passive-provider.png
+  [storehouse-active-provider]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse/storehouse-active-provider.png
+  [storehouse-requester]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse/storehouse-requester.png
+  [storehouse-buffer]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/storehouse/storehouse-buffer.png
 
   [hero-image]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/hero-image.jpg
 
