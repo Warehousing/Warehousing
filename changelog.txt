@@ -23,9 +23,9 @@ Date: 2020-08-15
     - Buffer & Requester buildings can have 30 logistic request slots, just like base-mod chests
     - Factorio target version updated to 1.0
   Translations:
-    - Italian updated (thanks aironenerowork)
+    - Italian added (thanks aironenerowork)
     - Polish updated (thanks tengongcreative)
-    - Slovak updated (thanks 350zipoo)
+    - Slovak added (thanks 350zipoo)
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
