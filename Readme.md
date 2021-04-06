@@ -2,39 +2,12 @@
 
 Mod for Factorio. *Store **all** the things!* (We heard you like boxes, you packrat you!)
 
-
-## News
-
 [![GitHub release][badge-latest-release]][github-latest-release]
+[![Factorio version target][badge-factorio-version]][mod-portal-entry]
 ![GitHub Release Date][badge-release-date]
 [![Crowdin][badge-crowdin]][crowdin-project]
 
 Go [grab it now][mod-portal-entry], or get it in-game by searching for `Warehousing`.
-
-### Translations!
-Want to see Warehousing available in your language? Does the quality of our existing translation leave you wanting more? Please help us [translate the mod][crowdin-project] on Crowdin! Create a free account (or log in with Google, Twitter, Facebook, GitHub, or Gitlab) and help make this mod (even more) awesome!
-
-### Latest
-
-Now updated for Factorio 0.17! Just like the base-game research, technology requirements have been overhauled. There are now two levels of "Logistics Warehousing" to research, and Warehousing research in general is more expensive.
-
-Crafting recipes were also updated—**no more wood!**
-
-Building storage capacity (except logistic storage variants) was finally rebalanced to reflect the 3x3 and 6x6 entity sizes. Storehouses now accept 450+ stacks of items, and Warehouses take 1800+ stacks. The old capacities are accessible via a startup setting, if you have an existing map with circuit logic that will break with the changed inventory sizes.
-
-Copying the research cost of "Logistic System" remains, as a startup setting (off by default, to save a bit of loading time). Enabling it will update the cost of "Logistics Warehousing 2" to match if you have a mod that changes the cost of "Logistic System". As before, report incompatible mods in [the forum thread][forum-thread] or [GitHub issue tracker][issue-tracker].
-
-There's also a new setting to disable inventory icon scaling, if you don't like how the stretched icons look on top of your buildings.
-
-Localizations for the new settings are almost entirely incomplete, except for a lucky few strings; [go to Crowdin][crowdin-project] if you can help translate them into more languages!
-
-### Previously
-
-Logistic warehouse research cost is now based on the cost of "Logistic System", for better balance when using mods that alter that research.
-
-Warehouses were changed to 6x6 as per a suggestion, so if you are upgrading from a very old version of the mod it will make all existing warehouses potentially overlap and cause unknown issues. You have been warned! (If you've transitioned a steam power setup from Factorio 0.14 or below to 0.15, you know the pain.)
-
-Factorio 0.12.18 allowed entity inventories to have scroll bars... Capacities were increased to take advantage of this. Please note that using significant numbers of warehouses _will_ cause a significant performance decrease. (Entity update performance is directly related to inventory slot count, so more slots to process on each tick means it will take longer.)
 
 
 ## Description
@@ -173,7 +146,11 @@ Graphics by Nova_Kast, with visual updates for Factorio 1.0 by snouz. **Please d
 
 Storehouses contributed by Hanniballo. Updates for Factorio 0.15 contributed by kingarthur, with integration help from dgw (joined as co-maintainer as of 0.0.13).
 
-Translations kindly provided by the following people:
+### Translations
+
+Want to see Warehousing available in your language? Please help us [translate the mod][crowdin-project] on Crowdin! Create a free account (or log in with Google, Twitter, Facebook, GitHub, or GitLab) and help make this mod (even more) awesome!
+
+Existing translations kindly provided by the following people:
 
 | <!--flag-->      |        Language        |                                Translator(s)                                |
 |------------------|------------------------|-----------------------------------------------------------------------------|
@@ -216,6 +193,7 @@ Translations kindly provided by the following people:
   [badge-crowdin]: https://d322cqt584bo4o.cloudfront.net/factorio-warehousing/localized.svg
   [badge-latest-release]: https://img.shields.io/github/release/Warehousing/Warehousing.svg?label=current+version
   [badge-release-date]: https://img.shields.io/github/release-date/Warehousing/Warehousing.svg?label=released
+  [badge-factorio-version]: https://img.shields.io/badge/dynamic/json.svg?label=supports%20factorio%20version&url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2FWarehousing&query=%24.releases%5B-1%3A%5D.info_json.factorio_version&colorB=%23a87723
 
   [crowdin-project]: https://crowdin.com/project/factorio-warehousing
   [forum-thread]: https://forums.factorio.com/17295
