@@ -25,6 +25,47 @@ if settings.startup["Warehousing-sixteen-mode"].value then
 	storage_storehouse_slots = 300
 end
 
+-- Utility for placing circuit connector graphics
+function connectorSprite(shift, shiftshadow)
+return
+	{
+		connector_main =
+		{
+			filename = ENTITYPATH.."connector.png",
+			width = 42,
+			height = 68,
+			shift = shift,
+			hr_version = {
+				filename = ENTITYPATH.."hr-connector.png",
+				width = 84,
+				height = 136,
+				scale = 0.5,
+				shift = shift,
+			}
+		},
+		connector_shadow =
+		{
+			filename = ENTITYPATH.."connector-shadow.png",
+			width = 34,
+			height = 17,
+			draw_as_shadow = true,
+			shift = shiftshadow,
+			hr_version = {
+				filename = ENTITYPATH.."hr-connector-shadow.png",
+				width = 68,
+				height = 33,
+				scale = 0.5,
+				draw_as_shadow = true,
+				shift = shiftshadow,
+			}
+		},
+		led_blue = { filename = "__core__/graphics/empty.png", size = 1 },
+		led_green = { filename = "__core__/graphics/empty.png", size = 1 },
+		led_red = { filename = "__core__/graphics/empty.png", size = 1 },
+		led_light = { type = "basic", intensity = 0, size = 0 }
+	}
+end
+
 -- generate base storehouse and warehouse
 data:extend({
 	{
@@ -98,6 +139,7 @@ data:extend({
 				green = {49/32, 6/32}
 			}
 		},
+		circuit_connector_sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32}),
 	},
 	{
 		type = "container",
@@ -167,6 +209,7 @@ data:extend({
 				green = {14/32, -22/32}
 			}
 		},
+		circuit_connector_sprites = connectorSprite({23/32, -22/32}, {73/32, 22/32}),
 	},
 })
 
@@ -223,46 +266,6 @@ return
 	}
 end
 
-function connectorSprite(shift, shiftshadow)
-return
-	{
-		connector_main =
-		{
-			filename = ENTITYPATH.."connector.png",
-			width = 42,
-			height = 68,
-			shift = shift,
-			hr_version = {
-				filename = ENTITYPATH.."hr-connector.png",
-				width = 84,
-				height = 136,
-				scale = 0.5,
-				shift = shift,
-			}
-		},
-		connector_shadow =
-		{
-			filename = ENTITYPATH.."connector-shadow.png",
-			width = 34,
-			height = 17,
-			draw_as_shadow = true,
-			shift = shiftshadow,
-			hr_version = {
-				filename = ENTITYPATH.."hr-connector-shadow.png",
-				width = 68,
-				height = 33,
-				scale = 0.5,
-				draw_as_shadow = true,
-				shift = shiftshadow,
-			}
-		},
-		led_blue = { filename = "__core__/graphics/empty.png", size = 1 },
-		led_green = { filename = "__core__/graphics/empty.png", size = 1 },
-		led_red = { filename = "__core__/graphics/empty.png", size = 1 },
-		led_light = { type = "basic", intensity = 0, size = 0 }
-	}
-end
-
 -- generate logistic variants
 function createLogisticContainer(name, logistic_type)
 	local p = table.deepcopy(data.raw["container"][name.."-basic"])
@@ -280,11 +283,9 @@ function createLogisticContainer(name, logistic_type)
 	p.animation_sound = sounds.logistics_chest_open
     p.opened_duration = 7
 	if name == "warehouse" then
-		p.circuit_connector_sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32})
 		p.animation = chestAnim(img, hrimg, shadow, hrshadow, {1, 0}, 520, 480, chestanim, hrchestanim, {1, -44/32}, 44)
 	end
 	if name == "storehouse" then
-		p.circuit_connector_sprites = connectorSprite({23/32, -22/32}, {73/32, 22/32})
 		p.animation = chestAnim(img, hrimg, shadow, hrshadow, {0, 0}, 256, 256, chestanim, hrchestanim, {0, 3/32}, 74)
 	end
 	if logistic_type == "storage" then
