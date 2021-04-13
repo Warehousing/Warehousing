@@ -278,7 +278,7 @@ function createLogisticContainer(name, logistic_type)
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
 	p.animation_sound = sounds.logistics_chest_open
-    p.opened_duration = 7
+	p.opened_duration = 7
 	if name == "warehouse" then
 		p.circuit_connector_sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32})
 		p.animation = chestAnim(img, hrimg, shadow, hrshadow, {1, 0}, 520, 480, chestanim, hrchestanim, {1, -44/32}, 44)
