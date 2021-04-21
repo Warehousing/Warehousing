@@ -152,26 +152,27 @@ Want to see Warehousing available in your language? Please help us [translate th
 
 Existing translations kindly provided by the following people:
 
-| <!--flag-->      |        Language        |                                Translator(s)                                |
-|------------------|------------------------|-----------------------------------------------------------------------------|
-| :south_africa:   | Afrikaans              | Anoyomouse<br>@Yuuki2012                                                    |
-| :cn:             | Chinese (Simplified)   | 621awdrgyjil<br>plumxing                                                    |
-| :cn:             | Chinese (Traditional)  | artemkiselevvloger<br>k98a<br>pickuse2013<br>willy04wu69                    |
-| :czech_republic: | Czech                  | kukuc473<br>Raus                                                            |
-| :finland:        | Finnish                | mikkoku81                                                                   |
-| :fr:             | French                 | alainmonk<br>Hasturcraft<br>rom5921                                         |
-| :de:             | German                 | apcnc<br>honkinator22<br>Opterai<br>silentpiranha                           |
-| :hungary:        | Hungarian              | artemkiselevvloger                                                          |
-| :it:             | Italian                | aironenerowork                                                              |
-| :jp:             | Japanese               | Quifon                                                                      |
-| :kr:             | Korean                 | @GimoXagros                                                                 |
-| :poland:         | Polish                 | diilmac<br>Nalapl3<br>sayonara4747<br>tengongcreative                       |
-| :brazil:         | Portuguese (Brazilian) | @RaphaelNeumann<br>@scarsick<br>vini84200<br>artemkiselevvloger<br>Clelton  |
-| :ru:             | Russian                | applevine1<br>apriori<br>axell2580<br>bjiomspeed<br>Oceanel                 |
-| :slovakia:       | Slovak                 | 350zipoo                                                                    |
-| :es:             | Spanish                | black.dreicous<br>frenchiveruti<br>ithan.lara.f<br>leortegacaudillo         |
-| :tr:             | Turkish                | orya                                                                        |
-| :ukraine:        | Ukrainian              | antonus777<br>ddayver                                                       |
+| <!--flag-->      |        Language        |                                Translator(s)                                       |
+|------------------|------------------------|------------------------------------------------------------------------------------|
+| :south_africa:   | Afrikaans              | Anoyomouse<br>@Yuuki2012                                                           |
+| :bulgaria:       | Bulgarian              | peter-mw                                                                           |
+| :cn:             | Chinese (Simplified)   | 621awdrgyjil<br>plumxing                                                           |
+| :cn:             | Chinese (Traditional)  | artemkiselevvloger<br>k98a<br>pickuse2013<br>willy04wu69                           |
+| :czech_republic: | Czech                  | kukuc473<br>Raus                                                                   |
+| :finland:        | Finnish                | mikkoku81                                                                          |
+| :fr:             | French                 | alainmonk<br>Hasturcraft<br>rom5921                                                |
+| :de:             | German                 | apcnc<br>honkinator22<br>Opterai<br>silentpiranha                                  |
+| :hungary:        | Hungarian              | artemkiselevvloger                                                                 |
+| :it:             | Italian                | aironenerowork                                                                     |
+| :jp:             | Japanese               | Quifon                                                                             |
+| :kr:             | Korean                 | @GimoXagros<br>StaGVii                                                             |
+| :poland:         | Polish                 | diilmac<br>Nalapl3<br>sayonara4747<br>tengongcreative                              |
+| :brazil:         | Portuguese (Brazilian) | @RaphaelNeumann<br>@scarsick<br>vini84200<br>artemkiselevvloger<br>Clelton         |
+| :ru:             | Russian                | applevine1<br>apriori<br>axell2580<br>bjiomspeed<br>Oceanel                        |
+| :slovakia:       | Slovak                 | 350zipoo                                                                           |
+| :es:             | Spanish                | black.dreicous<br>frenchiveruti<br>ithan.lara.f<br>leortegacaudillo<br>AgnotSeeker |
+| :tr:             | Turkish                | orya                                                                               |
+| :ukraine:        | Ukrainian              | antonus777<br>ddayver                                                              |
 
 
   [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-basic.png
