@@ -159,6 +159,7 @@ Existing translations kindly provided by the following people:
 | :cn:             | Chinese (Simplified)   | 621awdrgyjil<br>plumxing                                                           |
 | :cn:             | Chinese (Traditional)  | artemkiselevvloger<br>k98a<br>pickuse2013<br>willy04wu69                           |
 | :czech_republic: | Czech                  | kukuc473<br>Raus                                                                   |
+| :netherlands:    | Dutch                  | eregni<br>TheRealHenkFisher<br>Beverneus<br>Yuuki-chan2012                         |
 | :finland:        | Finnish                | mikkoku81                                                                          |
 | :fr:             | French                 | alainmonk<br>Hasturcraft<br>rom5921                                                |
 | :de:             | German                 | apcnc<br>honkinator22<br>Opterai<br>silentpiranha                                  |
