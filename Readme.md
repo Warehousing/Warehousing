@@ -155,6 +155,7 @@ Existing translations kindly provided by the following people:
 | <!--flag-->      |        Language        |                                Translator(s)                                       |
 |------------------|------------------------|------------------------------------------------------------------------------------|
 | :south_africa:   | Afrikaans              | Anoyomouse<br>@Yuuki2012                                                           |
+|                  | Arabic                 | yahyaqradi10                                                                       |
 | :bulgaria:       | Bulgarian              | peter-mw                                                                           |
 | :cn:             | Chinese (Simplified)   | 621awdrgyjil<br>plumxing                                                           |
 | :cn:             | Chinese (Traditional)  | artemkiselevvloger<br>k98a<br>pickuse2013<br>willy04wu69                           |
@@ -164,7 +165,7 @@ Existing translations kindly provided by the following people:
 | :fr:             | French                 | alainmonk<br>Hasturcraft<br>rom5921                                                |
 | :de:             | German                 | apcnc<br>honkinator22<br>Opterai<br>silentpiranha                                  |
 | :hungary:        | Hungarian              | artemkiselevvloger                                                                 |
-| :it:             | Italian                | aironenerowork                                                                     |
+| :it:             | Italian                | aironenerowork<br>cocchisgambelluri45                                              |
 | :jp:             | Japanese               | Quifon                                                                             |
 | :kr:             | Korean                 | @GimoXagros<br>StaGVii                                                             |
 | :poland:         | Polish                 | diilmac<br>Nalapl3<br>sayonara4747<br>tengongcreative                              |
