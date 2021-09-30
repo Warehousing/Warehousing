@@ -174,7 +174,7 @@ Existing translations kindly provided by the following people:
 | :slovakia:       | Slovak                 | 350zipoo                                                                           |
 | :es:             | Spanish                | black.dreicous<br>frenchiveruti<br>ithan.lara.f<br>leortegacaudillo<br>AgnotSeeker |
 | :tr:             | Turkish                | orya                                                                               |
-| :ukraine:        | Ukrainian              | antonus777<br>ddayver                                                              |
+| :ukraine:        | Ukrainian              | antonus777<br>ddayver<br>padwiyangel                                               |
 
 
   [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-basic.png
