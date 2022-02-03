@@ -157,7 +157,7 @@ Existing translations kindly provided by the following people:
 | :south_africa:   | Afrikaans              | Anoyomouse<br>@Yuuki2012                                                           |
 |                  | Arabic                 | yahyaqradi10                                                                       |
 | :bulgaria:       | Bulgarian              | peter-mw                                                                           |
-| :cn:             | Chinese (Simplified)   | 621awdrgyjil<br>plumxing                                                           |
+| :cn:             | Chinese (Simplified)   | 621awdrgyjil<br>PlexPt<br>plumxing                                                 |
 | :cn:             | Chinese (Traditional)  | artemkiselevvloger<br>k98a<br>pickuse2013<br>willy04wu69                           |
 | :czech_republic: | Czech                  | kukuc473<br>Raus                                                                   |
 | :netherlands:    | Dutch                  | eregni<br>TheRealHenkFisher<br>Beverneus<br>Yuuki-chan2012                         |
@@ -174,7 +174,7 @@ Existing translations kindly provided by the following people:
 | :slovakia:       | Slovak                 | 350zipoo                                                                           |
 | :es:             | Spanish                | black.dreicous<br>frenchiveruti<br>ithan.lara.f<br>leortegacaudillo<br>AgnotSeeker |
 | :tr:             | Turkish                | orya                                                                               |
-| :ukraine:        | Ukrainian              | antonus777<br>ddayver<br>padwiyangel                                               |
+| :ukraine:        | Ukrainian              | antonus777<br>ddayver<br>Met_en_Bouldry<br>padwiyangel                             |
 
 
   [warehouse-basic]: https://raw.githubusercontent.com/Warehousing/Warehousing/master/graphics/entity/warehouse/warehouse-basic.png
