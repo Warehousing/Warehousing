@@ -6,11 +6,13 @@
 -- Borrowed from FreeER
 -- - https://forums.factorio.com/viewtopic.php?f=14&t=7161&start=10#p67540
 -- reload recipes and technologies in game from prototypes (aka update existing ones with changes)
---
+--[[
+-- This is done before all migrations are run anyway: ./doc-html/auxiliary/migrations.html#lua-migrations
 for i, player in ipairs(game.players) do
   player.force.reset_recipes()
   player.force.reset_technologies()
 end
+--]]
 
 for index, force in pairs(game.forces) do
   -- generate technology / recipes tables once and store them
@@ -39,11 +41,10 @@ for index, force in pairs(game.forces) do
       recipes["storehouse-requester"].enabled = true
     end
   end
-  
+
   if tech["warehouse-smart-research"] and tech["warehouse-smart-research"].researched then
     if recipes["storehouse-smart"] then
       recipes["storehouse-smart"].enabled = true
     end
   end
 end
-
