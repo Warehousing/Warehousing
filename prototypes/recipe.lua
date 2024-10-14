@@ -15,7 +15,7 @@ data:extend({
 			{ type = "item", name = "iron-stick", amount = 85 },
 		},
 		energy_required = 30,
-		results = {{type="item", name="warehouse-basic", amount = 10}},
+		results = {{type="item", name="warehouse-basic", amount = 1}},
 	},
 	{ -- Passive Provider Warehouse
 		type = "recipe",
