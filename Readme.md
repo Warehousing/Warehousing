@@ -146,6 +146,14 @@ Graphics by Nova_Kast, with visual updates for Factorio 1.0 by snouz. **Please d
 
 Storehouses contributed by Hanniballo. Updates for Factorio 0.15 contributed by kingarthur, with integration help from dgw (joined as co-maintainer as of 0.0.13).
 
+## Migration removal
+
+As part of the effort to clean up the repo for 2.0 and SpaceAge, the migrations have been removed, as we don't forsee anyone needing them to transition from 1.1 to 2.0
+
+The migrations are many years old and have not been required for the longest time.
+
+Should migrations be needed (your game is that old), then we suggest opening your game in 1.1, running the migrations, and then moving to 2.0
+
 ### Translations
 
 Want to see Warehousing available in your language? Please help us [translate the mod][crowdin-project] on Crowdin! Create a free account (or log in with Google, Twitter, Facebook, GitHub, or GitLab) and help make this mod (even more) awesome!

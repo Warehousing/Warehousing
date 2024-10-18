@@ -1,7 +1,7 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * rewritten by Optera 2019
- *
  * extended by dgw 2021
+ * ported to 2.0 by anoyomouse 2024
  *
  * Part of the Warehousing mod
  *
@@ -11,6 +11,7 @@
 ICONPATH = "__Warehousing__/graphics/icons/"
 ENTITYPATH = "__Warehousing__/graphics/entity/"
 local sounds = require("__base__/prototypes/entity/sounds")
+local hit_effects = require ("__base__.prototypes.entity.hit-effects")
 
 local warehouse_slots = 1800
 local storehouse_slots = 450
@@ -59,6 +60,8 @@ return
 				shift = shiftshadow,
 			}
 		},
+		-- wire_pins =
+		-- wire_pins_shadow =
 		led_blue = { filename = "__core__/graphics/empty.png", size = 1 },
 		led_green = { filename = "__core__/graphics/empty.png", size = 1 },
 		led_red = { filename = "__core__/graphics/empty.png", size = 1 },
@@ -67,13 +70,13 @@ return
 end
 
 -- generate base storehouse and warehouse
+-- scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 data:extend({
 	{
 		type = "container",
 		name = "warehouse-basic",
 		icon = ICONPATH.."warehouse-basic.png",
 		icon_size = 64,
-		icon_mipmaps = 3,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
 		minable = {mining_time = 2, result = "warehouse-basic"},
 		max_health = 450,
@@ -81,20 +84,25 @@ data:extend({
 		dying_explosion = "medium-explosion",
 		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
 		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		resistances =
 		{
 			{
 				type = "fire",
 				percent = 90
+			},
+			{
+			  type = "impact",
+			  percent = 60
 			}
 		},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		landing_location_offset = {1.0, -1.0},
+		damaged_trigger_effect = hit_effects.entity(),
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
-		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
+		impact_category = "metal",
+		icon_draw_specification = {scale = 0.7},
 		picture = {
 			layers = {
 				{
@@ -125,21 +133,22 @@ data:extend({
 				},
 			},
 		},
-		circuit_wire_max_distance = 7.5,
-		circuit_wire_connection_point =
-		{
-			shadow =
-			{
-				red = {144/32, 79/32},
-				green = {126/32, 79/32}
+		circuit_wire_max_distance = default_circuit_wire_max_distance,
+		circuit_connector = {
+			sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32}),
+			points = {
+				shadow =
+				{
+					red = {144/32, 79/32},
+					green = {126/32, 79/32}
+				},
+				wire =
+				{
+					red = {67/32, 6/32},
+					green = {49/32, 6/32}
+				}
 			},
-			wire =
-			{
-				red = {67/32, 6/32},
-				green = {49/32, 6/32}
-			}
-		},
-		circuit_connector_sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32}),
+		}
 	},
 	{
 		type = "container",
@@ -195,7 +204,7 @@ data:extend({
 				},
 			},
 		},
-		circuit_wire_max_distance = 7.5,
+		circuit_wire_max_distance = default_circuit_wire_max_distance,
 		circuit_wire_connection_point =
 		{
 			shadow =
