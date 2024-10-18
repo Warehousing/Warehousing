@@ -1,7 +1,7 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * rewritten by Optera 2019
- *
  * extended by dgw 2021
+ * ported to 2.0 by anoyomouse 2024
  *
  * Part of the Warehousing mod
  *

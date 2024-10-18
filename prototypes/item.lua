@@ -1,7 +1,7 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
- *
  * extended by dgw 2021
+ * ported to 2.0 by anoyomouse 2024
  *
  * See License.txt in the project directory for license information.
 --]]
