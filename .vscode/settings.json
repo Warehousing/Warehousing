@@ -1,0 +1,25 @@
+{
+    "factorio.versions": [
+        {
+            "name": "1.2",
+            "factorioPath": "c:\\factorio\\Factorio_1.2.24\\bin\\x64\\factorio.exe"
+        },
+        {
+            "name": "factorio 1.2.25",
+            "factorioPath": "c:\\factorio\\Factorio_1.2.25\\bin\\x64\\factorio.exe"
+        },
+        {
+            "name": "2.0",
+            "factorioPath": "d:\\SteamLibrary\\steamapps\\common\\Factorio\\bin\\x64\\factorio.exe",
+            "active": true
+        }
+    ],
+    "Lua.workspace.library": [
+        "c:\\factorio\\Factorio_1.2.24\\data",
+        "d:\\SteamLibrary\\steamapps\\common\\Factorio\\data"
+    ],
+    "Lua.workspace.userThirdParty": [
+        "c:\\Users\\anoyo\\AppData\\Roaming\\Code\\User\\workspaceStorage\\8ecc89d3d51f83ca0ac0d824878141db\\justarandomgeek.factoriomod-debug\\sumneko-3rd"
+    ],
+    "Lua.workspace.checkThirdParty": "ApplyInMemory"
+}
