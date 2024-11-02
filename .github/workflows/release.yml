@@ -1,0 +1,37 @@
+name: Publish release to Mod Portal
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: release
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Lua
+      run: sudo apt-get install -y lua5.4
+
+    # our Makefile really does the heavy lifting; major props to @narc0tiq for
+    # https://github.com/narc0tiq/factorio-mod-makefile (the template)
+    - name: Build mod
+      run: make
+
+    - name: Upload to Mod Portal
+      # Was going to use https://github.com/JohnTheCoolingFan/factorio-mod-publish
+      # but we don't store the version number in info.json. Fortunately it's
+      # simple to adapt a 4-LoC shell script.
+      env:
+        FACTORIO_PORTAL_TOKEN: ${{ secrets.FACTORIO_PORTAL_TOKEN }}
+        MOD_NAME: Warehousing
+      run: |
+        export MOD_FILE="pkg/${MOD_NAME}_$(cat VERSION).zip"
+        UPLOAD_URL=$(curl -X POST -d mod="${MOD_NAME}" \
+          -H "Authorization: Bearer ${FACTORIO_PORTAL_TOKEN}" \
+          https://mods.factorio.com/api/v2/mods/releases/init_upload \
+          | jq -r ".upload_url")
+        curl -X POST -s -F "file=@${MOD_FILE}" "${UPLOAD_URL}"
