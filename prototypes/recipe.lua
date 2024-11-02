@@ -11,9 +11,9 @@ data:extend({
 		enabled = false,
 		ingredients =
 		{
-			{ type = "item", name = "steel-plate", amount = 200 },
+			{ type = "item", name = "steel-plate", amount = 150 },
 			{ type = "item", name = "stone-brick", amount = 40 },
-			{ type = "item", name = "iron-stick", amount = 85 },
+			{ type = "item", name = "iron-chest", amount = 40 },
 		},
 		energy_required = 30,
 		results = {{type="item", name="warehouse-basic", amount = 1}},
@@ -25,9 +25,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "passive-provider-chest", amount = 1 },
-			{ type = "item", name = "steel-plate", amount = 10 },
-			{ type = "item", name = "iron-stick", amount = 15 },
+			{ type = "item", name = "passive-provider-chest", amount = 5 },
+			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="warehouse-passive-provider", amount=1}},
@@ -39,9 +39,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "storage-chest", amount = 1 },
-			{ type = "item", name = "steel-plate", amount = 10 },
-			{ type = "item", name = "iron-stick", amount = 15 },
+			{ type = "item", name = "storage-chest", amount = 5 },
+			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="warehouse-storage", amount=1}},
@@ -53,9 +53,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "active-provider-chest", amount = 1 },
-			{ type = "item", name = "steel-plate", amount = 10 },
-			{ type = "item", name = "iron-stick", amount = 15 },
+			{ type = "item", name = "active-provider-chest", amount = 5 },
+			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="warehouse-active-provider", amount=1}},
@@ -67,9 +67,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "requester-chest", amount = 1 },
-			{ type = "item", name = "steel-plate", amount = 10 },
-			{ type = "item", name = "iron-stick", amount = 15 },
+			{ type = "item", name = "requester-chest", amount = 5 },
+			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="warehouse-requester", amount=1}},
@@ -81,9 +81,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "buffer-chest", amount = 1 },
-			{ type = "item", name = "steel-plate", amount = 10 },
-			{ type = "item", name = "iron-stick", amount = 15 },
+			{ type = "item", name = "buffer-chest", amount = 5 },
+			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="warehouse-buffer", amount=1}},
@@ -94,9 +94,9 @@ data:extend({
 		enabled = false,
 		ingredients =
 		{
-			{ type = "item", name = "steel-plate", amount = 50 },
+			{ type = "item", name = "steel-plate", amount = 40 },
 			{ type = "item", name = "stone-brick", amount = 10 },
-			{ type = "item", name = "iron-stick", amount = 16 },
+			{ type = "item", name = "iron-chest", amount = 10 },
 		},
 		energy_required = 30,
 		results = {{type="item", name="storehouse-basic", amount=1}},
@@ -108,8 +108,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "passive-provider-chest", amount = 1 },
-			{ type = "item", name = "iron-stick", amount = 4 },
+			{ type = "item", name = "passive-provider-chest", amount = 2 },
+			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="storehouse-passive-provider", amount=1}},
@@ -121,8 +122,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "storage-chest", amount = 1 },
-			{ type = "item", name = "iron-stick", amount = 4 },
+			{ type = "item", name = "storage-chest", amount = 2 },
+			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="storehouse-storage", amount=1}},
@@ -134,8 +136,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "active-provider-chest", amount = 1 },
-			{ type = "item", name = "iron-stick", amount = 4 },
+			{ type = "item", name = "active-provider-chest", amount = 2 },
+			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="storehouse-active-provider", amount=1}},
@@ -147,8 +150,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "requester-chest", amount = 1 },
-			{ type = "item", name = "iron-stick", amount = 4 },
+			{ type = "item", name = "requester-chest", amount = 2 },
+			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="storehouse-requester", amount=1}},
@@ -160,8 +164,9 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "buffer-chest", amount = 1 },
-			{ type = "item", name = "iron-stick", amount = 4 },
+			{ type = "item", name = "buffer-chest", amount = 2 },
+			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
 		results = {{type="item", name="storehouse-buffer", amount=1}},
