@@ -58,5 +58,39 @@ changes are part of the same PR. (We _much_ prefer using the "Merge pull
 request" button to cherry-picking commits—it makes life easier when the time
 comes to write changelogs! :smirk_cat:)
 
+### Local development setup
+
+To work on the mod, most of what you need will be Git and a text editor, in a
+Unix-like environment (most Linux distros running bare-metal, in a VM, or in
+WSL; macOS and other BSD flavors should also work).
+
+Assuming you already have an SSH key configured with GitHub, you can clone the
+mod repository with:
+
+    git clone git@github.com:Warehousing/Warehousing.git
+
+That's great for quick hacking, but you will need to create a fork and clone it
+instead (or add your own fork as a new Git remote) in order to push new changes
+for a pull request.
+
+In order to test-build the mod, you'll need a few basic tools. Most come
+preinstalled on modern OSes, but sometimes [Make][make-pkg] or [Lua][lua-start]
+aren't included by default. Chances are you can install them from your distro's
+package repository using obvious package names like `make` or `lua` (or via a
+third-party tool like [Homebrew][homebrew-start] on Mac).
+
+Once the few basic tools you need are installed, you can easily build the mod:
+
+    # if you are not already in the mod directory cloned with Git
+    cd path/to/Warehousing
+    # one simple command creates the file for you
+    make
+
+After `make` finishes, you will find both packed (`.zip`) and unpacked versions
+of the mod in the `pkg/` subfolder. Copy one into your Factorio `mods` folder
+for in-game testing.
 
   [crowdin-project]: https://crowdin.com/project/factorio-warehousing
+  [homebrew-start]: https://brew.sh/
+  [lua-runtime]: https://lua.org/start.html
+  [make-pkg]: https://www.gnu.org/software/make/
