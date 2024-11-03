@@ -25,8 +25,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "passive-provider-chest", amount = 5 },
-			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "passive-provider-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 25 },
 			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
@@ -39,8 +39,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "storage-chest", amount = 5 },
-			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "storage-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 25 },
 			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
@@ -53,8 +53,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "active-provider-chest", amount = 5 },
-			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "active-provider-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 25 },
 			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
@@ -67,8 +67,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "requester-chest", amount = 5 },
-			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "requester-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 25 },
 			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
@@ -81,8 +81,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "warehouse-basic", amount = 1 },
-			{ type = "item", name = "buffer-chest", amount = 5 },
-			{ type = "item", name = "steel-plate", amount = 25 },
+			{ type = "item", name = "buffer-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 25 },
 			{ type = "item", name = "concrete", amount = 40 },
 		},
 		energy_required = 5,
@@ -108,8 +108,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "passive-provider-chest", amount = 2 },
-			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "passive-provider-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 10 },
 			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
@@ -122,8 +122,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "storage-chest", amount = 2 },
-			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "storage-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 10 },
 			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
@@ -136,8 +136,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "active-provider-chest", amount = 2 },
-			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "active-provider-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 10 },
 			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
@@ -150,8 +150,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "requester-chest", amount = 2 },
-			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "requester-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 10 },
 			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
@@ -164,8 +164,8 @@ data:extend({
 		ingredients =
 		{
 			{ type = "item", name = "storehouse-basic", amount = 1 },
-			{ type = "item", name = "buffer-chest", amount = 2 },
-			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "buffer-chest", amount = 1 },
+			{ type = "item", name = "advanced-circuit", amount = 10 },
 			{ type = "item", name = "concrete", amount = 15 },
 		},
 		energy_required = 5,
