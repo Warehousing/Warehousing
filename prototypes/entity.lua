@@ -13,17 +13,27 @@ ENTITYPATH = "__Warehousing__/graphics/entity/"
 local sounds = require("__base__/prototypes/entity/sounds")
 local hit_effects = require ("__base__.prototypes.entity.hit-effects")
 
+-- slot counts
 local warehouse_slots = 1800
 local storehouse_slots = 450
 local storage_warehouse_slots = 2000
 local storage_storehouse_slots = 500
 
--- Support legacy mode
+-- Support legacy capacity mode
 if settings.startup["Warehousing-sixteen-mode"].value then
 	warehouse_slots = 800
 	storehouse_slots = 150
 	storage_warehouse_slots = 2000
 	storage_storehouse_slots = 300
+end
+
+-- icon scaling
+local warehouse_icon_spec = {scale = 1.0, scale_for_many = 2.0, shift = {0, -1.1}}
+local storehouse_icon_spec = {scale = 0.8, scale_for_many = 1.6, shift = {0, -0.5}}
+
+if settings.startup["Warehousing-icon-scaling"].value then
+	warehouse_icon_spec = {scale = 3.5, scale_for_many = 4.0, shift = {0, -0.9}}
+	storehouse_icon_spec = {scale = 1.75, scale_for_many = 2.0, shift = {0, -0.4}}
 end
 
 -- Utility for placing circuit connector graphics
@@ -70,7 +80,6 @@ return
 end
 
 -- generate base storehouse and warehouse
--- scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
 data:extend({
 	{
 		type = "container",
@@ -102,7 +111,7 @@ data:extend({
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
 		impact_category = "metal",
-		icon_draw_specification = {scale = 0.7},
+		icon_draw_specification = warehouse_icon_spec,
 		picture = {
 			layers = {
 				{
@@ -175,7 +184,8 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "container",
 		inventory_size = storehouse_slots,
-		scale_info_icons = settings.startup["Warehousing-icon-scaling"].value,
+		impact_category = "metal",
+		icon_draw_specification = storehouse_icon_spec,
 		picture = {
 			layers = {
 				{
