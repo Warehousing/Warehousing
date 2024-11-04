@@ -30,7 +30,7 @@ jobs:
         MOD_NAME: Warehousing
       run: |
         export MOD_FILE="pkg/${MOD_NAME}_$(cat VERSION).zip"
-        UPLOAD_URL=$(curl -X POST -d mod="${MOD_NAME}" \
+        export UPLOAD_URL=$(curl -X POST -d mod="${MOD_NAME}" \
           -H "Authorization: Bearer ${FACTORIO_PORTAL_TOKEN}" \
           https://mods.factorio.com/api/v2/mods/releases/init_upload \
           | jq -r ".upload_url")
