@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-11-04
+
+  Changed:
+    - Significant recipe rebalancing to eliminate iron sticks:
+      - Basic versions now require iron chests; steel cost adjusted
+      - Logistic versions now require advanced circuits and concrete
+    - Technology research prerequisites adjusted
+  Fixed:
+    - Icon scaling
+    - Startup setting to enable larger alt-mode icons (on by default) didn't work
+    - Space Age: Warehousing buildings can no longer be built on space platforms
+  Meta:
+    - Housekeeping and reorganization of source code, to avoid stray files in future releases
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2024-10-21
 
