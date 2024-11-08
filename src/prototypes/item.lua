@@ -8,6 +8,8 @@
 
 ICONPATH = "__Warehousing__/graphics/icons/"
 
+local item_sounds = require("__base__.prototypes.item_sounds")
+
 data:extend({
 	{
 		type = "item",
