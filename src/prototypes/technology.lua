@@ -60,7 +60,7 @@ data:extend(
 				recipe = "storehouse-storage",
 			},
 		},
-		prerequisites = { "warehouse-research", "robotics", "concrete", "advanced-circuit" },
+		prerequisites = { "warehouse-research", "construction-robotics", "logistic-robotics", "concrete" },
 		unit =
 		{
 			count = 150,
