@@ -42,7 +42,7 @@ return
 	{
 		connector_main =
 		{
-			filename = ENTITYPATH.."hr-connector.png",
+			filename = ENTITYPATH.."connector.png",
 			width = 84,
 			height = 136,
 			scale = 0.5,
@@ -50,7 +50,7 @@ return
 		},
 		connector_shadow =
 		{
-			filename = ENTITYPATH.."hr-connector-shadow.png",
+			filename = ENTITYPATH.."connector-shadow.png",
 			width = 68,
 			height = 33,
 			scale = 0.5,
@@ -102,13 +102,13 @@ data:extend({
 		picture = {
 			layers = {
 				{
-					filename = ENTITYPATH .. 'warehouse/hr-warehouse-basic.png',
+					filename = ENTITYPATH .. 'warehouse/warehouse-basic.png',
 					width = 520,
 					height = 480,
 					scale = 0.5,
 				},
 				{
-					filename = ENTITYPATH .. 'warehouse/hr-warehouse-basic-shadow.png',
+					filename = ENTITYPATH .. 'warehouse/warehouse-basic-shadow.png',
 					width = 520,
 					height = 480,
 					shift = { 1, 0 },
@@ -163,13 +163,13 @@ data:extend({
 		picture = {
 			layers = {
 				{
-					filename = ENTITYPATH .. 'storehouse/hr-storehouse-basic.png',
+					filename = ENTITYPATH .. 'storehouse/storehouse-basic.png',
 					width = 256,
 					height = 256,
 					scale = 0.5,
 				},
 				{
-					filename = ENTITYPATH .. 'storehouse/hr-storehouse-basic-shadow.png',
+					filename = ENTITYPATH .. 'storehouse/storehouse-basic-shadow.png',
 					width = 256,
 					height = 256,
 					scale = 0.5,
@@ -195,19 +195,19 @@ data:extend({
 	},
 })
 
-function chestAnim(hrimg, hrshadow, shadowshift, width, height, hrchestanim, chestshift, chestanimsize)
+function chestAnim(img, shadow, shadowshift, width, height, chestanim, chestshift, chestanimsize)
 return
 	{
 		layers = {
 			{
-				filename = hrimg,
+				filename = img,
 				width = width,
 				height = height,
 				repeat_count = 7,
 				scale = 0.5,
 			},
 			{
-				filename = hrchestanim,
+				filename = chestanim,
 				width = chestanimsize,
 				height = chestanimsize,
 				frame_count = 7,
@@ -215,7 +215,7 @@ return
 				scale = 0.5,
 			},
 			{
-				filename = hrshadow,
+				filename = shadow,
 				width = width,
 				height = height,
 				shift = shadowshift,
@@ -231,9 +231,9 @@ end
 function createLogisticContainer(name, logistic_type)
 	local p = table.deepcopy(data.raw["container"][name.."-basic"])
 	p.name = name.."-"..logistic_type
-	local hrimg = ENTITYPATH..name.."/hr-"..p.name..".png"
-	local hrshadow = ENTITYPATH..name.."/hr-"..name.."-shadow.png"
-	local hrchestanim = ENTITYPATH..name.."/hr-"..name.."-chest-anim.png"
+	local img = ENTITYPATH..name.."/"..p.name..".png"
+	local shadow = ENTITYPATH..name.."/"..name.."-shadow.png"
+	local chestanim = ENTITYPATH..name.."/"..name.."-chest-anim.png"
 	p.minable.result = p.name
 	p.icon = ICONPATH..p.name..".png"
 	p.type = "logistic-container"
@@ -241,10 +241,10 @@ function createLogisticContainer(name, logistic_type)
 	p.animation_sound = sounds.logistics_chest_open
 	p.opened_duration = 7
 	if name == "warehouse" then
-		p.animation = chestAnim(hrimg, hrshadow, {1, 0}, 520, 480, hrchestanim, {1, -44/32}, 44)
+		p.animation = chestAnim(img, shadow, {1, 0}, 520, 480, chestanim, {1, -44/32}, 44)
 	end
 	if name == "storehouse" then
-		p.animation = chestAnim(hrimg, hrshadow, {0, 0}, 256, 256, hrchestanim, {0, 3/32}, 74)
+		p.animation = chestAnim(img, shadow, {0, 0}, 256, 256, chestanim, {0, 3/32}, 74)
 	end
 	if logistic_type == "storage" then
 		p.max_logistic_slots = 1
@@ -277,7 +277,7 @@ function createLinkedContainer(name)
 	p.gui_mode = "admins" -- all, none, admins
 	p.icon = ICONPATH..name.."-linked.png"
 	p.icon_size = 64
-	p.picture.layers[1].filename = ENTITYPATH..name.."/hr-"..name.."-linked.png"
+	p.picture.layers[1].filename = ENTITYPATH..name.."/"..name.."-linked.png"
 	return p
 end
 
