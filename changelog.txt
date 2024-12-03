@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2024-12-03
+
+  Fixed:
+    - Entity graphics resolution handling changed in Factorio 2.0 (thank you @hgschmie)
+    - Linked storehouse sprite
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2024-11-09
 
