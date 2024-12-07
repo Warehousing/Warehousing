@@ -21,3 +21,11 @@ if data.raw["container"]["steel-chest"].surface_conditions ~= nil then
 		end
 	end
 end
+
+local logistic_mode = settings.startup["Warehousing-logistic-research-requirement"].value
+if logistic_mode == "both" or logistic_mode == "construction" then
+	table.insert(data.raw["technology"]["warehouse-logistics-research-1"].prerequisites, "construction-robotics")
+end
+if logistic_mode == "both" or logistic_mode == "logistic" then
+	table.insert(data.raw["technology"]["warehouse-logistics-research-1"].prerequisites, "logistic-robotics")
+end
