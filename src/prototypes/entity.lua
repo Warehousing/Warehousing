@@ -249,6 +249,9 @@ function createLogisticContainer(name, logistic_type)
 	if logistic_type == "storage" then
 		p.max_logistic_slots = 1
 	end
+	if logistic_type == "buffer" or logistic_type == "requester" then
+		p.trash_inventory_size = 20
+	end
 	return p
 end
 
