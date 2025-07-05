@@ -16,7 +16,7 @@ data:extend({
 		name = "Warehousing-copy-logistic-system",
 		setting_type = "startup",
 		default_value = false,
-		order = 'c-a',
+		order = 'c-a[b]',
 	},
 	{
 		type = "bool-setting",
@@ -24,5 +24,13 @@ data:extend({
 		setting_type = "startup",
 		default_value = false,
 		order = 'c-b',
+	},
+	{
+		type = "string-setting",
+		name = "Warehousing-logistic-research-requirement",
+		setting_type = "startup",
+		allowed_values = {"construction", "logistic", "both"},
+		default_value = "both",
+		order = 'c-a[a]',
 	},
 })
