@@ -93,7 +93,6 @@ data:extend({
 		},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
-		landing_location_offset = {1.0, -1.0},
 		damaged_trigger_effect = hit_effects.entity(),
 		fast_replaceable_group = "container",
 		inventory_size = warehouse_slots,
@@ -119,19 +118,21 @@ data:extend({
 		},
 		circuit_wire_max_distance = default_circuit_wire_max_distance,
 		circuit_connector = {
-			sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32}),
-			points = {
-				shadow =
-				{
-					red = {144/32, 79/32},
-					green = {126/32, 79/32}
+			{
+				sprites = connectorSprite({58/32, 6/32}, {135/32, 79/32}),
+				points = {
+					shadow =
+					{
+						red = {144/32, 79/32},
+						green = {126/32, 79/32}
+					},
+					wire =
+					{
+						red = {67/32, 6/32},
+						green = {49/32, 6/32}
+					}
 				},
-				wire =
-				{
-					red = {67/32, 6/32},
-					green = {49/32, 6/32}
-				}
-			},
+			}
 		}
 	},
 	{
@@ -178,20 +179,24 @@ data:extend({
 			},
 		},
 		circuit_wire_max_distance = default_circuit_wire_max_distance,
-		circuit_wire_connection_point =
-		{
-			shadow =
+		circuit_connector = {
 			{
-				red = {82/32, 22/32},
-				green = {64/32, 22/32}
-			},
-			wire =
-			{
-				red = {32/32, -22/32},
-				green = {14/32, -22/32}
+				sprites = connectorSprite({23/32, -22/32}, {73/32, 22/32}),
+				points =
+				{
+					shadow =
+					{
+						red = {82/32, 22/32},
+						green = {64/32, 22/32}
+					},
+					wire =
+					{
+						red = {32/32, -22/32},
+						green = {14/32, -22/32}
+					}
+				},
 			}
 		},
-		circuit_connector_sprites = connectorSprite({23/32, -22/32}, {73/32, 22/32}),
 	},
 })
 
@@ -238,14 +243,22 @@ function createLogisticContainer(name, logistic_type)
 	p.icon = ICONPATH..p.name..".png"
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
-	p.animation_sound = sounds.logistics_chest_open
-	p.opened_duration = 7
+
+	-- logistic robot animation properties moved into entity.robot_door for 2.1.0
 	if name == "warehouse" then
-		p.animation = chestAnim(img, shadow, {1, 0}, 520, 480, chestanim, {1, -44/32}, 44)
+		my_animation = chestAnim(img, shadow, {1, 0}, 520, 480, chestanim, {1, -44/32}, 44)
+		landing_location_offset = {1.0, -1.0}
 	end
 	if name == "storehouse" then
-		p.animation = chestAnim(img, shadow, {0, 0}, 256, 256, chestanim, {0, 3/32}, 74)
+		my_animation = chestAnim(img, shadow, {0, 0}, 256, 256, chestanim, {0, 3/32}, 74)
 	end
+	p.robot_door = {
+		animation = my_animation,
+		animation_sound = sounds.logistics_chest_open,
+		location_offset = landing_location_offset,
+		opened_duration = 7,
+	}
+
 	if logistic_type == "storage" then
 		p.max_logistic_slots = 1
 	end
@@ -274,8 +287,7 @@ function createLinkedContainer(name)
 	p.type = "linked-container"
 	p.name = "linked-"..name
 	p.minable.result = p.name
-	p.circuit_wire_connection_point = nil
-	p.circuit_connector_sprites = nil
+	p.circuit_connector = nil
 	p.circuit_wire_max_distance = nil
 	p.gui_mode = "admins" -- all, none, admins
 	p.icon = ICONPATH..name.."-linked.png"
