@@ -38,6 +38,29 @@ data:extend(
 	},
 	{
 		type = "technology",
+		name = "warehouse-gate-research-1",
+		icon = ICONPATH.."warehouse-logistics-research-1.png",
+		icon_size = 256,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-passive-provider",
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "storehouse-storage",
+			},
+		},
+		research_trigger =
+		{
+			type = "craft-item",
+			item = "passive-provider-chest",
+			count = 1
+		}
+	},
+	{
+		type = "technology",
 		name = "warehouse-logistics-research-1",
 		icon = ICONPATH.."warehouse-logistics-research-1.png",
 		icon_size = 256,
@@ -60,7 +83,7 @@ data:extend(
 				recipe = "storehouse-storage",
 			},
 		},
-		prerequisites = { "warehouse-research", "robotics", "concrete", "advanced-circuit" },
+		prerequisites = { "warehouse-research", "warehouse-gate-research-1", "concrete", "advanced-circuit" },
 		unit =
 		{
 			count = 150,
