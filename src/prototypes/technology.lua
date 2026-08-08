@@ -38,7 +38,7 @@ data:extend(
 	},
 	{
 		type = "technology",
-		name = "warehouse-gate-research-1",
+		name = "warehouse-logistics-research-gate",
 		icon = ICONPATH.."warehouse-logistics-research-1.png",
 		icon_size = 256,
 		effects =
@@ -83,7 +83,7 @@ data:extend(
 				recipe = "storehouse-storage",
 			},
 		},
-		prerequisites = { "warehouse-research", "warehouse-gate-research-1", "concrete", "advanced-circuit" },
+		prerequisites = { "warehouse-research", "warehouse-logistics-research-gate", "concrete", "advanced-circuit" },
 		unit =
 		{
 			count = 150,
