@@ -41,17 +41,6 @@ data:extend(
 		name = "warehouse-logistics-research-gate",
 		icon = ICONPATH.."warehouse-logistics-research-1.png",
 		icon_size = 256,
-		effects =
-		{
-			{
-				type = "unlock-recipe",
-				recipe = "storehouse-passive-provider",
-			},
-			{
-				type = "unlock-recipe",
-				recipe = "storehouse-storage",
-			},
-		},
 		research_trigger =
 		{
 			type = "build-entity",
