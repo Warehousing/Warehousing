@@ -54,9 +54,8 @@ data:extend(
 		},
 		research_trigger =
 		{
-			type = "craft-item",
-			item = "passive-provider-chest",
-			count = 1
+			type = "build-entity",
+			entity = "roboport"
 		}
 	},
 	{
