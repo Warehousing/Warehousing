@@ -244,18 +244,19 @@ function createLogisticContainer(name, logistic_type)
 	p.type = "logistic-container"
 	p.logistic_mode = logistic_type
 
-	-- logistic robot animation properties moved into entity.robot_door for 2.1.0
+	-- logistic robot animation properties moved into entity.robot_door for 2.1.7
+	local animation
+	local location_offset
 	if name == "warehouse" then
-		my_animation = chestAnim(img, shadow, {1, 0}, 520, 480, chestanim, {1, -44/32}, 44)
-		landing_location_offset = {1.0, -1.0}
-	end
-	if name == "storehouse" then
-		my_animation = chestAnim(img, shadow, {0, 0}, 256, 256, chestanim, {0, 3/32}, 74)
+		animation = chestAnim(img, shadow, {1, 0}, 520, 480, chestanim, {1, -44/32}, 44)
+		location_offset = {1.0, -1.0}
+	elseif name == "storehouse" then
+		animation = chestAnim(img, shadow, {0, 0}, 256, 256, chestanim, {0, 3/32}, 74)
 	end
 	p.robot_door = {
-		animation = my_animation,
+		animation = animation,
 		animation_sound = sounds.logistics_chest_open,
-		location_offset = landing_location_offset,
+		location_offset = location_offset,
 		opened_duration = 7,
 	}
 
