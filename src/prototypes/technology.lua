@@ -38,6 +38,17 @@ data:extend(
 	},
 	{
 		type = "technology",
+		name = "warehouse-logistics-research-gate",
+		icon = ICONPATH.."warehouse-logistics-research-1.png",
+		icon_size = 256,
+		research_trigger =
+		{
+			type = "build-entity",
+			entity = "roboport"
+		}
+	},
+	{
+		type = "technology",
 		name = "warehouse-logistics-research-1",
 		icon = ICONPATH.."warehouse-logistics-research-1.png",
 		icon_size = 256,
@@ -60,7 +71,7 @@ data:extend(
 				recipe = "storehouse-storage",
 			},
 		},
-		prerequisites = { "warehouse-research", "robotics", "concrete", "advanced-circuit" },
+		prerequisites = { "warehouse-research", "warehouse-logistics-research-gate", "concrete", "advanced-circuit" },
 		unit =
 		{
 			count = 150,
