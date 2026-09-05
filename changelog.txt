@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-09-05
+
+  Changed:
+    - Updated for Factorio 2.1
+    - Logistics Warehousing research is now gated behind building a Roboport, which fixes a
+      longstanding annoyance with Warehousing's tech-tree dependencies
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2024-12-10
 
