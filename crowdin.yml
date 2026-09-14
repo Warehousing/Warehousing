@@ -1,5 +1,15 @@
 files:
   - source: /src/locale/en/
     translation: /src/locale/%two_letters_code%/locale.cfg
-    dest: /locale.ini
+    languages_mapping:
+      two_letters_code:
+        es-ES: es-ES
+        fy-NL: fy-NL
+        ga-IE: ga-IE
+        pt-PT: pt-PT
+        pt-BR: pt-BR
+        sv-SE: sv-SE
+        zh-TW: zh-TW
+        zh-CN: zh-CN
     type: ini
+    dest: /locale.ini
